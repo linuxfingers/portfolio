@@ -7,11 +7,11 @@
  /*_______________________________________*\
 /*            color pallette               *\
 =============================================
-= light shade:          Faf9f9 - cream      =
+= light shade:          faf9f9 - cream      =
 = light accent:         d78a9b - pink       =
 = main brand:           009600 - term green =
-= dark accent:          77869c - dark blue  =
-= dark shade:           1c1d21 - dark slate =
+= dark accent:          391F3B - purple     =
+= dark shade:           000000 - black      =
 =============================================
 \*                                         */
 
@@ -41,7 +41,7 @@ html {
 }
 
 a {
-	color: #Faf9f9;
+	color: #faf9f9;
 	text-decoration: none;
 }
 
@@ -50,13 +50,35 @@ a:hover {
   text-decoration: dotted #d78a9b overline underline;
 }
 
+/*** Custom naviation ***/
+.pglink {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #faf9f9;
+  text-decoration: none;
+}
+
+.pglink:hover, pglink:focus {
+  color: #009600;
+  text-decoration: dotted #d78a9b overline underline;
+}
+
+.pglink:active{
+  color: #d78a9b;
+  text-decoration: dotted #d78a9b overline underline;
+}
+.pglink.disabled {
+  color: #6c757d;
+  text-decoration:line-through;
+
+  pointer-events: none;
+  cursor: default;
+}
+
 body {
-  background-color: #1c1d21;
-  background-image: linear-gradient(
-    to bottom, transparent, #1c1d21
-  ), url("/public/img/mobodark.gif");
-  background-repeat: repeat;
-  background-blend-mode: darken;
+  background-color: #000000;
+  background-image: url("/public/img/mobo.gif");
+  background-repeat: cover;
   background-attachment: fixed;
   height:100%;
   display: flex;
@@ -72,60 +94,58 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #Faf9f9;
+  color: #faf9f9;
+  font-family: "courierprimesans";
 }
 
 ol.light{
-  color:#Faf9f9;
+  color:#faf9f9;
   font-family: 'courierprimesans', Arial, sans-serif;
 }
 
 p {
-  color: #Faf9f9;
+  color: #faf9f9;
   font-family: 'courierprimesans', Arial, sans-serif;
   font-weight:normal;
   font-style:normal;
 }
 
 ul.light{
-  color:#Faf9f9;
+  color:#faf9f9;
   font-family: 'courierprimesans', Arial, sans-serif;
 }
 
 /* Boxes? */
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/img/motherboard.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/img/mobo.gif");
   height: 30%;
   margin: 20px;
   padding: 120px;
-
-  /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
-/* Place text in the middle of the image */
 .hero-text {
   text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: Faf9f9;
+  color: faf9f9;
 }
 
 .box-black {
   border: 1px solid white;
-  background-color: #1c1d21;
-  color: #Faf9f9;
+  background-color: #000;
+  color: #faf9f9;
   padding: 10px;
 }
 
 .box-brand {
-  border: 1px solid #Faf9f9;
+  border: 1px solid #faf9f9;
   background-color: #009600;
 }
 
@@ -134,7 +154,7 @@ ul.light{
 .btn-brand {
   display: inline-block;
   font-weight: 700;
-  color: #Faf9f9;
+  color: #faf9f9;
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
@@ -150,12 +170,6 @@ ul.light{
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .btn-brand {
-    transition: none;
-  }
-}
-
 .btn-brand:hover {
   color: #00ff00;
   text-decoration: none;
@@ -164,7 +178,7 @@ ul.light{
 .btn-brand:focus, .btn.focus {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
-  background-color: #Faf9f9;
+  background-color: #faf9f9;
   color: #009600;
 }
 
@@ -177,38 +191,12 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 
-
-
 /*Pilfered from Bootstrap*/
-
-.header-line {
-  line-height: 1;
-  border-bottom: 1px solid #Faf9f9;
-
-}
-
-.header-line-logo {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
-  font-size: 2.25rem;
-}
-
-.header-line-logo:hover {
-  text-decoration: none;
-}
-
-.display-4 {
-  font-size: 2.5rem;
-}
-@media (min-width: 768px) {
-  .display-4 {
-    font-size: 3rem;
-  }
-}
 
 .nav-scroller {
   position: relative;
   z-index: 2;
-  height: 2.75rem;
+  height: 2rem;
   overflow-y: hidden;
 }
 
@@ -246,92 +234,40 @@ fieldset:disabled a.btn {
   .h-md-250 { height: 250px; }
 }
 
-/*
- * textchunk name and description
- */
-.textchunk-title {
-  margin-bottom: 0;
-  font-size: 2rem;
-  font-weight: 400;
-}
-.textchunk-description {
-  font-size: 1.1rem;
-  color: #999;
-}
-
-@media (min-width: 40em) {
-  .textchunk-title {
-    font-size: 3.5rem;
-  }
-}
-
-/* Pagination */
-.textchunk-pagination {
-  margin-bottom: 4rem;
-}
-.textchunk-pagination > .btn {
-  border-radius: 2rem;
-}
-
-/*
- * textchunk posts
- */
-.textchunk-post {
-  margin-bottom: 4rem;
-}
-.textchunk-post-title {
-  margin-bottom: .25rem;
-  font-size: 2.5rem;
-}
-.textchunk-post-meta {
-  margin-bottom: 1.25rem;
-  color: #999;
-}
-
 /* Header and Footer */
 
-
 .bighead {
-  padding: 2.5rem 0;
-  color: #Faf9f9;
-  text-align: center;
-  background-color: #1c1d21;
-  border-bottom: .05rem solid #Faf9f9;
+  position: relative;
+  left: 0;
+  bottom: 0;
   width: 100%;
-
-}
-
-.bighead5 p:last-child {
-  margin-bottom: 0;
-}
-.blink {
-  animation: blink 2s linear infinite;
+  background-color: #000000;
+  border-bottom: .05rem solid #faf9f9;
+  text-align: center;
+  text-align: center;
+  background-color: #000000;
 }
 
 .content{
-  color: #Faf9f9;
-  background-color: #1c1d21;
+  color: #faf9f9;
+  background-color: #000000;
   padding: 2.5rem 2.5rem;
-  border-right: .05rem solid #Faf9f9;
-  border-left: .05rem solid #Faf9f9;
+  border-right: .05rem solid #faf9f9;
+  border-left: .05rem solid #faf9f9;
   position: relative;
   width: 99%;
   overflow: hidden;
 }
 
 .bigfoot {
-  padding: 1.5rem 0;
-  color: #Faf9f9;
-  text-align: center;
-  background-color: #1c1d21;
-  border-top: .05rem solid #Faf9f9;
+  position: relative;
+  padding-top: 1rem;
+  left: 0;
+  bottom: 0;
   width: 100%;
-  margin-top: auto;
-  position:relative;
-}
-
-.bigfoot5 p:last-child {
-  margin-bottom: 0;
+  background-color: #000000;
+  border-top: .05rem solid #faf9f9;
+  text-align: center;
 }
 
 #wrapper {
@@ -342,19 +278,10 @@ fieldset:disabled a.btn {
   padding: 1.5em 1.5em 1.5em 1.5em;
   overflow: auto;
   display: inline-block;
-  border-right: .05rem solid #Faf9f9;
-  border-left: .05rem solid #Faf9f9;
-  color: #Faf9f9;
-  background-color: #1c1d21;
-}
-
-.content1 {
-  padding: 2.5rem 0;
-  color: #Faf9f9;
-  background-color: #1c1d21;
-  width: 90%;
-  border-right: .05rem solid #Faf9f9;
-  border-left: .05rem solid #Faf9f9;
+  border-right: .05rem solid #faf9f9;
+  border-left: .05rem solid #faf9f9;
+  color: #faf9f9;
+  background-color: #000000;
 }
 
 .centered-element {
@@ -372,10 +299,51 @@ fieldset:disabled a.btn {
 }
 
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 0px #Faf9f9;
+    -webkit-box-shadow: inset 0 0 0px #faf9f9;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #Faf9f9;
+  background-color: #faf9f9;
   outline: 1px solid slategrey;
+}
+
+/*You should activate Windows.*/
+
+.bottomright {
+  position: absolute;
+  bottom: 2rem;
+  right: 3.5rem;
+  font-size: 16px;
+}
+.kern {
+  letter-spacing: .5px;
+  font-size: 19px;
+  font-family: "Segoe UI";
+}
+
+@font-face {
+    font-family: SegoeUI;
+    src:
+        local("Segoe UI"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: SegoeUI;
+    src:
+        local("Segoe UI Light"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+    font-weight: 100;
+}
+
+#overlay {
+  font-family: "Segoe UI Light";
+  color: rgba(169,169,169,.75); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
 }

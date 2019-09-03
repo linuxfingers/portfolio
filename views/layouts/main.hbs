@@ -20,6 +20,8 @@
     </script>
 <!-- End Google Analytics -->
 
+<script src="https://kit.fontawesome.com/1de139fa02.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 
 <script
@@ -35,37 +37,37 @@
   <link href="public/css/custom.css" rel="stylesheet">
 
 </head>
-
 <body>
-  <nav class="navbar-fixed-top">
-<header class="bighead py-3">
-  <div class="container">
-  <div class="row flex-nowrap justify-content-between align-items-center">
-    <div class="col-4 pt-1">
-      <a class="text-dark" href="#" onclick="randomSite();" target="_new">???</a>
+  <nav class="navbar navbar-dark navbar-expand-md bg-faded justify-content-center bighead">
+    <a href="/" class="navbar-brand d-flex w-50 mr-auto">visitor@linuxfingers:~$</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+        <ul class="navbar-nav w-100 justify-content-center">
+            <li class="nav-item active">
+                <a class="pglink" href="rhetoric">/rhetoric/</a>
+            </li>
+            <li class="nav-item">
+                <a class="pglink" href="art">/creative_arts/</a>
+            </li>
+            <li class="nav-item">
+                <a class="pglink" href="cv">/cv/</a>
+            </li>
+            <li class="nav-item">
+                <a class="pglink" href="about">/about_jen/</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+            <li class="nav-item">
+              {{#if user}}
+                <p>logged in.<a class="pglink" href="/logout"> <b>exit?</b></a>
+              {{else}}
+              <a class="pglink" href="/login">login $USER</a>
+              {{/if}}
+            </li>
+        </ul>
     </div>
-    <div class="col-4 text-center p-2 blink">
-      <a class="text-muted" href="/">/home/linuxfingers/</a>
-    </div>
-    <div class="col-4 d-flex justify-content-end align-items-center">
-      {{#if user}}
-      <a class="btn btn-sm btn-outline-secondary" href="/logout">Log Out</a>
-      {{else}}
-      <a class="btn btn-sm btn-outline-secondary" href="signin">/restricted/</a>
-      {{/if}}
-    </div>
-  </div>
-
-<div class="nav-scroller py-1 mb-2">
-  <nav class="nav d-flex justify-content-between">
-    <a class="p-2" href="rhetoric">/rhetoric/</a>
-    <a class="p-2" href="art">/art/</a>
-    <a class="p-2" href="cv">/cv/</a>
-    <a class="p-2" href="about">/about/</a>
-    <a class="p-2" href="contact">/contact/</a>
-  </nav>
-</div>
-</header>
 </nav>
 
 {{#if error}}
@@ -85,10 +87,13 @@
 
 <footer class="bigfoot">
   <p>
-    <img src="/public/img/baby.gif" height ="50">
-    website and content by <a href="https://twitter.com/linuxfingers">@linuxfingers</a>
-     <img src="/public/img/baby.gif" height ="50">
-  </p>
+<img src="/public/img/greenskull.gif" height="30px" href="#" onclick="randomSite();">
+     <a href="mailto:contact@linuxfingers.com">email</a>
+     ░ <a href="http://www.twitter.com/linuxfingers">twitter</a>
+     ░ <a href="http://www.facebook.com/linuxfingers">facebook</a>
+     ░ <a href="http://www.soundcloud.com/linuxfingers">soundcloud</a>
+<img src="/public/img/greenskull.gif" height="30px" href="#" onclick="randomSite();">
+</p>
 </footer>
 
 <script src="public/js/bootstrap.js"></script>

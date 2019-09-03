@@ -1,33 +1,16 @@
-<style>
-  .bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-
-  @media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-    }
-  }
-</style>
-
 
 
 <div id="wrapper" class="container">
 
 <div class="jumbotron hero-image">
-  <div class="box-black rounded hero-text">
+  <div class="box-black hero-text">
     <h1>wow what a cool website</h1>
     <p>time to party like it's 1999</p>
-    <a class="btn btn-brand" href="mailto:linuxfingers@gmail.com">hire me</a>
+    <a class="btn btn-brand" href="mailto:contact@linuxfingers.com">hire me</a>
   </div>
 </div>
 
-
+<!--
 <main role="main" class="container">
   <div class="row">
     <div class="col-md-8 textchunk-main">
@@ -94,7 +77,7 @@
         <p class="mb-0">#!/bin/bash<br>echo "Hello World"</p>
       </div>
 
-      <!--<div class="p-4">
+      <div class="p-4">
         <h4 class="font-italic">Archives</h4>
         <ol class="list-unstyled mb-0">
           <li><a href="#">March 2014</a></li>
@@ -110,7 +93,7 @@
           <li><a href="#">May 2013</a></li>
           <li><a href="#">April 2013</a></li>
         </ol>
-      </div>-->
+      </div>
 
       <div class="p-4">
         <h4 class="font-italic">hangout spots</h4>
@@ -122,28 +105,19 @@
           <li><a href="http://www.soundcloud.com/linuxfingers">soundcloud</a></li>
         </ol>
       </div>
-    </aside><!-- /.textchunk-sidebar -->
+    </aside><!-- /.textchunk-sidebar
+  </div><!-- /.row
+-->
 
-  </div><!-- /.row -->
+<img class="centered" src="/public/img/UCpopup.gif" width="50%">
 
 </main><!-- /.container -->
 </div>
-</div>
 
-<script>
+<script>$("#overlay").modal({
+    backdrop : "static",
+    keyboard: false
+});</script>
 
-  var options = {
-    strings: [
-      "<i>First</i> sentence.",
-      "<i>First</i> sentence.",
-      "<i>First</i> sentence.",
-      "<i>First</i> sentence.",
-      "<i>First</i> sentence.",
-      "&amp; a second sentence."
-    ],
-    typeSpeed: 100
-  }
-
-  var typed = new Typed(".element", options);
-
-</script>
+<div id="overlay" data-backdrop="static" class="bottomright">
+  <audio id="sound1" src="public/audio/laugh.wav" preload="auto"></audio><a class="#" onclick="document.getElementById('sound1').play();"><font class="kern">Activate Windows</font><br>Go to Settings to activate Windows.</a></div>
