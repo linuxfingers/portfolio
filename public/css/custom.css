@@ -311,7 +311,7 @@ fieldset:disabled a.btn {
 
 .bottomright {
   position: absolute;
-  bottom: 2rem;
+  bottom: 1.5rem;
   right: 3.5rem;
   font-size: 16px;
 }

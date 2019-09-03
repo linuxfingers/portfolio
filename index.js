@@ -114,11 +114,12 @@ var index = require('./routes/index');
 var about = require('./routes/about');
 var contact = require('./routes/contact');
 
-var home = require('./routes/home');
+//var home = require('./routes/home');
 var signin = require('./routes/signin');
 var local_reg = require('./routes/local_reg');
 var login = require('./routes/login');
 var logout = require('./routes/logout');
+var portfolio = require('./routes/portfolio')
 
 //**app.get('/', function(req, res) {
 //    res.render('splash', {title: 'Linux...fingers?', layout: false});
@@ -143,6 +144,9 @@ app.use('/login', login);
 
 //logs user out of site, deleting them from the session, and returns to homepage
 app.use('/logout', logout);
+
+//portfolio route
+app.use('/portfolio', portfolio);
 
 app.listen(5000, function() {
   console.log('Testing on port 5000, sir!');
