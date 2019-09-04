@@ -8,11 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://linuxfingers@bitbucket.org/linuxfingers/linuxfingers.com.git"
+    "url": "https://github.com/linuxfingers/portfolio.git"
   },
   "author": "jennifer mead",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/linuxfingers/linuxfingers.com#readme",
+  "homepage": "https://github.com/linuxfingers/portfolio",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.4",

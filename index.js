@@ -119,7 +119,10 @@ var signin = require('./routes/signin');
 var local_reg = require('./routes/local_reg');
 var login = require('./routes/login');
 var logout = require('./routes/logout');
-var portfolio = require('./routes/portfolio')
+var portfolio = require('./routes/portfolio');
+
+var emails = require('./routes/emails');
+var masters = require('./routes/masters');
 
 //**app.get('/', function(req, res) {
 //    res.render('splash', {title: 'Linux...fingers?', layout: false});
@@ -147,6 +150,11 @@ app.use('/logout', logout);
 
 //portfolio route
 app.use('/portfolio', portfolio);
+
+//portfolio route
+app.use('/emails', emails);
+
+app.use('masters', masters);
 
 app.listen(5000, function() {
   console.log('Testing on port 5000, sir!');

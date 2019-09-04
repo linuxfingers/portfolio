@@ -21,11 +21,4 @@ router.get('/previous/indesign', function(req, res, next) {
 	res.render('indesign', {user: req.user, title: 'inDesign REdesign'});
 });
 
-router.get('/masters', function(req, res, next) {
-	res.render('masters', {user: req.user, title: 'masters project'});
-});
-
-router.get('/masters/techdef', function(req, res, next) {
-	res.render('techdef', {user: req.user, title: 'masters project'});
-});
 module.exports = router;
