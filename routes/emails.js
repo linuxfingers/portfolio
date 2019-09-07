@@ -33,4 +33,8 @@ router.get('/spearan', function(req, res, next) {
 	res.render('spearan', {user: req.user, title: 'spearphishing email analysis'});
 });
 
+router.get('/antemp', function(req, res, next) {
+	res.render('antemp', {user: req.user, title: 'rhetorical analysis template'});
+});
+
 module.exports = router;

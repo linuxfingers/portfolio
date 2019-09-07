@@ -18,14 +18,6 @@
 
 /* ========= Main Bits of Pretty ========= */
 
-@font-face {
-    font-family: 'courierprimesans';
-    src: url('fonts/courierprimesans-webfont.woff2') format('woff2'),
-         url('fonts/courierprimesans-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 html, body{
   margin: 0;
   padding: 0;
@@ -42,37 +34,15 @@ html {
 
 a {
 	color: #faf9f9;
+  font-family: 'courierprimecode';
 	text-decoration: none;
+  line-height: inherit;
+  font-weight: inherit;
 }
 
 a:hover {
   color: #009600;
   text-decoration: dotted #d78a9b overline underline;
-}
-
-/*** Custom naviation ***/
-.pglink {
-  display: block;
-  padding: 0.5rem 1rem;
-  color: #faf9f9;
-  text-decoration: none;
-}
-
-.pglink:hover, pglink:focus {
-  color: #009600;
-  text-decoration: dotted #d78a9b overline underline;
-}
-
-.pglink:active{
-  color: #d78a9b;
-  text-decoration: dotted #d78a9b overline underline;
-}
-.pglink.disabled {
-  color: #6c757d;
-  text-decoration:line-through;
-
-  pointer-events: none;
-  cursor: default;
 }
 
 body {
@@ -86,6 +56,33 @@ body {
   flex-direction: column;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #faf9f9;
+  font-family: 'notomono';
+}
+
+ol.light{
+  color:#afaeae;
+  font-family: 'courierprimesans', Arial, sans-serif;
+}
+
+p {
+  color: #dadada;
+  font-family: notomono;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+ul.light{
+  color:#afaeae;
+  font-family: 'courierprimesans', Arial, sans-serif;
+}
+
+/*** Other Aesthetics ***/
+
 .centered {
     position: fixed;
     top: 50%;
@@ -93,38 +90,33 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.courier{
+  font-family: 'courierprimecode', courier;
+}
+
+.notomono {
+  font-family: 'notomono', sans;
+}
+
+
 .darken {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #faf9f9;
-  font-family: "courierprimesans";
-}
-
-ol.light{
-  color:#faf9f9;
-  font-family: 'courierprimesans', Arial, sans-serif;
-}
-
-p {
-  color: #faf9f9;
-  font-family: 'courierprimesans', Arial, sans-serif;
-  font-weight:normal;
-  font-style:normal;
-}
-
-ul.light{
-  color:#faf9f9;
-  font-family: 'courierprimesans', Arial, sans-serif;
-}
-
-/* Card Edits */
+/* Card Edits
 
 .card-deck {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
     grid-gap: 0.1rem 0.1rem;
+}
+*/
+
+.card-black{
+  border: 0.5rem #faf9f9;
+  background-color: #000000;
+  color: #afaeae;
+
 }
 
 /* Boxes? */
@@ -146,13 +138,13 @@ ul.light{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: faf9f9;
+  color: afaeae;
 }
 
 .box-black {
   border: 1px solid white;
   background-color: #000;
-  color: #faf9f9;
+  color: #afaeae;
   padding: 10px;
 }
 
@@ -173,8 +165,8 @@ ul.light{
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #009600;
-  border: 1px solid;
+  background-color: #000000;
+  border: 1px solid #faf9f9;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
@@ -203,49 +195,6 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 
-/*Pilfered from Bootstrap*/
-
-.nav-scroller {
-  position: relative;
-  z-index: 2;
-  height: 2rem;
-  overflow-y: hidden;
-}
-
-.nav-scroller .nav {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  padding-bottom: 1rem;
-  margin-top: -1px;
-  overflow-x: auto;
-  text-align: center;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-}
-
-.nav-scroller .nav-link {
-  padding-top: .75rem;
-  padding-bottom: .75rem;
-  font-size: .875rem;
-}
-
-.card-img-right {
-  height: 100%;
-  border-radius: 0 3px 3px 0;
-}
-
-.flex-auto {
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-}
-
-.h-250 { height: 250px; }
-@media (min-width: 768px) {
-  .h-md-250 { height: 250px; }
-}
-
 /* Header and Footer */
 
 .bighead {
@@ -260,17 +209,6 @@ fieldset:disabled a.btn {
   background-color: #000000;
 }
 
-.content{
-  color: #faf9f9;
-  background-color: #000000;
-  padding: 2.5rem 2.5rem;
-  border-right: .05rem solid #faf9f9;
-  border-left: .05rem solid #faf9f9;
-  position: relative;
-  width: 99%;
-  overflow: hidden;
-}
-
 .bigfoot {
   position: relative;
   padding-top: 1rem;
@@ -282,6 +220,41 @@ fieldset:disabled a.btn {
   text-align: center;
 }
 
+.navbar-hover a:hover {
+  background-color: #faf9f9;
+  color: #000;
+  text-decoration: dotted #000 overline underline;
+}
+
+.pglink {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #faf9f9;
+  text-decoration: none;
+  line-height: inherit;
+  font-size: inheret;
+  font-weight: inherit;
+}
+
+.pglink:hover, pglink:focus {
+  color: #009600;
+  text-decoration: dotted #d78a9b overline underline;
+}
+
+.pglink:active{
+  color: #d78a9b;
+  text-decoration: dotted #d78a9b overline underline;
+}
+.pglink.disabled {
+  color: #6c757d;
+  text-decoration:line-through;
+
+  pointer-events: none;
+  cursor: default;
+}
+
+/** Main Content Wrapper **/
+
 #wrapper {
   position:relative;
   float:center;
@@ -292,16 +265,11 @@ fieldset:disabled a.btn {
   display: inline-block;
   border-right: .05rem solid #faf9f9;
   border-left: .05rem solid #faf9f9;
-  color: #faf9f9;
-  background-color: #000000;
+  background-color: #151515;
 }
 
-.centered-element {
-  position: absolute;
-  left: 50%;
-  margin-left: -50px;
-  top: 50%;
-  margin-top: -50px;
+.text-centered {
+  text-align: center
 }
 
 /*Scrollbar OwO*/
@@ -316,10 +284,14 @@ fieldset:disabled a.btn {
 
 ::-webkit-scrollbar-thumb {
   background-color: #faf9f9;
-  outline: 1px solid slategrey;
+  outline: 1px solid #faf9f9;
 }
 
 /*You should activate Windows.*/
+
+a.win{
+  font-family: 'SegoeUILight', sans-serif;
+}
 
 .bottomright {
   position: absolute;
@@ -337,19 +309,13 @@ fieldset:disabled a.btn {
     font-family: SegoeUI;
     src:
         local("Segoe UI"),
-        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"),
-        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"),
-        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
     font-weight: 400;
 }
 
 @font-face {
-    font-family: SegoeUI;
+    font-family: SegoeUILight;
     src:
         local("Segoe UI Light"),
-        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"),
-        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"),
-        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
     font-weight: 100;
 }
 
@@ -361,19 +327,44 @@ fieldset:disabled a.btn {
 }
 
 
-/* Test CSS */
+/*** FONTS ***/
 
-.card-columns {
-  @include media-breakpoint-only(xl) {
-    column-count: 5;
-  }
-  @include media-breakpoint-only(lg) {
-    column-count: 4;
-  }
-  @include media-breakpoint-only(md) {
-    column-count: 3;
-  }
-  @include media-breakpoint-only(sm) {
-    column-count: 2;
-  }
+@font-face {
+    font-family: 'courierprimesans';
+    src: url('/public/fonts/courierprimesans-webfont.woff2') format('woff2'),
+         url('/public/fonts/courierprimesans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'courierprimecode';
+    src: url('/public/fonts/courier_prime_code-webfont.woff2') format('woff2'),
+         url('/public/fonts/courier_prime_code-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'courierprime';
+    src: url('/public/fonts/courier_prime-webfont.woff2') format('woff2'),
+         url('/public/fonts/courier_prime-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'coll';
+    src: url('/public/fonts/collegia-webfont.woff2') format('woff2'),
+         url('/public/fonts/collegia-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'notomono';
+    src: url('/public/fonts/notomono-regular-webfont.woff2') format('woff2'),
+         url('/public/fonts/notomono-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }

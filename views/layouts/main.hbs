@@ -20,52 +20,48 @@
     </script>
 <!-- End Google Analytics -->
 
-<script src="https://kit.fontawesome.com/1de139fa02.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-
-<script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-
-  <script src="/public/js/sites.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-scroll/1.3.2/slimscroll.js"></script>
-
   <link rel="icon" href="/public/icons/button.ico">
   <link href="/public/css/bootstrap.css" rel="stylesheet">
   <link href="/public/css/custom.css" rel="stylesheet">
 
 </head>
+
 <body>
-  <nav class="navbar navbar-dark navbar-expand-md bg-faded justify-content-center bighead">
-    <a href="/" class="navbar-brand d-flex w-50 mr-auto">visitor@linuxfingers:~$</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+
+  <nav class="navbar navbar-dark navbar-expand-md bg-faded justify-content-center bighead notomono">
+    <a class="d-flex w-50 mr-auto" href="/">visitor@linuxfingers:~$ cd ~</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+    <div class="navbar-collapse collapse w-100 navbar-hover" id="collapsingNavbar3">
+
         <ul class="navbar-nav w-100 justify-content-center">
-            <li class="nav-item active">
-                <a class="pglink" href="portfolio">/portfolio/</a>
+            <li class="nav-item">
+                <a class="pglink" href="#">/portfolio/</a>
             </li>
             <!--<li class="nav-item">
-                <a class="pglink" href="art">/creative_arts/</a>
+                <a class="pglink" href="#">/creative_arts/</a>
             </li>-->
             <li class="nav-item">
-                <a class="pglink" href="cv">/cv/</a>
+                <a class="pglink" href="#">/cv/</a>
             </li>
             <li class="nav-item">
-                <a class="pglink" href="about">/about_jen/</a>
+                <a class="pglink" href="#">/about_jen/</a>
             </li>
         </ul>
-        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-end courier">
             <li class="nav-item">
               {{#if user}}
-              <a class="pglink" href="/logout">exit?</a>
+              <a class="pglink" href="#">exit?</a>
               {{else}}
-              <a class="pglink" href="/signin">login $USER</a>
+              <a class="pglink" href="#">login $USER</a>
               {{/if}}
             </li>
         </ul>
+
     </div>
 </nav>
 
@@ -85,18 +81,16 @@
 
     {{{body}}}
 
-
 </div>
-
     <script>$("#overlay").modal({
         backdrop : "static",
         keyboard: false
     });</script>
 
     <div id="overlay" data-backdrop="static" class="bottomright">
-      <audio id="sound1" src="public/audio/laugh.wav" preload="auto"></audio><a class="#" onclick="document.getElementById('sound1').play();"><font class="kern">Activate Windows</font><br>Go to Settings to activate Windows.</a></div>
+      <audio id="sound1" src="public/audio/laugh.wav" preload="auto"></audio><a class="# win" onclick="document.getElementById('sound1').play();"><font class="kern">Activate Windows</font><br>Go to Settings to activate Windows.</a></div>
 
-<footer class="bigfoot">
+<footer class="bigfoot notomono">
     <p>
       <img src="/public/img/greenskull.gif" height="30px" href="#" onclick="randomSite();">
       ʇ̫͖̩̦̀̐̎̿̃̚ɔ͖̦͙̝̣͈̬̱̫̎ǝ̣͙̻̼̣̗̥̰̑ͩ͛̇͗u̹ͣ͑͊̓̑̾u̩̱͇̖̗̯͛́̿o͇͓̠͔̞̼ͪ͑̃ɔ̲̱͔̣̟̽ͥ͛̋̒ͫͮ͗̚
@@ -110,7 +104,11 @@
 
 </footer>
 
-<script src="public/js/bootstrap.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="/public/js/sites.js"></script>
+
 
 </body>
 </html>

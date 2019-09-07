@@ -113,6 +113,7 @@ app.set('view engine', '.hbs');
 var index = require('./routes/index');
 var about = require('./routes/about');
 var contact = require('./routes/contact');
+var uc = require('./routes/uc');
 
 //var home = require('./routes/home');
 var signin = require('./routes/signin');
@@ -123,10 +124,7 @@ var portfolio = require('./routes/portfolio');
 
 var emails = require('./routes/emails');
 var masters = require('./routes/masters');
-
-//**app.get('/', function(req, res) {
-//    res.render('splash', {title: 'Linux...fingers?', layout: false});
-//});
+var previous = require('./routes/previous');
 
 app.use('/', index);
 
@@ -151,10 +149,13 @@ app.use('/logout', logout);
 //portfolio route
 app.use('/portfolio', portfolio);
 
+app.use('/previous', previous);
 //portfolio route
 app.use('/emails', emails);
 
-app.use('masters', masters);
+app.use('/masters', masters);
+
+app.use('/uc', uc);
 
 app.listen(5000, function() {
   console.log('Testing on port 5000, sir!');
