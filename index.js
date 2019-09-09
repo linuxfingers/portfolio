@@ -121,6 +121,7 @@ var local_reg = require('./routes/local_reg');
 var login = require('./routes/login');
 var logout = require('./routes/logout');
 var portfolio = require('./routes/portfolio');
+var cv = require('./routes/cv');
 
 var emails = require('./routes/emails');
 var masters = require('./routes/masters');
@@ -156,6 +157,8 @@ app.use('/emails', emails);
 app.use('/masters', masters);
 
 app.use('/uc', uc);
+
+app.use('/cv', cv);
 
 app.listen(5000, function() {
   console.log('Testing on port 5000, sir!');
