@@ -36,11 +36,26 @@
       </button>
 
     <div class="navbar-collapse collapse w-100 navbar-hover" id="collapsingNavbar3">
-
-        <ul class="navbar-nav w-100 justify-content-center">
-            <li class="nav-item">
-                <a class="pglink" href="/uc">/portfolio/</a>
-            </li>
+    <ul class="navbar-nav w-100 justify-content-center">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle pglink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">/portfolio/ <span class="caret"></span></a>
+              <ul class="dropdown-menu dd-black">
+                <li><a href="#">▓ ./rhetoric&&security/</a></li>
+                <li><a style="margin-left: 40px" href="#">./project_desc</a></li>
+                <li><a style="margin-left: 40px" href="#">./phase0_website/</a></li>
+                <li><a style="margin-left: 40px" href="#">./phase1_research/</a></li>
+                <li><a style="margin-left: 40px" href="#">./phase1_training/</a></li>
+                <li role="separator" class="nav-item dropdown-divider"></li>
+                <li><a href="#">▓ ./writing/</a></li>
+                <li><a style="margin-left: 40px" href="#">./online_communities/</a></li>
+                <li><a style="margin-left: 40px" href="#">./MMORPGs</a></li>
+                <li><a style="margin-left: 40px" href="#">./seo</a></li>
+                <li><a href="#">▓ ./design/</a></li>
+              </ul>
+          </li>
+        <!--<li class="nav-item">
+                  <a class="pglink" href="/uc">/portfolio/</a>
+            </li>-->
             <!--<li class="nav-item">
                 <a class="pglink" href="/uc">/creative_arts/</a>
             </li>-->
@@ -82,32 +97,35 @@
     {{{body}}}
 
 </div>
-    <script>$("#overlay").modal({
-        backdrop : "static",
-        keyboard: false
-    });</script>
-
     <div id="overlay" data-backdrop="static" class="bottomright">
       <audio id="sound1" src="public/audio/laugh.wav" preload="auto"></audio><a class="# win" onclick="document.getElementById('sound1').play();"><font class="kern">Activate Windows</font><br>Go to Settings to activate Windows.</a></div>
 
-<footer class="bigfoot notomono">
-    <p>
-      <img src="/public/img/greenskull.gif" height="30px" href="#" onclick="randomSite();">
+<footer class="bigfoot">
+<!--    <span style="float:left;">
+      <div class="dropup">
+      <button class="dropbtn">sitemap</button>
+        <div class="dropup-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+  </div>
+</span>-->
+      <p class="white"><img src="/public/img/greenskull.gif" height="30px" href="#" target="_blank" onclick="randomSite();">
       ʇ̫͖̩̦̀̐̎̿̃̚ɔ͖̦͙̝̣͈̬̱̫̎ǝ̣͙̻̼̣̗̥̰̑ͩ͛̇͗u̹ͣ͑͊̓̑̾u̩̱͇̖̗̯͛́̿o͇͓̠͔̞̼ͪ͑̃ɔ̲̱͔̣̟̽ͥ͛̋̒ͫͮ͗̚
        ░ <a target="_blank" rel="noopener noreferrer" href="mailto:contact@linuxfingers.com">email</a>
        ░ <a target="_blank" rel="noopener noreferrer" href="http://www.twitter.com/linuxfingers">twitter</a>
        ░ <a target="_blank" rel="noopener noreferrer" href="http://www.facebook.com/linuxfingers">facebook</a>
        ░ <a target="_blank" rel="noopener noreferrer" href="http://www.soundcloud.com/linuxfingers">soundcloud</a>
        ░ ̭́̂́͐͛c͖̻ͯ̽õ̭̼̪̦̠ͅn̺̰ͤ̌͒ͭ̆̏n̲̼̦͕̥̗̝̠̒̏ͧ̃̓̓ͬẹ͉́ͨ̑̆ͬ̃ͥͫc͔͓͈̮ͮ͐̃t̘̖͉̫̬̰ͨͪ
-       <img src="/public/img/greenskull.gif" height="30px" href="#" onclick="randomSite();">
-  </p>
-
+       <img src="/public/img/greenskull.gif" height="30px" href="#" target="_blank" onclick="randomSite();">
+     </p>
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-<script src="/public/js/sites.js"></script>
+<script src="/public/js/custom.js"></script>
 
 
 </body>

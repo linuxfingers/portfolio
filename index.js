@@ -115,7 +115,6 @@ var about = require('./routes/about');
 var contact = require('./routes/contact');
 var uc = require('./routes/uc');
 
-//var home = require('./routes/home');
 var signin = require('./routes/signin');
 var local_reg = require('./routes/local_reg');
 var login = require('./routes/login');
