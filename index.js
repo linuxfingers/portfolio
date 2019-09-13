@@ -102,7 +102,6 @@ app.use(function(req, res, next){
   next();
 });
 
-
 app.use("/public", express.static(__dirname + "/public"));
 
 app.engine('.hbs', hbs({defaultLayout: 'main', extname: '.hbs'}));
@@ -110,31 +109,46 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', '.hbs');
 
 
+//main
 var index = require('./routes/index');
-var about = require('./routes/about');
-var contact = require('./routes/contact');
 var uc = require('./routes/uc');
 
+//passport stuff
 var signin = require('./routes/signin');
 var local_reg = require('./routes/local_reg');
 var login = require('./routes/login');
 var logout = require('./routes/logout');
-var portfolio = require('./routes/portfolio');
-var cv = require('./routes/cv');
 
+
+
+//rhetsec
+var rhetsec = require('./routes/rhetsec');
+
+var phase0 = require('./routes/phase0');
+
+var phase1 = require('./routes/phase1');
 var emails = require('./routes/emails');
-var masters = require('./routes/masters');
-var previous = require('./routes/previous');
 
+var phase2 = require('./routes/phase2');
 var training = require('./routes/training');
 
+var phaseprofit = require('./routes/phaseprofit');
+
+//writing
+var writing = require('./routes/writing');
+
+//visaudio
+var visaudio = require('./routes/visaudio');
+
+//about
+var about = require('./routes/about');
+
+//cv
+var cv = require('./routes/cv');
+
+//main routes
 app.use('/', index);
-
-//display the about page
-app.use('/about', about);
-
-//display the contact page
-app.use('/contact', contact);
+app.use('/uc', uc);
 
 //displays our signup page
 app.use('/signin', signin);
@@ -148,22 +162,30 @@ app.use('/login', login);
 //logs user out of site, deleting them from the session, and returns to homepage
 app.use('/logout', logout);
 
-//portfolio route
-app.use('/portfolio', portfolio);
+//rhetsec route
+app.use('/phase0', phase0);
 
-app.use('/previous', previous);
-//portfolio route
+app.use('/phase1', phase1);
 app.use('/emails', emails);
 
-app.use('/masters', masters);
-
-app.use('/uc', uc);
-
-app.use('/cv', cv);
-
+app.use('/phase2', phase2);
 app.use('/training', training);
 
-//
+app.use('/phaseprofit', phaseprofit);
+
+//writing
+app.use('/writing', writing);
+
+//visaudio
+app.use('/visaudio', visaudio);
+
+//display the about page
+app.use('/about', about);
+
+//cv
+app.use('/cv', cv);
+
+//end routes
 
 app.listen(5000, function() {
   console.log('Testing on port 5000, sir!');

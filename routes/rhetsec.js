@@ -13,6 +13,13 @@ router.get('/theproject', function(req, res, next) {
 	res.render('theproject', {user: req.user, title: 'visitor@linuxfingers:~/theproject$'});
 });
 
+router.get('/rationale', function(req, res, next) {
+	res.render('rationale', {user: req.user, title: 'visitor@linuxfingers:~/theproject/rationale$'});
+});
+
+router.get('/limitations', function(req, res, next) {
+	res.render('limitations', {user: req.user, title: 'visitor@linuxfingers:~/theproject/limitations$'});
+});
 
 
 module.exports = router;
