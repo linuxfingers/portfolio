@@ -69,12 +69,16 @@ ol.light{
 
 p {
   color: #afaeae;
-  font-family: notomono;
-  font-size: 16px;
+  font-family: 'sourcesanspro';
+  font-size: 18px;
   font-style: normal;
   font-variant: normal;
   font-weight: 500;
   line-height: 27px;
+}
+
+p a {
+  font-family: 'sourcesanspro';
 }
 
 ul.light{
@@ -228,6 +232,10 @@ fieldset:disabled a.btn {
   text-align: center;
 }
 
+.bigfoot a {
+  font-family: 'courierprimesans';
+}
+
 .navbar-hover a:hover {
   background-color: #faf9f9;
   color: #000;
@@ -274,6 +282,8 @@ fieldset:disabled a.btn {
   border-right: .05rem solid #faf9f9;
   border-left: .05rem solid #faf9f9;
   background-color: #151515;
+  font-family: 'sourcesanspro';
+  color: #faf9f9;
 }
 
 .text-centered {
@@ -336,6 +346,15 @@ a.win{
 
 
 /*** FONTS ***/
+
+@font-face {
+    font-family: 'sourcesanspro';
+    src: url('/public/fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('/public/fonts/sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 @font-face {
     font-family: 'courierprimesans';

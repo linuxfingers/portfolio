@@ -126,6 +126,8 @@ var emails = require('./routes/emails');
 var masters = require('./routes/masters');
 var previous = require('./routes/previous');
 
+var training = require('./routes/training');
+
 app.use('/', index);
 
 //display the about page
@@ -158,6 +160,10 @@ app.use('/masters', masters);
 app.use('/uc', uc);
 
 app.use('/cv', cv);
+
+app.use('/training', training);
+
+//
 
 app.listen(5000, function() {
   console.log('Testing on port 5000, sir!');

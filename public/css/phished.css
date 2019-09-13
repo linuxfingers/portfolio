@@ -1,0 +1,273 @@
+
+
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('/public/img/trees.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*******************************************/
+/*         Website:  linuxfingers.com      */
+/*         Author:   Jennifer Mead         */
+/*         Date:     August 2019           */
+/*******************************************/
+
+ /*_______________________________________*\
+/*            color pallette               *\
+=============================================
+= light shade:          f6f2f4 - white      =
+= light accent:         d4af37 - prov gold  =
+= main brand:           3b55a5 - prov blue  =
+= dark accent:          6f7a90 - slate blue =
+= dark shade:           362f4c - slate      =
+=============================================
+\*                                         */
+
+
+/* ========= Main Bits of Pretty ========= */
+
+@font-face {
+    font-family: 'sourcesanspro';
+    src: url('/public/fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('/public/fonts/sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+html {
+	font-family: 'sourcesanspro', Arial;
+	list-style: decimal-leading-zero;
+	text-rendering: optimizeLegibility;
+  min-height:100%;
+  position:relative;
+}
+
+a {
+	color: #d4af37;
+  font-family: 'sourcesanspro';
+	text-decoration: none;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+a:hover {
+  color: #3b55a5;
+  text-decoration: none;
+}
+
+body {
+  background-color: #f6f2f4;
+  background-image: url("#");
+  background-repeat: cover;
+  background-attachment: fixed;
+  height:100%;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  color: #362f4c;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #3b55a5;
+  font-family: 'sourcesanspro';
+}
+
+ol.light{
+  color:#afaeae;
+  font-family: 'sourcesanspro', Arial, sans-serif;
+}
+
+p {
+  color: #362f4c;
+  font-family: 'sourcesanspro';
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 28px;
+}
+
+ul.light{
+  color:#362f4c;
+    font-family: 'sourcesanspro';
+}
+
+/*** Other Aesthetics ***/
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.darken {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.white {
+  color: #f6f2f4;
+}
+
+.darkslate {
+  color: #362f4c;
+}
+
+/* Card Edits
+
+.card-deck {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    grid-gap: 0.1rem 0.1rem;
+}
+.card-black{
+  border: 0.5rem #f6f2f4;
+  background-color: #000000;
+  color: #afaeae;
+
+}
+
+*/
+
+= light shade:          f6f2f4 - white      =
+= light accent:         d4af37 - prov gold  =
+= main brand:           3b55a5 - prov blue  =
+= dark accent:          6f7a90 - slate blue =
+= dark shade:           362f4c - slate
+
+/* Custom Button */
+
+.btn-prov {
+  display: inline-block;
+  font-weight: 700;
+  color: #f6f2f4;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #3b55a5;
+  border: 1px solid #d4af37;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-prov:hover {
+  color: #6f7a90;
+  text-decoration: none;
+}
+
+.btn-prov:focus, .btn.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+  background-color: #6f7a90;
+  color: #f6f2f4;
+}
+
+.btn-prov.disabled, .btn:disabled {
+  opacity: 0.65;
+}
+
+a.btn-prov.disabled,
+fieldset:disabled a.btn {
+  pointer-events: none;
+}
+
+/* Header and Footer */
+
+.bighead {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #3b55a5;
+  border-bottom: .05rem solid #d4af37;
+  font-size: 18px;
+}
+
+/*Blue Scrollbar*/
+
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0px #362f4c;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3b55a5;
+  outline: 1px solid #3b55a5;
+}
+
+/*** FONTS ***/
+
+@font-face {
+    font-family: 'coll';
+    src: url('/public/fonts/collegia-webfont.woff2') format('woff2'),
+         url('/public/fonts/collegia-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'notomono';
+    src: url('/public/fonts/notomono-regular-webfont.woff2') format('woff2'),
+         url('/public/fonts/notomono-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/***Background stuff***/
+
+.provbg {
+  background-image: url('/public/img/ProvLogo.png');
+  background-size: cover;
+  height: auto;
+  overflow: hidden;
+  opacity: 0.1;
+}
+
+.provlogo {
+  float: right;
+  width: 300px;
+  shape-outside: url('/public/img/ProvLogo.png');
+  shape-margin: 40px;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  vertical-align: middle;
+}
+
+/*** Dropdown Stuff***/
+
+.dd-prov {
+  background: rgba(59, 85, 165, 0.9);
+  color: #f6f2f4;
+  font-weight: inherit;
+  min-width: 180px;
+  width: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  white-space: nowrap;
+  padding: 0.5rem;
+  border-radius: 0px !important;
+}
+
+.dd-prov a {
+  background-color: inherit;
+  color: inherit;
+}
