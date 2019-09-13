@@ -87,6 +87,14 @@ ul.light{
 }
 
 /*** Other Aesthetics ***/
+.w-40 {
+  width: 40%;
+}
+
+#nav li {
+   display: inline-block;
+   text-align:center;
+}
 
 .centered {
     position: fixed;
