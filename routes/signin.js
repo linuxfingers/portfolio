@@ -3,7 +3,7 @@ var router = express.Router();
 var passport = require('passport');
 
 router.get('/', function(req, res) {
-	res.render('http://linuxfingers.com/uc');
+	res.redirect('http://linuxfingers.com/uc');
 });
 
 //router.get('/', function(req, res) {
