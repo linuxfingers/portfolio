@@ -3,7 +3,7 @@ var router = express.Router();
 
 router.get('/', function(req, res, next) {
 	if (req.user){
-		res.render('training', {user: req.user, title: 'visitor@linuxfingers:~/training$ '});
+		res.render('training', {user: req.user, title: 'visitor@linuxfingers:~/phase2/training$ '});
 		}
 		else{
 			res.redirect('http://www.linuxfingers.com/uc');

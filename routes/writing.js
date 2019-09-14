@@ -10,9 +10,9 @@ router.get('/', function(req, res, next) {
 		}
 });
 
-router.get('/4chan', function(req, res, next) {
+router.get('/comm', function(req, res, next) {
 	if (req.user){
-		res.render('4chan', {user: req.user, title: 'visitor@linuxfingers:~/4chan_paper$'});
+		res.render('comm', {user: req.user, title: 'visitor@linuxfingers:~/4chan_paper$'});
 		}
 		else{
 			res.redirect('http://www.linuxfingers.com/uc');
@@ -31,6 +31,24 @@ router.get('/mpca', function(req, res, next) {
 router.get('/seo', function(req, res, next) {
 	if (req.user){
 		res.render('seo', {user: req.user, title: 'visitor@linuxfingers:~/seo$'});
+		}
+		else{
+			res.redirect('http://www.linuxfingers.com/uc');
+		}
+});
+
+router.get('/poetry', function(req, res, next) {
+	if (req.user){
+		res.render('poetry', {user: req.user, title: 'visitor@linuxfingers:~/seo$'});
+		}
+		else{
+			res.redirect('http://www.linuxfingers.com/uc');
+		}
+});
+
+router.get('/gonzo', function(req, res, next) {
+	if (req.user){
+		res.render('gonzo', {user: req.user, title: 'visitor@linuxfingers:~/seo$'});
 		}
 		else{
 			res.redirect('http://www.linuxfingers.com/uc');

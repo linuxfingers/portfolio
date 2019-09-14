@@ -3,8 +3,12 @@ var router = express.Router();
 var passport = require('passport');
 
 router.get('/', function(req, res) {
-	res.render('signin');
+	res.render('http://linuxfingers.com/uc');
 });
+
+//router.get('/', function(req, res) {
+//	res.render('signin');
+//});
 
 router.post('/local-reg', passport.authenticate('local-signup', {
   successRedirect: '/',

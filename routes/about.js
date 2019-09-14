@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
 		}
 });
 
-router.get('/', function(req, res, next) {
+router.get('/jen', function(req, res, next) {
 	if (req.user){
 		res.render('jen', {user: req.user, title: 'visitor@linuxfingers:~/about/jen$ '});
 		}

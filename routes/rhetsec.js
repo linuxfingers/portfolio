@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 		}
 });
 
-router.get('/', function(req, res, next) {
+router.get('/projdesc', function(req, res, next) {
 	if (req.user){
 		res.render('projdesc', {user: req.user, title: 'visitor@linuxfingers:~/project_desc$'});
 		}
