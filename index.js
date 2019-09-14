@@ -163,12 +163,14 @@ app.use('/login', login);
 app.use('/logout', logout);
 
 //rhetsec route
+app.use('/rhetsec', rhetsec);
+
 app.use('/phase0', phase0);
 
 app.use('/phase1', phase1);
 app.use('/emails', emails);
 
-app.use('/phase2', phase2); 
+app.use('/phase2', phase2);
 app.use('/training', training);
 
 app.use('/phaseprofit', phaseprofit);

@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
 		res.render('writing', {user: req.user, title: 'visitor@linuxfingers:~/previous_works$'});
 		}
 		else{
-			res.redirect('/uc');
+			res.redirect('http://www.linuxfingers.com/uc');
 		}
 });
 
@@ -15,7 +15,7 @@ router.get('/4chan', function(req, res, next) {
 		res.render('4chan', {user: req.user, title: 'visitor@linuxfingers:~/4chan_paper$'});
 		}
 		else{
-			res.redirect('/uc');
+			res.redirect('http://www.linuxfingers.com/uc');
 		}
 });
 
@@ -24,7 +24,7 @@ router.get('/mpca', function(req, res, next) {
 		res.render('mpca', {user: req.user, title: 'visitor@linuxfingers:~/mpca_2016$'});
 		}
 		else{
-			res.redirect('/uc');
+			res.redirect('http://www.linuxfingers.com/uc');
 		}
 });
 
@@ -33,7 +33,7 @@ router.get('/seo', function(req, res, next) {
 		res.render('seo', {user: req.user, title: 'visitor@linuxfingers:~/seo$'});
 		}
 		else{
-			res.redirect('/uc');
+			res.redirect('http://www.linuxfingers.com/uc');
 		}
 });
 

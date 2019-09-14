@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
 		res.render('cv', {user: req.user, title: 'visitor@linuxfingers:~/cv$'});
 		}
 		else{
-			res.redirect('/uc');
+			res.redirect('http://www.linuxfingers.com/uc');
 		}
 });
 

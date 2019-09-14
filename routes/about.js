@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
 		res.render('about', {user: req.user, title: 'visitor@linuxfingers:~/about$ '});
 		}
 		else {
-			res.redirect('/uc');
+			res.redirect('http://www.linuxfingers.com/uc');
 		}
 });
 
@@ -15,7 +15,7 @@ router.get('/', function(req, res, next) {
 		res.render('jen', {user: req.user, title: 'visitor@linuxfingers:~/about/jen$ '});
 		}
 		else {
-			res.redirect('/uc');
+			res.redirect('http://www.linuxfingers.com/uc');
 		}
 });
 
@@ -24,7 +24,7 @@ router.get('/provsec', function(req, res, next) {
 		res.render('provsec', {user: req.user, title: 'visitor@linuxfingers:~/about/provsec$ '});
 		}
 		else {
-			res.redirect('/uc');
+			res.redirect('http://www.linuxfingers.com/uc');
 			}
 });
 
@@ -33,7 +33,7 @@ router.get('/contact', function(req, res, next) {
 		res.render('contact', {user: req.user, title: 'visitor@linuxfingers:~/about/contact$'});
 		}
 		else {
-			res.redirect('/uc');
+			res.redirect('http://www.linuxfingers.com/uc');
 		}
 });
 

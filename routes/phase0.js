@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
 		res.render('training', {user: req.user, title: 'visitor@linuxfingers:~/training$ '});
 		}
 		else{
-			res.redirect('/uc');
+			res.redirect('http://www.linuxfingers.com/uc');
 		}
 });
 
@@ -15,7 +15,7 @@ router.get('/elogin', function(req, res, next) {
 		res.render('elogin', {user: req.user});
 		}
 		else{
-			res.redirect('/uc');
+			res.redirect('http://www.linuxfingers.com/uc');
 		}
 });
 

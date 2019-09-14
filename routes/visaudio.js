@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
 		res.render('visaudio', {user: req.user, title: 'visitor@linuxfingers:~/visual&&audio$'});
 		}
 		else{
-			res.redirect('/uc');
+			res.redirect('http://www.linuxfingers.com/uc');
 		}
 });
 
@@ -15,7 +15,7 @@ router.get('/indesign', function(req, res, next) {
 		res.render('indesign', {user: req.user, title: 'visitor@linuxfingers:~/inDesign_REdesign$'});
 		}
 		else{
-			res.redirect('/uc');
+			res.redirect('http://www.linuxfingers.com/uc');
 		}
 });
 
