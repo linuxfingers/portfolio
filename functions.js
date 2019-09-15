@@ -11,7 +11,17 @@ exports.localReg = function (username, password) {
   var deferred = Q.defer();
 
   MongoClient.connect(mongodbUrl, function (err, db) {
+    var approved_emails = ["test@test.com"];
+    var approved = approved_emails.includes(username);
+
+    if(!approved) {
+      console.log("Invalid email");
+      deferred.resolve(false);
+      return;
+    }
+
     var collection = db.collection('localUsers');
+
 
     //check if username is already assigned in our database
     collection.findOne({'username' : username})

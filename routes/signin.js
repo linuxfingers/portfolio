@@ -2,13 +2,13 @@ var express = require('express');
 var router = express.Router();
 var passport = require('passport');
 
-router.get('/', function(req, res) {
-	res.redirect('http://linuxfingers.com/uc');
-});
-
 //router.get('/', function(req, res) {
-//	res.render('signin');
+//	res.redirect('http://linuxfingers.com/uc');
 //});
+
+router.get('/', function(req, res) {
+	res.render('signin');
+});
 
 router.post('/local-reg', passport.authenticate('local-signup', {
   successRedirect: '/',
