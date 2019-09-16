@@ -11,11 +11,11 @@ exports.localReg = function (username, password) {
   var deferred = Q.defer();
 
   MongoClient.connect(mongodbUrl, function (err, db) {
-    var approved_emails = ["test@test.com"];
+    var approved_emails = ["g3n2@strch33z.wz","tre3man@gmail.com","SCogdill@stcloudstate.edu","jmkilborn@stcloudstate.edu","jpmadden@stcloudstate.edu"];
     var approved = approved_emails.includes(username);
 
     if(!approved) {
-      console.log("Invalid email");
+      console.log("Sorry, you're not authorized to see this section. Contact me if you'd like to see what I'm working on, and I'll consider your request.");
       deferred.resolve(false);
       return;
     }

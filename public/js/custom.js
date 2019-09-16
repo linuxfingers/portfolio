@@ -44,3 +44,10 @@ var difference = now - birth;
 var age = new Date(difference).getFullYear() - 1970
 var span = document.getElementById('age');
 span.innerHTML = age;
+
+//login JS
+
+$('#bologna-list a').on('click', function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})

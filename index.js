@@ -64,7 +64,7 @@ passport.use('local-signup', new LocalStrategy(
       }
       if (!user) {
         console.log("COULD NOT REGISTER");
-        req.session.error = 'That username is already in use, please try a different one.'; //inform user could not log them in
+        req.session.error = 'That username is already in use or you are not authorized to access this content. Please try a different email or contact me for more information.'; //inform user could not log them in
         done(null, user);
       }
     })
