@@ -13,7 +13,8 @@ var express = require('express'),
     path = require('path');
 
 var config = require('./config.js'), //config file contains all tokens and other private info
- funct = require('./functions.js'); //funct file contains our helper functions for our Passport and database work
+
+funct = require('./functions.js'); //funct file contains our helper functions for our Passport and database work
 
 
 const app = express();
@@ -64,7 +65,7 @@ passport.use('local-signup', new LocalStrategy(
       }
       if (!user) {
         console.log("COULD NOT REGISTER");
-        req.session.error = 'That username is already in use or you are not authorized to access this content. Please try a different email or contact me for more information.'; //inform user could not log them in
+        req.session.error = 'That username is already in use or you are not authorized to access this content. Contact me for more information.'; //inform user could not log them in
         done(null, user);
       }
     })
@@ -119,20 +120,8 @@ var local_reg = require('./routes/local_reg');
 var login = require('./routes/login');
 var logout = require('./routes/logout');
 
-
-
 //rhetsec
 var rhetsec = require('./routes/rhetsec');
-
-var phase0 = require('./routes/phase0');
-
-var phase1 = require('./routes/phase1');
-var emails = require('./routes/emails');
-
-var phase2 = require('./routes/phase2');
-var training = require('./routes/training');
-
-var phaseprofit = require('./routes/phaseprofit');
 
 //writing
 var writing = require('./routes/writing');
@@ -165,15 +154,6 @@ app.use('/logout', logout);
 //rhetsec route
 app.use('/rhetsec', rhetsec);
 
-app.use('/phase0', phase0);
-
-app.use('/phase1', phase1);
-app.use('/emails', emails);
-
-app.use('/phase2', phase2);
-app.use('/training', training);
-
-app.use('/phaseprofit', phaseprofit);
 
 //writing
 app.use('/writing', writing);
