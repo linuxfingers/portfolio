@@ -37,29 +37,22 @@ function off() {
 $
 
 //birthday because I'm lazy
+//
+//var birth = new Date('1988-02-25');
+//var now = new Date();
+//var difference = now - birth;
+//var age = new Date(difference).getFullYear() - 1970
+//var span = document.getElementById('age');
+//span.innerHTML = age;
 
-var birth = new Date('1988-02-25');
-var now = new Date();
-var difference = now - birth;
-var age = new Date(difference).getFullYear() - 1970
-var span = document.getElementById('age');
-span.innerHTML = age;
-
-//login JS
-
-$('#bologna-list a').on('click', function (e) {
-  e.preventDefault()
-  $(this).tab('show')
-})
-
-//footnote JS
+//footnote & tooltip JS
 
 jQuery(document).ready(function() {
   jQuery('[data-toggle="tooltip"]').each(function() {
     var $elem = jQuery(this);
     $elem.tooltip({
       html:true,
-      container: $elem,
+      //container: $elem,
       delay: {hide:400}
     });
   });

@@ -11,6 +11,7 @@ var express = require('express'),
     GoogleStrategy = require('passport-google'),
     FacebookStrategy = require('passport-facebook'),
     path = require('path');
+    errorHandler = require('express-error-handler');
 
 var config = require('./config.js'), //config file contains all tokens and other private info
 
@@ -172,3 +173,17 @@ app.use('/cv', cv);
 app.listen(5000, function() {
   console.log('Testing on port 5000, sir!');
 });
+
+var errorHandler = require('express-error-handler'),
+  handler = errorHandler({
+    views: {
+      '404': '404.hbs'
+    }
+  });
+
+// After all your routes...
+// Pass a 404 into next(err)
+app.use( errorHandler.httpError(404) );
+
+// Handle all unhandled errors:
+app.use( handler );

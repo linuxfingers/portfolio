@@ -101,6 +101,11 @@ router.get('/phase1/email_analysis/corpuslist', function(req,res,next) {
 	}
 );
 
+router.get('/phase1/email_analysis/verbosecorpus', function(req,res,next) {
+		res.render('rhetsec/phase1/email_analysis/verbosecorpus', {user: req.user, title: 'visitor@linuxfingers:~/rhetsec/phase1/email_analysis/verbose_email_corpus$'});
+	}
+);
+
 //******Phase 2******//
 
 router.get('/phase2/', function(req,res,next) {
