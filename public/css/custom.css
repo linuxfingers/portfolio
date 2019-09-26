@@ -27,14 +27,13 @@ html, body{
 html {
 	font-family: 'courierprimesans', courier;
 	list-style: decimal-leading-zero;
-	text-rendering: optimizeLegibility;
   min-height:100%;
   position:relative;
 }
 
 a {
 	color: #faf9f9;
-  font-family: 'courierprimecode';
+  font-family: 'courierprimecode', courier;
 	text-decoration: none;
   line-height: inherit;
   font-weight: inherit;
@@ -184,7 +183,7 @@ span.footnote {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: afaeae;
+  color: #afaeae;
 }
 
 .box-black {
@@ -314,7 +313,7 @@ color: #009600;
   color: #faf9f9;
   text-decoration: none;
   line-height: inherit;
-  font-size: inheret;
+  font-size: inherit;
   font-weight: inherit;
 }
 
@@ -340,7 +339,7 @@ color: #009600;
 #wrapper {
   position: relative;
   float: center;
-  width: 80%;
+  width: 90%;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -393,14 +392,14 @@ a.win{
 @font-face {
     font-family: SegoeUI;
     src:
-        local("Segoe UI"),
+        local("Segoe UI");
     font-weight: 400;
 }
 
 @font-face {
     font-family: SegoeUILight;
     src:
-        local("Segoe UI Light"),
+        local("Segoe UI Light");
     font-weight: 100;
 }
 

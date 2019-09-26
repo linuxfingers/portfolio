@@ -96,13 +96,8 @@ router.get('/phase1/email_analysis/spearphishing', function(req,res,next) {
 	}
 );
 
-router.get('/phase1/email_analysis/corpuslist', function(req,res,next) {
-		res.render('rhetsec/phase1/email_analysis/corpuslist', {user: req.user, title: 'visitor@linuxfingers:~/rhetsec/phase1/email_analysis/email_corpus$'});
-	}
-);
-
-router.get('/phase1/email_analysis/verbosecorpus', function(req,res,next) {
-		res.render('rhetsec/phase1/email_analysis/verbosecorpus', {user: req.user, title: 'visitor@linuxfingers:~/rhetsec/phase1/email_analysis/verbose_email_corpus$'});
+router.get('/phase1/email_analysis/corpus', function(req,res,next) {
+		res.render('rhetsec/phase1/email_analysis/corpus', {user: req.user, title: 'visitor@linuxfingers:~/rhetsec/phase1/email_analysis/email_corpus$'});
 	}
 );
 
