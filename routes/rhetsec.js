@@ -19,8 +19,8 @@ router.get('/', function(req,res,next) {
 	}
 );
 
-router.get('/description', function(req,res,next) {
-		res.render('rhetsec/description', {user: req.user, title: 'visitor@linuxfingers:~/rhetsec/project_description$'});
+router.get('/about', function(req,res,next) {
+		res.render('rhetsec/about', {user: req.user, title: 'visitor@linuxfingers:~/rhetsec$'});
 	}
 );
 
@@ -30,10 +30,14 @@ router.get('/limitations', function(req,res,next) {
 );
 
 router.get('/rationale', function(req,res,next) {
-		res.render('rhetsec/rationale', {user: req.user, title: 'visitor@linuxfingers:~/rhetsec/phase1/rationale$'});
+		res.render('rhetsec/rationale', {user: req.user, title: 'visitor@linuxfingers:~/rhetsec/rationale$'});
 	}
 );
 
+router.get('/assessment', function(req,res,next) {
+		res.render('rhetsec/assessment', {user: req.user, title: 'visitor@linuxfingers:~/rhetsec/self_assessment$'});
+	}
+);
 
 //******Phase 0******//
 
