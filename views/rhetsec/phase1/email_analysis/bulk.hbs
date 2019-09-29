@@ -17,300 +17,80 @@
     </p>
   </div>
 <br>
-  <div class="row justify-content-center">
-    <p>Here you will find links to the analyses I have done for the bulk phsishing category.</p>
+<hr>
+<p>
+  Bulk phishing is the most common type of attack, and the least technologically sophisticated. They work through impersonation of a corporation or organization and threatening or urgent-sounding language to obtain information and credentials. These emails  tend not to be personalized, even if they claim they are, and may only reference general information.  At first, I was going to present these emails as separate analyses based on the company of origination. As I conducted my analysis, I realized that all of the emails I collected from both the Enron Dataset and outside shared enough similarities to group together without losing understanding. If you'd like to see any of the emails I have referenced in this analysis outside of the images provided, please feel free to click on the image to be directed to the source.</p>
+<p>
+  It's important to note that the emails from the Enron Dataset come from the early to mid-2000s, giving a specific contextual situation in regards to privacy concerns. Identity theft was a topic of conversation for many people, as millions of Americans were victims of identity theft each year in the early 2000s. The foundation of the famous ID theft protection company LifeLock occurred in 2005. Cybercrime complaints <a href="https://www.iii.org/graph-archive/96301" target="_blank">  trended upwards and continue to grow.</a> The concern for privacy and protection has only increased since then, and while it may not have the same type of extreme marketing it once did, it's still a genuine fear phishing emails can use to their advantage to make the emails appear even more legitimate.
+</p>
+<h5>Who sent the email?</h5>
+<p>
+  I selected a variety of types of phishing emails from the Enron Dataset to understand how they could operate in different contexts. The four companies I targetted in this dataset were Amazon, Chase Bank, eBay, and PayPal. I chose these companies purely due to familiarity with their emails from this period and felt that I would be able to analyze them better than those from a company I did not conduct business with at that time. Outside of the Enron Dataset, there were only three emails: a maintenance notification from Indiana.edu, a free World of Warcraft gift, and an iTunes account notice. Unsurprisingly, they operated similarly to the emails in the Enron Dataset. While the companies are varied, the emails seem to operate on the same basic premise that some notice, alert, or issue with a customer's account or activity has come up. With each email, the intended recipient was assumed to have been a customer of the company contacting them, either randomly targetted or contacted due to recent account activity. A common theme indicated to the recipient that their account information was incorrect, typically manifesting in some violation to account policies or procedures if not updated. Generally, the emails present themselves to the recipient as urgent and that their account was in jeopardy.
+</p>
+<h5>What's the email doing?</h5>
+<p>
+  For example, these particular Amazon emails [<a href="./corpus#amazon_2" target="_blank">amazon 2</a> & <a href="./corpus#amazon_4" target="_blank">amazon 4</a>] give very legal sounding notices that they're violating terms of the User Agreement and are at risk of being terminated. Another typical report seen in Chase and PayPal phishing emails was unauthorized access to an account, attempts to access the account from foreign IPs, or unauthorized purchases. The odd thing about these emails was that the punishment for not acting on them seemed to be disabling or terminating the account. That's a bizarre practice for a legitimate business to do and is a general giveaway for it being a phishing attempt. The majority of these emails hit hard on ideas of presenting shared values of privacy, safety, and maintaining the existing business relationship with the victim, but often the presentation is murky and convoluted. This example from "Chase," distilled into the essential message it's trying to convey, presents itself incredibly haphazardly:
+</p>
+<div class="row box-black p-2 m-3">
+
+  <div class="col email-box">
+      <p>Your account access has been limited due to not having enough information in your account.</p> <p>However, your account is limited due to us making sure that an unauthorized third party didn't access you, so to be safe, we limited your access.</p> <p>(Remember, your access is limited now!)</p><p>Here's a Case ID.</p> <p>We're responsible for your security at Chase.</p> <p>We want you to be safe, so click in this red box to make it better.</p> <p>Thanks!</p>
+    </div>
+  <div class="col email-box">
+  Chase Bank is constantly working to ensure security by regularly screening the accounts in our system. We recently reviewed your account, and we need more information to help us provide you with secure service. Until we can collect this information, your access to sensitive account features will be limited. We would like to restore your access as soon as possible, and we apologize for the inconvenience. <br>
+  Why is my account access limited?<br>
+  Your account access has been limited for the following reason(s):<br>
+    <br>
+ March 20, 2007: We would like to ensure that your account was not accessed by an unauthorized third party. Because protecting the security of your account is our primary concern, we have limited access to sensitive <b>Chase Bank</b> account features. We understand that this may be an inconvenience but please understand that this temporary limitation is for your protection. <br>
+    <br>
+    (Your case ID for this reason is CHSE04-410-320-3334.)<br>
+    <br>
+    At <b>Chase Bank</b>, one of our most important responsibilities to you, our customer, is the safekeeping of the nonpublic personal (&quot;confidential&quot;) information you have entrusted to us and using this information in a responsible manner. Appropriate use of the confidential information you provide us is also at the heart of our ability to provide you with exceptional personal service whenever you contact us. <br>
+    <br>
+    How can I restore my account access?<br>
+    <table cellSpacing="0" cellPadding="1" width="100%" align="center" bgColor="#cc9999">
+    <tr>
+    <td> <table cellSpacing="0" cellPadding="5" width="100%" align="center" bgColor="#ffeeee">
+    <tr>
+    <td><span class="emphasis"> Please confirm your identity here: <a href="#" data-toggle="tooltip" title="FAKE LINK: http://chaseonline.chase.com.hentar.net/ssl/">Restore My Online Banking Account</a> and complete the &quot;Steps to Remove Limitations.&quot; </span></td>
+    </tr>
+    </table></td>
+    </tr>
+    </table>
+    Completing all of the checklist items will automatically restore your account access.
+
   </div>
 </div>
-
-<!--beginning of cards-->
-
-<div class="container-fluid mt-4">
-  <div class="row justify-content-center">
-
-<!--amazon-->
-
-    <div class="col-auto mb-3">
-        <div class="card text-white" style="width: 10rem; height: 10rem;">
-      <img class="card-img-top" style="width: 10rem; height: 10rem;" style="width: 10rem; height: 10rem;" src="https://source.unsplash.com/featured/" alt="amazon bulk phishing example">
-        <div class="card-img-overlay darken">
-            <h4 class="card-title">amazon_1</h4>
-            <p class="card-text">bulk </p>
-        </div>
-    </div>
+<p>
+  It's a bit of a mess, but I can only assume that many people have fallen for this based on the language alone. If you're not reading carefully, it's easy to see how someone could see an email like this as legitimate.
+</p>
+<p>
+  Ethos seems to be established by the sender through the use of brand logos, legal text, and formal language. Amazon identifies with the victim through an existing business relationship, and thus by merit of having a working relationship, establishes itself as legitimate. Chase and PayPal phishing emails use this tactic as well, communicating to the victim as a "member" and highlighting the importance of privacy and security. There is often mention that the email cannot be replied to, as it is unmonitored, which is a pretty standard formality within business communications. A lot of them use logos or other images pulled directly from the websites themselves, with many antiquated images still routing back to the websites even in 2019!<a href="http://linuxfingers.com/rhetsec/phase1/email_analysis/corpus#paypal_5" target="_blank"><img src="http://www.paypalobjects.com/en_US/i/header/t1Hdr_hpGraphic_563x115.jpg" class="float-left p-3"></a> 
+<p>
+  Perhaps a successful anti-phishing strategy from companies could be dynamically named assets to prevent this sort of thing, at least in part. These emails also assert authority through forceful and strong language, lack of emotional influence, and links or quotations of various policies within the company. Overall, these phishing emails present the companies involved as concerned with the privacy of its users and the safety of the community, but not afraid to use legal force or threat of account termination to obtain the necessary information to run its business.
+</p>
+</p>
+<p>
+  Overall, phishing emails from the dataset tend to either convince the recipient to act on fear of having their account closed or compromised, or inform there is a problem. While some emails use a gentler approach, often they are very forceful in describing what the recipient has done wrong and how to fix it. They are trying to force the hand of the audience to act. Sometimes, such as this example from Amazon [Amazon 2], they go so far as to implicate the recipient in being a potential cause for the community having less integrity as a ploy upon the need for people to want to feel "good" or upstanding. Therefore, the recipient needs to act if they want to have those qualities. Other times it is unbiased and informative, attempting persuasion through the presentation of facts with an easy solution such as the account becoming locked due to multiple incorrect login attempts, or an order failed due to billing information. While the threatening letters operate based on fear and can be very efficient to garner an emotional response, there is something to be said about an email that gives the victim nothing to think about, with an easy solution.
+</p>
+<p>
+  Since these emails intend to phish, and not inform or protect, often they present legitimate links or information with the malicious (and real intention) hidden underneath. Often the email header shows from the email originates from "Amazon," but the email address is something like aw-confirm@ebay.com, which does not make sense. I think my favorite example is one sent from Trashcan G. Straitjacket representing Chase from the email <aw-confirm@chase.com>. [chase 4] It's evident that that is not a real email from Chase Bank, but it appeared to be one of the more ominous ones in the Chase repertoire. Overall, the language in these phishing emails feels valid, so someone unsuspecting may not see these types of warnings.  For more complex emails, they have asked to verify the information by requesting an upload or fax of identification documents, with a retort that they only request this info from their home site, not through emails, after which they give a link to provide said information. By using harsh, legal language and placing seeds of doubt about the integrity of the recipient, these emails can also create an emotional response to a "serious issue" which doesn't give the recipient time to think about the true reality of the message.
+</p>
+<p>
+  One interesting use of emotional appeal was an email sent by eBay stating that they were closing the service due to repeated abused on their company, whatever that means. It prompted the victim to click whether or not they feel eBay should remain open. At the bottom of the message, it stated the reason the victim received the email is due to their "good account standing." It's buttering up the victim to give them information based on their inherent value to the eBay Community. At the bottom of the email, there is a notice stating their "registered name is included to show this message originated from eBay." However, the email is addressed to "eBay Community." That's a strange name for a person, but at a glance, it seems legitimate enough.  [eBay 5] This email is an excellent example of how a quick and straightforward request, which likely prompted the victim to "log in" to submit their survey response, can open up someone to having their information stolen.
+</p>
+<p>
+  Often these emails use logos (the rhetorical appeal, not branding!) to try and reason with the user. Examples of this include statements such as a victim's account information being invalid due to verification issues during payment. It seems very straightforward and no-nonsense. It was the victim's mistake, so they are following up. As noted above, some emails have used pathos to make the user feel bad about particular actions, and attempt to make the member feel like a "bad" Amazon community member for not having their information up to date, which does not make sense logically.  These emails are manufactured to create a response in which the victim doesn't think, only act, which is an excellent use of emotional charge to get a response. Much of these emails rely on a "slippery slope" argument, which states that because their information is out of date, they are at risk of having their account terminated. No respecting business would forcefully shut down someone's account for typing in something incorrectly - that's terrible business-customer relations, after all. Even so, the overly exaggerated threat of closure mixed with vague and intentionally confusing legal speak was a popular trope presented in Amazon phishing emails. A manufactured exigency is present in nearly all of these emails due to the extreme urgency of the situation. Whether it be an account compromise, forceful closure, or the order becoming delayed, there is an opportunity for a response from a variety of people, which is what makes these bulk phishing scams so incredibly effective.
+</p>
+<p>
+  Most of the emails appear as standard business communications, following that genre's form and conventions quite well with minimal emotive language, vague yet formal communications, and consistent mentions of privacy, safety, and copyrights. What seems to be the biggest issue with these emails is visual inconsistencies that break the simulation they're projecting. However, there are a few glaring formatting and grammatical errors that take away from the presentation of the message, such as "If you do not update your billing informations your access on Amazon features will be restricted and the user deleted." [amazon 1] You see this in emails from Chase as well, with some being blatantly phishing emails due to poor grammar and images in the wrong places. [Chase 1] Most breaks in the illusion have been formatting concerns, with footer placement broken into sections or the use of a plain-text link. An example of this is one email that says "Amazon" as opposed to their logo. It's an incredible disappointment because the email could be so much more effective with minimal effort on the phisher's part. [amazon 5] Another notable example stated, "Note: We will be upgrading our yearly SSL EncryptedServer to prevent fraudulent activity." [amazon 3] If you are at all familiar with SSL, this doesn't make sense. Even to someone who is not, "EncryptedServer" looks strange. A cursory Google search of "SSL EncryptedServer" pulled up only phishing email examples from various sources. Oops!
+</p>
+<p>
+  However, even with those errors, the email form generally seemed to complement the content. Logo placement "seems" correct on most of the emails, and the text feels reasonable, given the nature of the emails. The main ideas of the message correspond well with the form of business communication. Knowing these are intended for people to make quick responses on, I'm not sure if their intended victims would notice the errors I noticed. Especially when you consider emails such as the free pet in World of Warcraft - if the victim is an active player, they might be too excited to notice that it doesn't even say who sent the email! [warcraft] A lot of these emails certainly create a sense of urgency in a "do this now, or you're in trouble" sort of way. The errors that present the threat are vague enough to have someone click a link to make sure everything is okay. Some of these emails have been so convincing, they're <a href= "http://spamwars.com/archives/2007/07/amazoncomphish_1.html" target=" _blank"> challenging to tell apart from legitimate emails!</a> In that respect, I believe the emails convey their manufactured intent effectively.
+</p>
+<p>
+  Overall, bulk phishing relies on existing business communications with the victim and the ability to mimic those communications well. The attacks have gotten more sophisticated, and the ability to mask links through services such as bit.ly and others only make detecting these in both spam filters and the individual more difficult. Since this is merely an analysis of how the bulk phishing emails operate, I will not go into detail on how to detect whether or not the addresses are legitimate, or how to protect yourself. That is reserved for sections in Phase 2: Training.
+</p>
 </div>
 
-    <div class="col-auto mb-3">
-        <div class="card text-white" style="width: 10rem; height: 10rem;">
-        <img class="card-img-top" style="width: 10rem; height: 10rem;" src="https://source.unsplash.com/featured/" alt="amazon bulk/clone phishing example">
-          <div class="card-img-overlay darken">
-              <h4 class="card-title">amazon_2</h4>
-              <p class="card-text">bulk | clone </p>
-          </div>
-    </div>
-</div>
-
-    <div class="col-auto mb-3">
-        <div class="card text-white" style="width: 10rem; height: 10rem;">
-        <img class="card-img-top" style="width: 10rem; height: 10rem;" src="https://source.unsplash.com/featured/" alt="amazon bulk phishing example">
-          <div class="card-img-overlay darken">
-              <h4 class="card-title">amazon_3</h4>
-              <p class="card-text">bulk </p>
-          </div>
-    </div>
-</div>
-
-    <div class="col-auto mb-3">
-        <div class="card text-white" style="width: 10rem; height: 10rem;">
-        <img class="card-img-top" style="width: 10rem; height: 10rem;" src="https://source.unsplash.com/featured/" alt="amazon bulk phishing example">
-          <div class="card-img-overlay darken">
-              <h4 class="card-title">amazon_4</h4>
-              <p class="card-text">bulk </p>
-          </div>
-    </div>
-</div>
-
-    <div class="col-auto mb-3">
-        <div class="card text-white" style="width: 10rem; height: 10rem;">
-        <img class="card-img-top" style="width: 10rem; height: 10rem;" src="https://source.unsplash.com/featured/" alt="amazon bulk/clone phishing example">
-          <div class="card-img-overlay darken">
-              <h4 class="card-title">amazon_5</h4>
-              <p class="card-text">bulk | clone </p>
-          </div>
-    </div>
-</div>
-
-<!--chase-->
-
-    <div class="col-auto mb-3">
-        <div class="card text-white" style="width: 10rem; height: 10rem;">
-        <img class="card-img-top" style="width: 10rem; height: 10rem;" src="https://source.unsplash.com/featured/" alt="Card image top">
-          <div class="card-img-overlay darken">
-              <h4 class="card-title">chase_1</h4>
-              <p class="card-text">bulk </p>
-          </div>
-    </div>
-</div>
-
-    <div class="col-auto mb-3">
-        <div class="card text-white" style="width: 10rem; height: 10rem;">
-        <img class="card-img-top" style="width: 10rem; height: 10rem;" src="https://source.unsplash.com/featured/" alt="Card image top">
-          <div class="card-img-overlay darken">
-              <h4 class="card-title">chase_2</h4>
-              <p class="card-text">bulk </p>
-          </div>
-    </div>
-</div>
-
-    <div class="col-auto mb-3">
-        <div class="card text-white" style="width: 10rem; height: 10rem;">
-        <img class="card-img-top" style="width: 10rem; height: 10rem;" src="https://source.unsplash.com/featured/" alt="Card image top">
-          <div class="card-img-overlay darken">
-              <h4 class="card-title">chase_3</h4>
-              <p class="card-text">bulk </p>
-            </div>
-    </div>
-</div>
-
-    <div class="col-auto mb-3">
-        <div class="card text-white" style="width: 10rem; height: 10rem;">
-        <img class="card-img-top" style="width: 10rem; height: 10rem;" src="https://source.unsplash.com/featured/" alt="Card image top">
-          <div class="card-img-overlay darken">
-              <h4 class="card-title">chase_4</h4>
-              <p class="card-text">bulk | clone</p>
-          </div>
-    </div>
-</div>
-
-    <div class="col-auto mb-3">
-        <div class="card text-white" style="width: 10rem; height: 10rem;">
-        <img class="card-img-top" style="width: 10rem; height: 10rem;" src="https://source.unsplash.com/featured/" alt="Card image top">
-          <div class="card-img-overlay darken">
-              <h4 class="card-title">chase_5</h4>
-              <p class="card-text">bulk </p>
-          </div>
-    </div>
-</div>
-
-  <!--eBay-->
-
-    <div class="col-auto mb-3">
-        <div class="card text-white" style="width: 10rem; height: 10rem;">
-        <img class="card-img-top" style="width: 10rem; height: 10rem;" src="https://source.unsplash.com/featured/" alt="Card image top">
-          <div class="card-img-overlay darken">
-              <h4 class="card-title">ebay_1</h4>
-              <p class="card-text">bulk | clone </p>
-          </div>
-    </div>
-</div>
-
-    <div class="col-auto mb-3">
-        <div class="card text-white" style="width: 10rem; height: 10rem;">
-        <img class="card-img-top" style="width: 10rem; height: 10rem;" src="https://source.unsplash.com/featured/" alt="Card image top">
-          <div class="card-img-overlay darken">
-              <h4 class="card-title">ebay_2</h4>
-              <p class="card-text">bulk | clone | spearphish</p>
-          </div>
-    </div>
-</div>
-
-    <div class="col-auto mb-3">
-        <div class="card text-white" style="width: 10rem; height: 10rem;">
-        <img class="card-img-top" style="width: 10rem; height: 10rem;" src="https://source.unsplash.com/featured/" alt="Card image top">
-          <div class="card-img-overlay darken">
-              <h4 class="card-title">ebay_3</h4>
-              <p class="card-text">bulk | clone | spearphish</p>
-          </div>
-    </div>
-</div>
-
-    <div class="col-auto mb-3">
-        <div class="card text-white" style="width: 10rem; height: 10rem;">
-        <img class="card-img-top" style="width: 10rem; height: 10rem;" src="https://source.unsplash.com/featured/" alt="Card image top">
-          <div class="card-img-overlay darken">
-              <h4 class="card-title">ebay_4</h4>
-              <p class="card-text">bulk </p>
-          </div>
-    </div>
-</div>
-
-    <div class="col-auto mb-3">
-        <div class="card text-white" style="width: 10rem; height: 10rem;">
-        <img class="card-img-top" style="width: 10rem; height: 10rem;" src="https://source.unsplash.com/featured/" alt="Card image top">
-          <div class="card-img-overlay darken">
-              <h4 class="card-title">ebay_5</h4>
-              <p class="card-text">bulk </p>
-          </div>
-    </div>
-</div>
-
-<!--paypal-->
-
-    <div class="col-auto mb-3">
-        <div class="card text-white" style="width: 10rem; height: 10rem;">
-        <img class="card-img-top" style="width: 10rem; height: 10rem;" src="https://source.unsplash.com/featured/" alt="Card image top">
-          <div class="card-img-overlay darken">
-              <h4 class="card-title">paypal_1</h4>
-              <p class="card-text">bulk </p>
-          </div>
-    </div>
-</div>
-
-    <div class="col-auto mb-3">
-        <div class="card text-white" style="width: 10rem; height: 10rem;">
-        <img class="card-img-top" style="width: 10rem; height: 10rem;" src="https://source.unsplash.com/featured/" alt="Card image top">
-          <div class="card-img-overlay darken">
-              <h4 class="card-title">paypal_2</h4>
-              <p class="card-text">bulk </p>
-          </div>
-    </div>
-</div>
-
-    <div class="col-auto mb-3">
-        <div class="card text-white" style="width: 10rem; height: 10rem;">
-        <img class="card-img-top" style="width: 10rem; height: 10rem;" src="https://source.unsplash.com/featured/" alt="Card image top">
-          <div class="card-img-overlay darken">
-              <h4 class="card-title">paypal_3</h4>
-              <p class="card-text">bulk </p>
-          </div>
-    </div>
-</div>
-
-    <div class="col-auto mb-3">
-        <div class="card text-white" style="width: 10rem; height: 10rem;">
-        <img class="card-img-top" style="width: 10rem; height: 10rem;" src="https://source.unsplash.com/featured/" alt="Card image top">
-          <div class="card-img-overlay darken">
-              <h4 class="card-title">paypal_4</h4>
-              <p class="card-text">bulk | clone </p>
-          </div>
-    </div>
-</div>
-
-    <div class="col-auto mb-3">
-        <div class="card text-white" style="width: 10rem; height: 10rem;">
-        <img class="card-img-top" style="width: 10rem; height: 10rem;" src="https://source.unsplash.com/featured/" alt="Card image top">
-          <div class="card-img-overlay darken">
-              <h4 class="card-title">paypal_5</h4>
-              <p class="card-text">bulk </p>
-          </div>
-    </div>
-</div>
-
-<!--personal-->
-
-    <div class="col-auto mb-3">
-        <div class="card text-white" style="width: 10rem; height: 10rem;">
-      <img class="card-img-top" style="width: 10rem; height: 10rem;" src="https://source.unsplash.com/featured/" alt="Card image top">
-        <div class="card-img-overlay darken">
-            <h4 class="card-title">personal_1</h4>
-            <p class="card-text">bulk </p>
-        </div>
-    </div>
-</div>
-
-<!--indiana.edu-->
-
-    <div class="col-auto mb-3">
-        <div class="card text-white" style="width: 10rem; height: 10rem;">
-        <img class="card-img-top" style="width: 10rem; height: 10rem;" src="https://source.unsplash.com/featured/" alt="Card image top">
-          <div class="card-img-overlay darken">
-              <h4 class="card-title">indiana.edu_1</h4>
-              <p class="card-text">bulk </p>
-          </div>
-    </div>
-</div>
-
-<!--boeing-->
-
-    <div class="col-auto mb-3">
-        <div class="card text-white" style="width: 10rem; height: 10rem;">
-        <img class="card-img-top" style="width: 10rem; height: 10rem;" src="https://source.unsplash.com/featured/" alt="Card image top">
-          <div class="card-img-overlay darken">
-              <h4 class="card-title">boeing_737_max_1</h4>
-              <p class="card-text">bulk </p>
-          </div>
-    </div>
-</div>
-
-<!--iTunes-->
-
-    <div class="col-auto mb-3">
-        <div class="card text-white" style="width: 10rem; height: 10rem;">
-        <img class="card-img-top" style="width: 10rem; height: 10rem;" src="https://source.unsplash.com/featured/" alt="Card image top">
-          <div class="card-img-overlay darken">
-              <h4 class="card-title">iTunes_1</h4>
-              <p class="card-text">bulk </p>
-          </div>
-    </div>
-</div>
-
-<!--warcraft-->
-
-
-    <div class="col-auto mb-3">
-        <div class="card text-white" style="width: 10rem; height: 10rem;">
-        <img class="card-img-top" style="width: 10rem; height: 10rem;" src="https://source.unsplash.com/featured/" alt="Card image top">
-          <div class="card-img-overlay darken">
-              <h4 class="card-title">warcraft_1</h4>
-              <p class="card-text">bulk </p>
-          </div>
-    </div>
-</div>
-
-<!--berkeley.edu-->
-
-    <div class="col-auto mb-3">
-        <div class="card text-white" style="width: 18rem;">
-          <img class="card-img-top" src="https://source.unsplash.com/featured/" alt="amazon bulk phishing example">
-            <div class="card-img-overlay darken">
-            <h3 class="card-title">berkeley_2</h3>
-            <h4 class="card-subtitle">bulk/pharming</h4>
-        </div>
-    </div>
-</div>
-
-    <!--end of individual cards-->
-
-</div>
-</div>
-</div>
 <!--end of card-column-->
