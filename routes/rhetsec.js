@@ -70,11 +70,6 @@ router.get('/phase1/email_analysis/', function(req,res,next) {
 	}
 );
 
-router.get('/phase1/email_analysis/boxphishing', function(req,res,next) {
-	res.render('rhetsec/phase1/email_analysis/boxphishing', {user: req.user, title: 'visitor@linuxfingers:~/rhetsec/phase1/email_analysis/boxphishing_analysis$'});
-	}
-);
-
 router.get('/phase1/email_analysis/bulk', function(req,res,next) {
 		res.render('rhetsec/phase1/email_analysis/bulk', {user: req.user, title: 'visitor@linuxfingers:~/rhetsec/phase1/email_analysis/bulk_phishing_analysis$'});
 	}
@@ -90,8 +85,8 @@ router.get('/phase1/email_analysis/malspam', function(req,res,next) {
 	}
 );
 
-router.get('/phase1/email_analysis/pharming', function(req,res,next) {
-		res.render('rhetsec/phase1/email_analysis/pharming', {user: req.user, title: 'visitor@linuxfingers:~/rhetsec/phase1/email_analysis/pharming_analysis$'});
+router.get('/phase1/email_analysis/pse', function(req,res,next) {
+		res.render('rhetsec/phase1/email_analysis/pse', {user: req.user, title: 'visitor@linuxfingers:~/rhetsec/phase1/email_analysis/pse_analysis$'});
 	}
 );
 

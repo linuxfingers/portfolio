@@ -46,7 +46,7 @@ a:hover {
 
 body {
   background-color: #000000;
-  background-image: url("/public/img/mobo.gif");
+  background-image: url("/img/mobo.gif");
   background-repeat: cover;
   background-attachment: fixed;
   height: 100%;
@@ -110,6 +110,10 @@ span.footnote {
   width: 40%;
 }
 
+.w-30 {
+  width: 30%;
+}
+
 #nav li {
    display: inline-block;
    text-align:center;
@@ -167,7 +171,7 @@ span.footnote {
 /* Boxes? */
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/img/mobo.gif");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/mobo.gif");
   height: 30%;
   margin: 20px;
   padding: 120px;
@@ -415,8 +419,8 @@ a.win{
 
 @font-face {
     font-family: 'sourcesanspro';
-    src: url('/public/fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
-         url('/public/fonts/sourcesanspro-regular-webfont.woff') format('woff');
+    src: url('/fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('/fonts/sourcesanspro-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -424,40 +428,40 @@ a.win{
 
 @font-face {
     font-family: 'courierprimesans';
-    src: url('/public/fonts/courierprimesans-webfont.woff2') format('woff2'),
-         url('/public/fonts/courierprimesans-webfont.woff') format('woff');
+    src: url('/fonts/courierprimesans-webfont.woff2') format('woff2'),
+         url('/fonts/courierprimesans-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'courierprimecode';
-    src: url('/public/fonts/courier_prime_code-webfont.woff2') format('woff2'),
-         url('/public/fonts/courier_prime_code-webfont.woff') format('woff');
+    src: url('/fonts/courier_prime_code-webfont.woff2') format('woff2'),
+         url('/fonts/courier_prime_code-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'courierprime';
-    src: url('/public/fonts/courier_prime-webfont.woff2') format('woff2'),
-         url('/public/fonts/courier_prime-webfont.woff') format('woff');
+    src: url('/fonts/courier_prime-webfont.woff2') format('woff2'),
+         url('/fonts/courier_prime-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'coll';
-    src: url('/public/fonts/collegia-webfont.woff2') format('woff2'),
-         url('/public/fonts/collegia-webfont.woff') format('woff');
+    src: url('/fonts/collegia-webfont.woff2') format('woff2'),
+         url('/fonts/collegia-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'notomono';
-    src: url('/public/fonts/notomono-regular-webfont.woff2') format('woff2'),
-         url('/public/fonts/notomono-regular-webfont.woff') format('woff');
+    src: url('/fonts/notomono-regular-webfont.woff2') format('woff2'),
+         url('/fonts/notomono-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -465,7 +469,7 @@ a.win{
 /***Background stuff***/
 
 .provbg {
-  background-image: url('/public/img/ProvLogo.png');
+  background-image: url('/img/ProvLogo.png');
   background-size: cover;
   height: auto;
   overflow: hidden;
@@ -475,7 +479,7 @@ a.win{
 .provlogo {
   float: right;
   width: 300px;
-  shape-outside: url('/public/img/ProvLogo.png');
+  shape-outside: url('/img/ProvLogo.png');
   shape-margin: 40px;
   margin-right: 40px;
   margin-left: 40px;

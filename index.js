@@ -104,7 +104,7 @@ app.use(function(req, res, next){
   next();
 });
 
-app.use("/public", express.static(__dirname + "/public"));
+app.use("/", express.static(__dirname + "/public"));
 
 app.engine('.hbs', hbs({defaultLayout: 'main', extname: '.hbs'}));
 app.set('views', path.join(__dirname, 'views'));
@@ -132,9 +132,6 @@ var visaudio = require('./routes/visaudio');
 
 //about
 var about = require('./routes/about');
-
-//cv
-var cv = require('./routes/cv');
 
 //main routes
 app.use('/', index);
@@ -164,9 +161,6 @@ app.use('/visaudio', visaudio);
 
 //display the about page
 app.use('/about', about);
-
-//cv
-app.use('/cv', cv);
 
 //end routes
 
