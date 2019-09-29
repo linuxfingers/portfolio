@@ -4,11 +4,11 @@ var router = express.Router();
 //if logged in, else redirect
 //router.get('/', function(req, res, next) {
 //		res.render('rhetsec', {user: req.user, title: 'visitor@linuxfingers:~/project_desc$'});
-		}
-		else{
-			res.redirect('http://www.linuxfingers.com/signin');
-		}
-});
+//		}
+//		else{
+//			res.redirect('http://www.linuxfingers.com/signin');
+//		}
+//});
 
 //DO NOT PUSH LIVE IF NO REDIRECT FOR USER LOGIN//
 
