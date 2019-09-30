@@ -64,7 +64,7 @@ router.get('/assessment', function(req,res,next) {
 
 router.get('/phase0/', function(req,res,next) {
 	if (req.user){
-		res.render('rhetsec/phaseprofit/index', {user: req.user, title:'visitor@linuxfingers.com:/rhetsec/phase0$'});
+		res.render('rhetsec/phase0/index', {user: req.user, title:'visitor@linuxfingers.com:/rhetsec/phase0$'});
 	}
 	else{
 		res.redirect('http://www.linuxfingers.com/signin');
