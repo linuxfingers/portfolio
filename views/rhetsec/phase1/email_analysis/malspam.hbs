@@ -19,8 +19,7 @@
 </div>
 
 <div class="row justify-content-center">
-  <p><b>This is a work in progress.</b>
-        <br><span id="lastModified"></span>
+  <p><b>This is a work in progress.</b><span id="lastModified"></span>
   </p>
 </div>
 
@@ -31,7 +30,7 @@
     In regards to rhetorical analysis, I'm going to approach the Malspam section a bit differently than the others for a few reasons. I realized very quickly looking at Malspam that they tended to mimic a variety of examples and that perhaps as a category for rhetorical analysis, it needed to be treated a bit differently. To be clear, these aren't the only ways in which malware is transmitted, but they are illustrative examples of this phishing genre.
   </p>
 
-<b>Boeing 737 Max</b>
+<h5>Boeing 737 Max</h5>
 
 <p>
   The first email I looked at for this analysis was one that comes from Joshua Berlinger, a "private inteligent analyst." That is not my typo; that was how the author presented themselves. What's interesting is that <a href="https://www.linkedin.com/in/josh-berlinger-7bb17114/?originalSubdomain=hk" target="_blank">Joshua Berlinger</a> is a digital reporter and producer from CNN out of Hong Kong, and I presume the phisher used this information in hopes that the recipient would believe that Mr. Berlinger himself is contacting them to save the recipient, their family, and friends. A cursory Google search combining Isgec and Berlinger's name produced no results outside of this phishing email and <a href="https://www.cnn.com/profiles/joshua-berlinger" target="_blank">CNN's profile page</a>; he has no connection to Isgec as far as I am aware. While the phisher is using a potentially high profile name and company, their ethos is diminished due to numerous grammatical and spelling errors. While it could be shrugged off as a message written urgently to inform the recipient of impending danger, a little spellcheck might not have hurt this "inteligent analyst" in being more successful with their phishing.
@@ -53,7 +52,7 @@
   Rhetorically, the email uses a few types of appeals in order to persuade the victim into clicking on this file. As mentioned above, the use of pathos is prevalent in the email. Combining emotional manipulation with scare tactics concerning death figures from the actual crash that occurred, it easily can convince someone to act - especially if they have someone flying very soon. Logos is also present in this email via the figures and facts stated about the Boeing 737 Max 8 jet that crashed. The email mentions the route which "crashed into the Java Sea 12 minutes after takeoff." It also states a death toll, reiterating that <i>all</i> 189 passengers and crew were killed in the accident. Combining these figures, with the admission of an "information leak" on the dark web from a private intelligence analyst, and an implicated threat of the recipient's victims potentially dying, is more than enough exigency to have someone click on that infected file.
 </p>
 
-<b>Emotet</b>
+<h5>Emotet</h5>
 
 <p>
   The emotet malspam generally seemed to operate like personal solicitation emails do, in that they either mimicked a conversation had between people, or a dialogue exchange occurred, and then a file was sent. The examples I used all requested the recipient to check in on a recent payment or invoice submitted, which is the file sent in the email containing the malware. The audience appears to be either an employee working on financials for the company or a C-level executive who is in charge of making or receiving payments for the company. Generally, these emails are notably lacking pathos, unlike the Boeing email, and rely heavily on ethos and logos to be successful. Being as impersonal as possible, and conducting business in the typical exchange format, is what makes these phishing attacks so successful. The form fits general conventions: "please find attached remittance advice for our recent payment to you," asking them to contact with any questions, or requests to open a document. What's interesting about the email that asks you to open the attached file is that it also gives the password in the same email itself - certainly not best practices by any stretch of the imagination, but unfortunately a <a href="https://www.searlesgraphics.com/blog/2120/please-stop-sending-passwords-via-email" target="_blank">pretty common occurance</a>. Generally, this would be done through a separate channel such as SMS, or even a separate email (although I wouldn't advise that tactic either for security reasons,) and was a red flag to me that this was not legitimate. However, it wouldn't be to some unless they had proper training, and remembered it, which is most likely why they chose to approach the email this way.
@@ -71,8 +70,13 @@
   Overall, these emails fit well with the style and form they were going for and is unsurprising that they are an incredibly successful method of transmission. The Department of Homeland Security has deemed Emotet as one of the <a href="https://www.us-cert.gov/ncas/alerts/TA18-201A" target="_blank">most costly and destructive malware,"</a> and is responsible for on average $1,000,000 of cleanup per incident. Emotet is very dangerous to an individual or organization, as it gains access to <i>all</i> stored credentials on a machine, even ones that you have saved in your browser. It also can access emails on an infected device, opening the infected victim up to even more trouble. Emotet is a banking trojan, which is a program that looks like a legitimate file until installed (hence the name). It captures passwords, keystrokes, and any other type of data that tends to redirect information about banking and financials to an external server. It also can update itself, which makes fighting this malware even more difficult. In fact, it's been so successful, that <a href="https://blog.alertlogic.com/must-know-phishing-statistics-2018/" target="_blank">57% of all activity from banking trojans in the first quarter of 2018</a>! These examples follow the highest trend in phishing as well using an invoice or payment being 15.9% of all malware transmitted, with a scanned document coming in at 11.9%. Knowing this, it is especially important to understand how the vectors of transmission - the phishing emails - operate to help protect potential victims, and I'm hoping that I can do that in the near future.
 </p>
 
-<b>Lokibot</b>
+<h5>Lokibot</h5>
 
-<b>Hancitor</b>
+<h5>Hancitor</h5>
+<p>
+  The Hancitor emails operated much like a clonephishing email would, mimicking notices from corporations like Docusign and HelloFax. For brevity's sake, please see the detailed analysis for clonephishing in regards to how these emails operate rhetorically. I have found no difference, aside from what the end goal of the phisher is. As opposed to phishing campaigns that look to obtain credentials from a user inputting them outright, Hancitor acts as a gateway to do that without having the user enter anything. Classified as a macro-based malware, Hancitor operates by installing banking trojans as the primary payload from remote servers. Remember, banking trojans compromise computers by accessing their saved credentials and target financial information, and being able to get these payloads through a macro is a pretty ingenious way to run undetected. In the early days, Hancitor was inserted as a macro in a Word document, but the increase in quality of email virus and spam filters tend to catch these. This increase in detectability has made Hancitor distribution evolve, and now files are generally hosted on independent servers, either manufactured and mimicked or legitimate and compromised. The Hancitor malware is transmitted through a downloadable file inside a link encoded with the victim's email address. In some instances, the email address from the link gets added to a database of phished victims, presumably to get a better understanding of which systems are and (or aren't) scanning for malware. The DocuSign and HelloFax examples provided in the corpus are an example of that. For further reading, an excellent technical post from Palo Alto Networks' Unit 42 goes into depth about Hancitor's new transmission methods <a href="https://unit42.paloaltonetworks.com/unit42-compromised-servers-fraud-accounts-recent-hancitor-attacks/" target="_blank">here.</a>
+</p>
 
-<b>Conclusion</b>
+<h5>Conclusion</h5>
+
+<p><center><h4><a href="#top">&#9954; beam me up, scotty_ &#9954;</h4></center></p>

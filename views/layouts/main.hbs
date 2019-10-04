@@ -43,13 +43,12 @@ onload = function(){
 
 <body>
   <nav class="navbar navbar-dark navbar-expand-md bg-faded justify-content-center bighead notomono" id="li">
-    <a class="d-flex w-30 mr-auto" href="/">visitor@linuxfingers:~$ cd ~</a>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+    <a class="d-flex flex-row w-33 mr-auto" href="/">visitor@linuxfingers:~$ cd ~</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bighead">
           <span class="navbar-toggler-icon"></span>
       </button>
+  <div class="navbar-collapse collapse w-100 navbar-hover" id="bighead">
 
-    <div class="navbar-collapse collapse w-100 navbar-hover" id="collapsingNavbar3">
     <ul class="navbar-nav" style="text-align:center">
           <li class="dropdown">
             <a href="#" class="dropdown-toggle pglink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">/rhetoric&&security/ <span class="caret"></span></a>
@@ -64,12 +63,12 @@ onload = function(){
 {{#if user}}
 
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle pglink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">/phase0/<span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle pglink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">/phase0_website/<span class="caret"></span></a>
             <ul class="dropdown-menu dd-black">
               <li><a href="/rhetsec/phase0/">./about</a></li>
             </ul>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle pglink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">/phase1/<span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle pglink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">/phase1_research/<span class="caret"></span></a>
             <ul class="dropdown-menu dd-black">
               <li><a href="/rhetsec/phase1/">./about</a></li>
               <li><a href="/rhetsec/phase1/definitions">./technical definitions</a></li>
@@ -88,7 +87,7 @@ onload = function(){
               <li><a href="/rhetsec/phase1/SAT/" style="margin-left: 40px">./about</a></li>
             </ul>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle pglink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">/phase2/<span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle pglink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">/phase2_training/<span class="caret"></span></a>
             <ul class="dropdown-menu dd-black">
               <li><a href="/rhetsec/phase2/">./about</a></li>
               <li role="separator" class="nav-item dropdown-divider"></li>
@@ -102,60 +101,12 @@ onload = function(){
             <ul class="dropdown-menu dd-black">
               <li><a href="/rhetsec/phaseprofit/">./about</a></li>
             </ul>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle pglink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">/other/ <span class="caret"></span></a>
-              <ul class="dropdown-menu dd-black">
-                <li><a href="#">▓ /writing/</a></li>
-                <li><a href="/writing/comm" style="margin-left: 40px">./online_communities</a></li>
-                <li><a href="/writing/mpca" style="margin-left: 40px">./MMORPGs</a></li>
-                <li><a href="/writing/seo" style="margin-left: 40px">./seo</a></li>
-                <li><a href="/writing/poetry" style="margin-left: 40px">./poetry</a></li>
-                <li><a href="/writing/gonzo" style="margin-left: 40px">./narrative&&gonzo</a></li>
-                <li role="separator" class="nav-item dropdown-divider"></li>
-                <li><a href="#">▓ /visaudio/</a></li>
-                <li><a href="/visaudio/indesign" style="margin-left: 40px">./digital_design</a></li>
-                <li><a href="/visaudio/artwork" style="margin-left: 40px">./artwork</a></li>
-                <li><a href="/visaudio/music" style="margin-left: 40px">./music</a></li>
-                <li role="seperator" class="nav-item dropdown-divider"></li>
-                <li><a href="/about/jen">./jen</a></li>
-                <li><a href="/about/cv">./CV</a></li>
-                <li><a href="/about/contact">./contact</a></li>
-                <li role="separator" class="nav-item dropdown-divider"></li>
-                <li><a href="/about/provsec">./providentia security</a></li>
-              </ul>
 
           {{else}}
-
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle pglink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">/writing/ <span class="caret"></span></a>
-              <ul class="dropdown-menu dd-black">
-                <li><a href="/writing/comm">./online_communities</a></li>
-                <li><a href="/writing/mpca">./MMORPGs</a></li>
-                <li><a href="/writing/seo">./seo</a></li>
-                <li role="separator" class="nav-item dropdown-divider"></li>
-                <li><a href="/writing/poetry">./poetry</a></li>
-                <li><a href="/writing/gonzo">./narrative&&gonzo</a></li>
-              </ul>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle pglink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">/visual&&audio/ <span class="caret"></span></a>
-                  <ul class="dropdown-menu dd-black">
-                    <li><a href="/visaudio/indesign">./digital_design</a></li>
-                    <li><a href="/visaudio/artwork">./artwork</a></li>
-                    <li><a href="/visaudio/music">./music</a></li>
-                  </ul>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle pglink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">/about/ <span class="caret"></span></a>
-                  <ul class="dropdown-menu dd-black">
-                    <li><a href="/about/jen">./jen</a></li>
-                    <li><a href="/about/cv">./CV</a></li>
-                    <li><a href="/about/contact">./contact</a></li>
-                    <li role="separator" class="nav-item dropdown-divider"></li>
-                    <li><a href="/about/provsec">./providentia security</a></li>
-                  </ul>
-{{/if}}
+          {{/if}}
         </ul>
 
-        <ul class="nav navbar-nav ml-auto w-100 justify-content-end courier">
+        <ul class="nav navbar-nav mr-auto ml-auto w-100 justify-content-end courier">
             <li class="nav-item">
               {{#if user}}
               <a class="pglink" href="/logout">exit?</a>
@@ -190,16 +141,38 @@ onload = function(){
       <audio id="sound1" src="/audio/laugh.wav" preload="auto"></audio><a class="# win" onclick="document.getElementById('sound1').play();"><font class="kern">Activate Windows</font><br>Go to Settings to activate Windows.</a></div>
 
 <footer class="bigfoot">
-<!--    <span style="float:left;">
-      <div class="dropup">
-      <button class="dropbtn">sitemap</button>
-        <div class="dropup-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-  </div>
-</span>-->
+<nav class="navbar navbar-dark navbar-expand-md bg-faded justify-content-center notomono" id="li">
+
+    <ul class="navbar-nav" style="text-align:center">
+      <li class="dropup">
+        <a href="#" class="dropdown-toggle pglink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">/writing/ <span class="caret"></span></a>
+          <ul class="dropdown-menu dd-black">
+            <li><a href="/writing/comm">./online_communities</a></li>
+            <li><a href="/writing/mpca">./MMORPGs</a></li>
+            <li><a href="/writing/seo">./seo</a></li>
+            <li role="separator" class="nav-item dropdown-divider"></li>
+            <li><a href="/writing/poetry">./poetry</a></li>
+            <li><a href="/writing/gonzo">./narrative&&gonzo</a></li>
+          </ul>
+          <li class="dropup">
+            <a href="#" class="dropdown-toggle pglink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">/visual&&audio/ <span class="caret"></span></a>
+              <ul class="dropdown-menu dd-black">
+                <li><a href="/visaudio/indesign">./digital_design</a></li>
+                <li><a href="/visaudio/artwork">./artwork</a></li>
+                <li><a href="/visaudio/music">./music</a></li>
+              </ul>
+          <li class="dropup">
+            <a href="#" class="dropdown-toggle pglink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">/about/ <span class="caret"></span></a>
+              <ul class="dropdown-menu dd-black">
+                <li><a href="/about/jen">./jen</a></li>
+                <li><a href="/about/cv">./CV</a></li>
+                <li><a href="/about/contact">./contact</a></li>
+                <li role="separator" class="nav-item dropdown-divider"></li>
+                <li><a href="/about/provsec">./providentia security</a></li>
+              </ul>
+            </ul>
+        </nav>
+<!--
       <p class="white"><img src="/img/greenskull.gif" height="30px" href="#" target="_blank" onclick="randomSite();">
       ʇ̫͖̩̦̀̐̎̿̃̚ɔ͖̦͙̝̣͈̬̱̫̎ǝ̣͙̻̼̣̗̥̰̑ͩ͛̇͗u̹ͣ͑͊̓̑̾u̩̱͇̖̗̯͛́̿o͇͓̠͔̞̼ͪ͑̃ɔ̲̱͔̣̟̽ͥ͛̋̒ͫͮ͗̚
        ░ <a target="_blank" rel="noopener noreferrer" href="mailto:contact@linuxfingers.com">email</a>
@@ -208,7 +181,7 @@ onload = function(){
        ░ <a target="_blank" rel="noopener noreferrer" href="http://www.soundcloud.com/linuxfingers">soundcloud</a>
        ░ ̭́̂́͐͛c͖̻ͯ̽õ̭̼̪̦̠ͅn̺̰ͤ̌͒ͭ̆̏n̲̼̦͕̥̗̝̠̒̏ͧ̃̓̓ͬẹ͉́ͨ̑̆ͬ̃ͥͫc͔͓͈̮ͮ͐̃t̘̖͉̫̬̰ͨͪ
        <img src="/img/greenskull.gif" height="30px" href="#" target="_blank" onclick="randomSite();">
-     </p>
+     </p>-->
 </footer>
 
 <script src="/js/typeWriter.js"></script>
