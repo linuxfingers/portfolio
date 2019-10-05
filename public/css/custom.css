@@ -17,6 +17,11 @@
 
 
 /* ========= Main Bits of Pretty ========= */
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
 
 html, body{
   margin: 0;
@@ -474,6 +479,13 @@ color: #009600;
 
 /*You should activate Windows.*/
 
+@media screen and (max-width: 480px) {
+    #overlay {
+        display: none;
+    }
+}
+
+
 a.win{
   font-family: 'SegoeUILight', sans-serif;
 }
@@ -506,9 +518,9 @@ a.win{
 
 #overlay {
   font-family: "Segoe UI Light", sans-serif;
-  color: rgba(169,169,169,.75); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
+  color: rgba(169,169,169,.75);
+  z-index: 2;
+  cursor: pointer;
 }
 
 

@@ -25,6 +25,7 @@ var sites = [
                 location.href = sites[i];
             }
 
+
 //Activate Windows, you scrub
 function on() {
   document.getElementById("overlay").style.display = "block";
@@ -34,7 +35,6 @@ function off() {
   document.getElementById("overlay").style.display = "none";
 }
 
-$
 
 //birthday because I'm lazy
 //
