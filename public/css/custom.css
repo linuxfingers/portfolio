@@ -17,9 +17,9 @@
 
 
 /* ========= Main Bits of Pretty ========= */
-@media screen and (prefers-reduced-motion: reduce) {
+@media screen {
 	html {
-		scroll-behavior: auto;
+		scroll-behavior: smooth;
 	}
 }
 
@@ -78,11 +78,7 @@ ol.light{
 p {
   color: #afaeae;
   font-family: 'sourcesanspro';
-  font-size: 16px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 500;
-  line-height: 24px;
+
 }
 
 p a {
@@ -101,6 +97,13 @@ margin: auto !important;
 display: flex;
 }
 
+.navbar-toggler {
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+    border-width:0;
+    border-radius:0;
+}
 
 //*** Footnotes ***//
 
