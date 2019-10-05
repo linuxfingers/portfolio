@@ -37,6 +37,7 @@
     "passport-local": "^1.0.0",
     "passport-twitter": "^1.0.4",
     "q": "^1.5.1",
+    "rfs": "^9.0.0",
     "typed.js": "^2.0.10"
   }
 }

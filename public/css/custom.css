@@ -485,6 +485,9 @@ color: #009600;
     }
 }
 
+.navbar {
+  z-index: 9998;
+}
 
 a.win{
   font-family: 'SegoeUILight', sans-serif;
@@ -519,7 +522,7 @@ a.win{
 #overlay {
   font-family: "Segoe UI Light", sans-serif;
   color: rgba(169,169,169,.75);
-  z-index: 2;
+  z-index: 9999;
   cursor: pointer;
 }
 
