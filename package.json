@@ -19,6 +19,7 @@
     "bcrypt": "^3.0.6",
     "bcrypt-nodejs": "0.0.3",
     "bcryptjs": "^2.4.3",
+    "bootstrap": "^4.3.1",
     "cookie-parser": "^1.4.4",
     "express": "^4.17.1",
     "express-error-handler": "^1.1.0",
@@ -36,6 +37,7 @@
     "passport-google": "^0.3.0",
     "passport-local": "^1.0.0",
     "passport-twitter": "^1.0.4",
+    "popper.js": "^1.15.0",
     "q": "^1.5.1",
     "rfs": "^9.0.0",
     "typed.js": "^2.0.10"
