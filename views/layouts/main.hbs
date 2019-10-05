@@ -19,6 +19,8 @@
 <link rel="icon" href="/icons/favicon-192.png" sizes="192x192">
 <link rel="icon" href="/icons/favicon-228.png" sizes="228x228">
 
+<script src="https://kit.fontawesome.com/1de139fa02.js" crossorigin="anonymous"></script>
+
 <!-- Start Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138652320-1"></script>
     <script>
@@ -40,84 +42,93 @@ onload = function(){
   <link href="/css/custom.css" rel="stylesheet">
 
 </head>
-
 <body>
-  <nav class="navbar navbar-dark navbar-expand-md bg-faded justify-content-center bighead notomono" id="li">
-    <a class="d-flex flex-row w-33 mr-auto" href="/">visitor@linuxfingers:~$ cd ~</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bighead">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-  <div class="navbar-collapse collapse w-100 navbar-hover" id="bighead">
 
-    <ul class="navbar-nav" style="text-align:center">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle pglink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">/rhetoric&&security/ <span class="caret"></span></a>
-              <ul class="dropdown-menu dd-black">
-                <li><a href="/rhetsec/">./about</a></li>
-                <li><a href="/rhetsec/rationale">./rationale</a></li>
-                <li><a href="/rhetsec/limitations">./limitations</a></li>
-                <li><a href="/rhetsec/assessment">./self-assessment</a></li>
-              </ul>
-          </li>
+<nav class="navbar navbar-expand-lg bighead notomono">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-dungeon" style="color:#faf9f9"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto justify-content-between">
+                    <li class="nav-item">
+                        <a class="pglink" href="#">visitor@linuxfingers:~$ cd ~</a>
+                    </li>
 
 {{#if user}}
+                    <li class="nav-item dropdown">
+                        <a class="pglink dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">/rhetsec/</a>
+                        <div class="dropdown-menu dd-black" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/rhetsec/">./about</a>
+                            <a class="dropdown-item" href="/rhetsec/rationale">./rationale</a>
+                            <a class="dropdown-item" href="/rhetsec/limitations">./limitations</a>
+                            <a class="dropdown-item" href="/rhetsec/assessment">./self-assessment</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="pglink dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">/p0_website/</a>
+                        <div class="dropdown-menu dd-black" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/rhetsec/phase0/">./about</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="pglink dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">/p1_research/</a>
+                        <div class="dropdown-menu dd-black" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/rhetsec/phase1/">./about</a>
+                            <a class="dropdown-item" href="/rhetsec/phase1/definitions">./technical definitions</a>
+                            <a class="dropdown-item" href="/rhetsec/phase1/bibliography">./bibliography</a>
+                          <hr>
+                            <a class="dropdown-item" href="#">./phishing email analysis</a>
+                            <a class="dropdown-item" href="/rhetsec/phase1/email_analysis/" style="margin-left: 40px">./about</a>
+                            <a class="dropdown-item" href="/rhetsec/phase1/email_analysis/bulk" style="margin-left: 40px">./bulk phishing</a>
+                            <a class="dropdown-item" href="/rhetsec/phase1/email_analysis/clonephishing" style="margin-left: 40px">./clonephishing</a>
+                            <a class="dropdown-item" href="/rhetsec/phase1/email_analysis/malspam" style="margin-left: 40px">./malspam</a>
+                            <a class="dropdown-item" href="/rhetsec/phase1/email_analysis/pse" style="margin-left: 40px">./personal solicitation</a>
+                            <a class="dropdown-item" href="/rhetsec/phase1/email_analysis/spearfishing" style="margin-left: 40px">./spearphishing</a>
+                            <a class="dropdown-item" href="/rhetsec/phase1/email_analysis/corpus" style="margin-left: 40px">./phishing email corpus</a>
+                          <hr>
+                            <a class="dropdown-item" href="#">./security awareness training analysis</a>
+                            <a class="dropdown-item" href="/rhetsec/phase1/SAT/" style="margin-left: 40px">./about</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="pglink dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">/p2_training/</a>
+                        <div class="dropdown-menu dd-black" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/rhetsec/phase2/">./about</a>
+                            <hr>
+                            <a class="dropdown-item" href="#">./training materials</a>
+                            <a class="dropdown-item" href="/rhetsec/phase2/elogin" style="margin-left: 40px">./fake login page</a>
+                            <a class="dropdown-item" href="/rhetsec/phase2/phished" style="margin-left: 40px">./you've been phished</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="pglink dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">/p???/</a>
+                        <div class="dropdown-menu dd-black" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/rhetsec/phaseprofit/">./about</a>
+                        </div>
+                    </li>
+  {{else}}
 
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle pglink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">/phase0_website/<span class="caret"></span></a>
-            <ul class="dropdown-menu dd-black">
-              <li><a href="/rhetsec/phase0/">./about</a></li>
-            </ul>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle pglink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">/phase1_research/<span class="caret"></span></a>
-            <ul class="dropdown-menu dd-black">
-              <li><a href="/rhetsec/phase1/">./about</a></li>
-              <li><a href="/rhetsec/phase1/definitions">./technical definitions</a></li>
-              <li><a href="/rhetsec/phase1/bibliography">./bibliography</a></li>
-              <li role="separator" class="nav-item dropdown-divider"></li>
-              <li><a href="#">./phishing email analysis</a></li>
-              <li><a href="/rhetsec/phase1/email_analysis/" style="margin-left: 40px">./about</a></li>
-              <li><a href="/rhetsec/phase1/email_analysis/bulk" style="margin-left: 40px">./bulk phishing</a></li>
-              <li><a href="/rhetsec/phase1/email_analysis/clonephishing" style="margin-left: 40px">./clonephishing</a></li>
-              <li><a href="/rhetsec/phase1/email_analysis/malspam" style="margin-left: 40px">./malspam</a></li>
-              <li><a href="/rhetsec/phase1/email_analysis/pse" style="margin-left: 40px">./personal solicitation</a></li>
-              <li><a href="/rhetsec/phase1/email_analysis/spearfishing" style="margin-left: 40px">./spearphishing</a></li>
-              <li><a href="/rhetsec/phase1/email_analysis/corpus" style="margin-left: 40px">./phishing email corpus</a></li>
-              <li role="separator" class="nav-item dropdown-divider"></li>
-              <li><a href="#">./security awareness training analysis</a></li>
-              <li><a href="/rhetsec/phase1/SAT/" style="margin-left: 40px">./about</a></li>
-            </ul>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle pglink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">/phase2_training/<span class="caret"></span></a>
-            <ul class="dropdown-menu dd-black">
-              <li><a href="/rhetsec/phase2/">./about</a></li>
-              <li role="separator" class="nav-item dropdown-divider"></li>
-              <li><a href="#">./training materials</a></li>
-              <li><a href="/rhetsec/phase2/" style="margin-left: 40px">./about</a></li>
-              <li><a href="/rhetsec/phase2/elogin" style="margin-left: 40px">./fake login page</a></li>
-              <li><a href="/rhetsec/phase2/phished" style="margin-left: 40px">./you've been phished</a></li>
-            </ul>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle pglink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">/phase???/<span class="caret"></span></a>
-            <ul class="dropdown-menu dd-black">
-              <li><a href="/rhetsec/phaseprofit/">./about</a></li>
-            </ul>
+                <li class="nav-item">
+                    <a class="pglink" href="/rhetsec/whatisrhetsec">/rhetsec/</a>
+                </li>
 
-          {{else}}
-          {{/if}}
-        </ul>
 
-        <ul class="nav navbar-nav mr-auto ml-auto w-100 justify-content-end courier">
-            <li class="nav-item">
-              {{#if user}}
-              <a class="pglink" href="/logout">exit?</a>
-              {{else}}
-              <a class="pglink" href="/signin">login $USER</a>
-              {{/if}}
-            </li>
-        </ul>
+{{/if}}
+                  <li class="nav-item">
+                    {{#if user}}
+                    <a class="pglink" href="/logout">exit?</a>
+                    {{else}}
+                    <a class="pglink" href="/signin">login $USER</a>
+                    {{/if}}
+                  </li>
 
-    </div>
-</nav>
+
+                </ul>
+            </div>
+        </nav>
+
+
+
 <div id="wrapper">
 
 <a name="top"></a>
@@ -137,54 +148,58 @@ onload = function(){
     {{{body}}}
 
 </div>
+
+
+
     <div id="overlay" data-backdrop="static" class="bottomright">
       <audio id="sound1" src="/audio/laugh.wav" preload="auto"></audio><a class="# win" onclick="document.getElementById('sound1').play();"><font class="kern">Activate Windows</font><br>Go to Settings to activate Windows.</a></div>
 
 <footer class="bigfoot">
-<nav class="navbar navbar-dark navbar-expand-md bg-faded justify-content-center notomono" id="li">
 
-    <ul class="navbar-nav" style="text-align:center">
-      <li class="dropup">
-        <a href="#" class="dropdown-toggle pglink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">/writing/ <span class="caret"></span></a>
-          <ul class="dropdown-menu dd-black">
-            <li><a href="/writing/comm">./online_communities</a></li>
-            <li><a href="/writing/mpca">./MMORPGs</a></li>
-            <li><a href="/writing/seo">./seo</a></li>
-            <li role="separator" class="nav-item dropdown-divider"></li>
-            <li><a href="/writing/poetry">./poetry</a></li>
-            <li><a href="/writing/gonzo">./narrative&&gonzo</a></li>
-          </ul>
-          <li class="dropup">
-            <a href="#" class="dropdown-toggle pglink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">/visual&&audio/ <span class="caret"></span></a>
-              <ul class="dropdown-menu dd-black">
-                <li><a href="/visaudio/indesign">./digital_design</a></li>
-                <li><a href="/visaudio/artwork">./artwork</a></li>
-                <li><a href="/visaudio/music">./music</a></li>
-              </ul>
-          <li class="dropup">
-            <a href="#" class="dropdown-toggle pglink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">/about/ <span class="caret"></span></a>
-              <ul class="dropdown-menu dd-black">
-                <li><a href="/about/jen">./jen</a></li>
-                <li><a href="/about/cv">./CV</a></li>
-                <li><a href="/about/contact">./contact</a></li>
-                <li role="separator" class="nav-item dropdown-divider"></li>
-                <li><a href="/about/provsec">./providentia security</a></li>
-              </ul>
-            </ul>
-        </nav>
-<!--
-      <p class="white"><img src="/img/greenskull.gif" height="30px" href="#" target="_blank" onclick="randomSite();">
-      ʇ̫͖̩̦̀̐̎̿̃̚ɔ͖̦͙̝̣͈̬̱̫̎ǝ̣͙̻̼̣̗̥̰̑ͩ͛̇͗u̹ͣ͑͊̓̑̾u̩̱͇̖̗̯͛́̿o͇͓̠͔̞̼ͪ͑̃ɔ̲̱͔̣̟̽ͥ͛̋̒ͫͮ͗̚
-       ░ <a target="_blank" rel="noopener noreferrer" href="mailto:contact@linuxfingers.com">email</a>
-       ░ <a target="_blank" rel="noopener noreferrer" href="http://www.twitter.com/linuxfingers">twitter</a>
-       ░ <a target="_blank" rel="noopener noreferrer" href="http://www.facebook.com/linuxfingers">facebook</a>
-       ░ <a target="_blank" rel="noopener noreferrer" href="http://www.soundcloud.com/linuxfingers">soundcloud</a>
-       ░ ̭́̂́͐͛c͖̻ͯ̽õ̭̼̪̦̠ͅn̺̰ͤ̌͒ͭ̆̏n̲̼̦͕̥̗̝̠̒̏ͧ̃̓̓ͬẹ͉́ͨ̑̆ͬ̃ͥͫc͔͓͈̮ͮ͐̃t̘̖͉̫̬̰ͨͪ
-       <img src="/img/greenskull.gif" height="30px" href="#" target="_blank" onclick="randomSite();">
-     </p>-->
+  <nav class="navbar navbar-expand-lg bigfoot notomono">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-dungeon" style="color:#faf9f9"></i>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto justify-content-center">
+                    <li class="nav-item dropup">
+                        <a class="pglink dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">/about/</a>
+                        <div class="dropdown-menu dd-black" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/about/jen">./about_jen</a>
+                            <a class="dropdown-item" href="/about/cv">./CV</a>
+                            <a class="dropdown-item" href="/about/contact">./contact</a>
+                            <a class="dropdown-item" href="/about/provsec">./providentia security</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropup">
+                        <a class="pglink dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">/writing/</a>
+                        <div class="dropdown-menu dd-black" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/writing/comm">./online_communities</a>
+                            <a class="dropdown-item" href="/writing/mpca">./MMORPGs</a>
+                            <a class="dropdown-item" href="/writing/seo">./seo</a>
+                            <a class="dropdown-item" href="/writing/poetry">./poetry</a>
+                            <a class="dropdown-item" href="/writing/gonzo">./narrative&&gonzo</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropup">
+                        <a class="pglink dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">/visual&&audio/</a>
+                        <div class="dropdown-menu dd-black" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/rhetsec/phase2/">./about</a>
+                            <hr>
+                            <a class="dropdown-item" href="#">./training materials</a>
+                            <a class="dropdown-item" href="/rhetsec/phase2/elogin" style="margin-left: 40px">./fake login page</a>
+                            <a class="dropdown-item" href="/rhetsec/phase2/phished" style="margin-left: 40px">./you've been phished</a>
+                        </div>
+                    </li>
+
+                  </ul>
+              </div>
+          </nav>
+
+
 </footer>
 
-<script src="/js/typeWriter.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>

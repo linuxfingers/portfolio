@@ -24,6 +24,10 @@ router.get('/', function(req,res,next) {
 	}
 });
 
+router.get('/whatisrhetsec', function(req,res,next){
+	res.render('rhetsec/whatisrhetsec', {user: req.user, title: 'visitor@linuxfingers~/rhetsec/what_is_rhetsec&'});
+});
+
 router.get('/about', function(req,res,next) {
 	if (req.user){
 		res.render('rhetsec/about', {user: req.user, title: 'visitor@linuxfingers:~/rhetsec$'});
