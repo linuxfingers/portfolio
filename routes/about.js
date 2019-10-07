@@ -37,13 +37,4 @@ router.get('/provsec', function(req, res, next) {
 	//}
 });
 
-router.get('/contact', function(req, res, next) {
-	//if (req.user){
-		res.render('about/contact', {user: req.user, title: 'visitor@linuxfingers:~/about/contact$'});
-	//}
-	//else{
-	//	res.redirect('http://www.linuxfingers.com/signin');
-	//}
-});
-
 module.exports = router;
