@@ -90,6 +90,11 @@ ul, dl {
   	list-style-type: none;
 }
 
+.biblio {
+	margin-bottom: 1rem;
+	margin-top: .1rem;
+}
+
 .navbar-nav,
 .mr-auto {
 flex: 1;
@@ -627,6 +632,15 @@ a.win{
 }
 
 /***typing effect**/
+
+
+/**USAGE:
+
+<div class="typewriter">
+	<div class="typewriter-text">text that's typed</div>
+</div>
+
+**/
 
 .typewriter {
     font-family: 'courierprimecode', monospace;
