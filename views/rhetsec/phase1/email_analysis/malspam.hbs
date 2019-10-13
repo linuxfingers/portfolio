@@ -15,7 +15,8 @@
 </div>
 
 <div class="row justify-content-center mb-5">
-  <p><b>This is a work in progress.Last updated on 04 October 2019.</b>
+  <p><b>This is a work in progress.Last updated on 10yikes
+     October 2019.</b>
   </p>
 </div>
 
@@ -67,6 +68,28 @@
 </p>
 
 <h5>Lokibot</h5>
+<p>
+  Lokibot is another trojan which is transmitted much like the Emotet malspam examples above. They are sent disguised as personal communications, with a general request to view a document. Lokibot is an old-school contender but making headlines once again due to newer obfuscated versions of the program. Steganography is even being used in a <a href="https://www.bleepingcomputer.com/news/security/lokibot-uses-image-files-to-hide-code-for-unpacking-routine/" target="_target">recent variant</a>, putting in the code necessary for unpacking the program into an image. It's proving difficult to detect with these advanced methods of transmission, which is what makes understanding the email as a vector even more important.
+</p>
+
+<p>
+  These emails are sent for a variety of "reasons," mostly consisting of requests for quotations, purchase orders, or to look over the attached files. The author presents themselves as someone who already has a working relationship with the client or someone who is looking to gain business with them. The lokibot phishing emails tend to establish ethos through the use of company logos, official titles, and following the general conventions of business communications. In that regard, authority is displayed through the use of company logos, corporate jargon, dnd titles that would befit someone who'd be contacting an organization fo their specific requests, such "Global Sourcing Specialist. <a href="./corpus#lokibot_3">[source]</a>"
+</p>
+
+
+<p>
+  The intent is apparent in the majority of these emails, with the author directing the victim to view an attachment or send information to the author in <a href="./corpus#lokibot_4">response to a document</a> that's been attached. Generally, the real intention of the email is masked through the use of industry-specific terms or somewhat formal requests for product information, but many of these fail to do this properly. For instance, one <a href="./corupus#lokibot_2">example</a> states: "Please findattachedproforma for your acknowledgement and kindly send thefinal PI in order to proceed with the request foradvance payment." This statement is riddled with typos, and is even addressed to "Dearsir/madam," both of which are a dead giveaway that someone who is appearing to conduct sales is not who they seem to be. These emails are hoping that the lack of proper grammar is misconstrued as a language barrier because the majority of these emails appear to originate from outside of the potential victim's country of origin. Other attempts to mask that it's a phishing email include statements such as <a href="./corpus#lokibot_1">thank you very much for your time during the Fair</a>," implying that there was a previous interaction with the individual.
+</p>
+
+<p>
+  The audience of these emails appears to be someone who is in charge of making purchasing or work contracts. Frequently, you see the use of the PI abbreviation, which generally means "purchase invoice." In the context of these types of emails, I assume that's what the author was intending to mean when requesting PI from a potential victim. The use of "in" language in these emails implies that the victim and phisher have a shared sense of identity - they are both business people, conducting business, with the hope that both will profit from the venture. While the emails don't explicitly state that they are requesting another audience, it could be inferred that they would be forwarded to an appropriate person if needed.
+</p>
+
+
+<p>
+  The rhetorical appeals present in these emails tend to be ethos and logos - there are generally no emotional appeals in business communications unless it is a proposal (but even then, not often.) Ethos is present primarily in how the authors present themselves and the company they're "representing." Some go quite far and have an entire footer in an email talking about their company. Some have copyright notices, while others have mentioned "going green" by not printing the email. All of these are not uncommon, and I've observed similar email footers from legitimate senders. It's a great way to make it seem like the email is from a "real" person as opposed to a phishing scam. Logos is present through the use of contact information for the "real" person, including phone numbers, addresses, and websites. Also, the use of specific invoice numbers and product SKUs is a fantastic example of the phisher using logos to make it seem like what is communicated is truthful, and not an attempt to deposit a virus payload onto someone's computer.
+</p>
+
 
 <h5>Hancitor</h5>
 <p>
@@ -74,5 +97,8 @@
 </p>
 
 <h5>Conclusion</h5>
+<p>
+  Overall, I would say that the malspam emails have appeared to be the second most effective so far next to clonephishing. What makes these types of emails work so well is that they not only prey on busy, overworked employees, but do so in a way that isn't exactly unusual for business communications. By requesting a quote on products, or offering an invoice, it's creating a situation that would usually exist but doesn't - mimicking a standard, everyday routine that probably wouldn't be noticed unless you were paying attention. Realistically, no one is on guard 100% of the time, which is why it's so important to understand what makes these work language-wise to prevent future attacks.
+</p>
 
 <p><center><h4><a href="#top">&#9954; beam me up, scotty_ &#9954;</h4></center></p>

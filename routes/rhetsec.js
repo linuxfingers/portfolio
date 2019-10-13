@@ -180,18 +180,9 @@ router.get('/phase1/SAT/', function(req,res,next) {
 	}
 });
 
-router.get('/phase1/SAT/inspired', function(req,res,next) {
+router.get('/phase1/SAT/analysis', function(req,res,next) {
 	if (req.user){
-		res.render('rhetsec/phase1/SAT/inspired', {user: req.user, title: 'visitor@linuxfingers:~/rhetsec/phase1/SAT/inspired_eLearning$'});
-	}
-	else{
-		res.redirect('signin');
-	}
-});
-
-router.get('/phase1/SAT/knowbe4', function(req,res,next) {
-	if (req.user){
-		res.render('rhetsec/phase1/SAT/knowbe4', {user: req.user, title: 'visitor@linuxfingers:~/rhetsec/phase1/SAT/knowbe4$'});
+		res.render('rhetsec/phase1/SAT/analysis', {user: req.user, title: 'visitor@linuxfingers:~/rhetsec/phase1/SAT/knowbe4$'});
 	}
 	else{
 		res.redirect('signin');
@@ -207,18 +198,9 @@ router.get('/phase1/SAT/parts', function(req,res,next) {
 	}
 });
 
-router.get('/phase1/SAT/phishlabs', function(req,res,next) {
+router.get('/phase1/SAT/skb', function(req,res,next) {
 	if (req.user){
-		res.render('rhetsec/phase1/SAT/phishlabs', {user: req.user, title: 'visitor@linuxfingers:~/rhetsec/phase1/SAT/phishlabs$'});
-	}
-	else{
-		res.redirect('signin');
-	}
-});
-
-router.get('/phase1/SAT/sans', function(req,res,next) {
-	if (req.user){
-		res.render('rhetsec/phase1/SAT/sans', {user: req.user, title: 'visitor@linuxfingers:~/rhetsec/phase1/SAT/SANS$'});
+		res.render('rhetsec/phase1/SAT/skb', {user: req.user, title: 'visitor@linuxfingers:~/rhetsec/phase1/SAT/SANS&&KnowBe4$'});
 	}
 	else{
 		res.redirect('signin');
