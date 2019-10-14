@@ -1,31 +1,34 @@
-<div class="jumbotron hero-image">
-  <div class="hero-text">
-    <h2>&Lt; rhetoric + cybersecurity = &#10084; &Gt;</h2><br>
-    <h5><img src="/img/greenskull.gif" height="30px" href="#" target="_blank" onclick="randomSite();"> time to party like it's 1999 <img src="/img/greenskull.gif" height="30px" href="#" target="_blank" onclick="randomSite();"></h5>
+<div class="d-none d-lg-block">
+  <div class="row justify-content-center mb-2">
+    <h1>/home/linuxfingers/portfolio/</h1>
+  </div>
+  <div class="row justify-content-center mb-2">
+    <h5 class="eve"><img src="/img/greenskull.gif" height="30px" href="#" target="_blank" onclick="randomSite();"> 🇼🇪🇱🇨🇴🇲🇪 🇹🇴 🇲🇾 🇱🇮🇹🇹🇱🇪 🇭🇴🇲🇪 🇮🇳 🇨🇾🇧🇪🇷🇸🇵🇦🇨🇪 <img src="/img/greenskull.gif" height="30px" href="#" target="_blank" onclick="randomSite();"></h5>
+</div>
+</div>
+
+<div class="d-lg-none">
+  <div class="row justify-content-center mb-2">
+    <h4>/linuxfingers/portfolio/</h4>
+    <h6 class="eve"><img src="/img/greenskull.gif" height="30px" href="#" target="_blank" onclick="randomSite();"> 🇼🇪🇱🇨🇴🇲🇪 🇹🇴 🇲🇾 🇱🇮🇹🇹🇱🇪 🇭🇴🇲🇪 🇮🇳 🇨🇾🇧🇪🇷🇸🇵🇦🇨🇪 <img src="/img/greenskull.gif" height="30px" href="#" target="_blank" onclick="randomSite();"></p>
   </div>
 </div>
 
-<!--<img class="img-fluid centered" src="/img/UCpopup.gif" width="50%">-->
-
 <div class="p-3 justify-content-center">
-  <div class="box-black ml-3 p-2 float-right">
-    <img src="/img/holygrail.gif" class="img-fluid p-2">
+  <div class="box-black ml-3 mb-3 p-2 float-right">
+    <img src="/img/holygrail.gif" class="img-fluid p-1">
   </div>
-  <p>
-    I've thought a lot about both of these fields, and I believe a meaningful relationship exists between rhetoric and cybersecurity. It's the perfect marriage of disciplines, and I feel it should be focused on seriously if we want to promote technological literacy - not just in the workplace, but overall. I aim to push that conversation in the right direction with this project.
-  </p>
-
   <p>
     This space here is where I will house my upcoming master's portfolio project, among other bits I've worked on. I'm currently a master's candidate for a Rhetoric and Writing degree at Saint Cloud State University, and I've chosen a website portfolio over a thesis because I feel that the type of work I have been interested in [digital spaces] is more suited to a digital space than a standard thesis. I am much more open to the idea of having easily accessible knowledge and building a community, rather than hiding behind paywalls or other types of barriers. I am a huge proponent of Open Source, and feel that education should follow the same path.
   </p>
 
   <p>
-    Currently, access to portfolio content is restricted to my committee. I expect an approval for publication date near December 2019. I intend on releasing my project to the wild when I have approval. If you have questions about what I am working on, or have worked on in the past (or even just want to say hello,) please see my <a href="/about/jen">about me</a> page for contact methods.</a> I'm more than happy to talk about anything I'm working on. &#9835;
+    I've thought a lot about both rhetoric and cybersecurity, and I believe a meaningful relationship exists between them. It's the perfect marriage of disciplines, and I feel it should be focused on seriously if we want to promote technological literacy - not just in the workplace, but overall. I aim to push that conversation in the right direction with this project. Currently, access to portfolio content is restricted to my committee. I expect an approval for publication date near December 2019. I intend on releasing my project to the wild when I have approval. If you have questions about what I am working on, or have worked on in the past (or even just want to say hello,) please see my <a href="/about/jen">about me</a> page for contact methods.</a> I'm more than happy to talk about anything I'm working on. &#9835;
   </p>
 
 </div>
 
-<div class="col p-3">
+<div class="col">
 {{#if user}}
 <div class="row justify-content-center">
 
@@ -33,12 +36,17 @@
 </div>
 
 <div class="row justify-content-center">
-  <a class="btn btn-brand" href="/starthere">Start Here!</a>
+  <a class="btn-brand" href="/starthere">Start Here!</a>
 </div>
 
 {{else}}
-<p>
-  If you have access, please click "login $USER" at the top of the page to access the portfolio. Otherwise, enjoy the links at the bottom here!
-</p>
+
+<div class="d-none d-lg-block">
+  <p>If you have access, please click "login $USER" at the top of the page to access the portfolio. Otherwise, enjoy the links at the bottom here!</p>
+</div>
+
+<div class="d-lg-none">
+  <p>If you have access, please <a href="/signin">login $USER</a>. Otherwise, enjoy the links at the bottom here!</p>
+</div>
 {{/if}}
 </div>
