@@ -133,6 +133,9 @@ var visaudio = require('./routes/visaudio');
 //about
 var about = require('./routes/about');
 
+//404?
+var ope = require('./routes/ope');
+
 //main routes
 app.use('/', index);
 app.use('/uc', uc);
@@ -164,20 +167,8 @@ app.use('/about', about);
 
 //end routes
 
+app.use('/*', ope);
+
 app.listen(5000, function() {
   console.log('Testing on port 5000, sir!');
 });
-
-var errorHandler = require('express-error-handler'),
-  handler = errorHandler({
-    views: {
-      '404': '404.hbs'
-    }
-  });
-
-// After all your routes...
-// Pass a 404 into next(err)
-app.use( errorHandler.httpError(404) );
-
-// Handle all unhandled errors:
-app.use( handler );

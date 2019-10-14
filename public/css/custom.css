@@ -262,11 +262,11 @@ input:checked ~ .menu-content {
 
 /* Boxes? */
 
+
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/mobo.gif");
   height: 30%;
-  margin: 20px;
-  padding: 120px;
+	width: auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -302,7 +302,7 @@ input:checked ~ .menu-content {
   background-color: #faf9f9;
   color: #000;
   padding: 10px;
-  height: 500px;
+  height: 700;
   overflow:scroll;
 }
 
@@ -312,6 +312,7 @@ input:checked ~ .menu-content {
 
 .email-box a{
   color: blue;
+	font-family:Roboto-Regular,Helvetica,Arial,sans-serif;
 }
 
 .box-brand {
@@ -460,11 +461,11 @@ color: #009600;
 #wrapper {
   position: relative;
   float: center;
-  width: 90%;
+  width: 70%;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 3rem;
+  padding: 5rem;
   overflow: auto;
   display: inline-block;
   border-right: .05rem solid #faf9f9;

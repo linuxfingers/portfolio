@@ -8,16 +8,46 @@
     ░ <a href="./bulk">bulk</a>
     ░ <a href="#">_clone_</a>
     ░ <a href="./malspam">malspam</a>
-    ░ <a href="./pse">personal solicitation</a>
+    ░ <a href="./pse">PSE</a>
     ░ <a href="./spearphishing">spearphishing</a>
     ░ <a href="./corpus">corpus</a>
   </h5>
   </div>
 
 <div class="row justify-content-center mb-5">
-  <p><b>This is a work in progress.</b></p>
-  <p>Note for later: the clone phish was successful for podesta and powell because the bit.ly link wasn't detected by Gmail's spam filter. So even though it was a direct copy of one of their own emails with a malicious link, the spam filter had no way of telling, and let the email go through uninterrupted. The failure (or success, depending on how you look at it) was inherently due to human error.</p>
-  <p>This attack takes an email and copies it word for word, changing links to malicious sites. The sending email is generally spoofed, so it looks legitimate to the unaware. These attacks can also mimic requests to share documents through places like Google Drive, Docusign, or Dropbox, prompting users to enter login credentials, which allows the attackers to gain access to their files.</p>
+  <p><b>This is a work in progress. Last updated 13 October 2019.</b></p>
 </div>
+
+<p>
+  A clonephishing attack takes an email and copies it word for word, changing links to malicious sites. The sending email is generally spoofed, so it looks legitimate to the unaware. These attacks can also mimic requests to share documents through places like Google Drive, DocuSign, or Dropbox, prompting users to enter login credentials, which allows the attackers to gain access to their files; this seems to be the most common method of clonephishing attack I've observed so far.
+</p>
+
+<p>
+  Clonephishing is a unique type of phishing, philosophically speaking. We can see it technically as a simple copy & paste job, with sprinkles of spoofing. But if we think about it on a theoretical level, it's something much more. I've generally analyzed phishing emails using the rhetorical appeals, but this genre is a bit different. I can look at how these emails establish their ethos, but really, it's examining how a phisher mimicked a brand's chosen style of communication. I think more so that these emails are a representation of the simulacrum.   Baudrillard states that the phase order of the image is as follows (p.6 of simulacra & simulation): reflection, masking/denaturing, absence, and pure simulacrum. Reflection, which we believe to be a faithful copy of the original, a "sacramental" representation. Masking and denaturing, which covers the actual reality from us, but may hint at the obscured reality. Then absence, a representation of an original without an original. And finally, simulacrum, which is a representation without grounding within reality.  If we think about emails as an "image," then the representation of these emails as real and "correct" representations of emails from the actual company versus a perversion by a phishing attempt can be followed in the order chain above quite easily.
+</p>
+
+<p>
+  To demonstrate this, I'm going to use the Podesta email [Podesta] as an example in this analysis. While the other examples <i>do</i> fall into the same category, I don't believe they achieve the same growth in the image chain described above. If you are unfamiliar with this specific phishing email, it was responsible for one of the most significant controversies in the  2016 presidential campaign. Aside from accusations of <a href="https://www.washingtonpost.com/business/collusion-or-not-trump-said-no-and-mueller-agrees/2019/03/24/daa91d3e-4eaa-11e9-bdb7-44f948cc0605_story.html" target="_blank" rel="noopener noreferrer">collusion</a>, <a href="https://www.nytimes.com/2016/10/12/us/politics/hillary-clinton-emails-wikileaks.html" target="_blank" rel="noopener noreferrer">Russian Interference</a> (or rather, the spectacle of Russian Interference,) and <a href="https://www.theguardian.com/commentisfree/2016/oct/31/the-podesta-emails-show-who-runs-america-and-how-they-do-it" target="_blank" rel="noopener noreferrer">conversations that remove the veil that classified the Democratic elite as "common people"</a>, the compromise of Podesta's account have shown the inner workings of Hillary Clinton's presidential campaign and have impacted how the public perceives the authenticity of politicians. It's also created an even bigger specter of Russian Hackers than had existed prior. In a sense, the release of these emails started a progression of blaming Russian Hackers on everything that is incredibly reminiscent of McCarthyism.  Yes, there was a concentrated effort on US politicians and defense agencies, but knowing that they had targets in 116 countries leads me to believe it was not a matter of focused aggression, but a success in a long list of targets they were after, some of which included the Pope's Kiev representative, the punk band Pussy Riot, and numerous Russian journalists and oppositionists.  I do not deny that the breach had Russian actors, but to state that Fancy Bear (the group that's believed to be responsible for the leak) is an official arm of Russian Intelligence meant to bring down the United States is founded upon propaganda, a desire for a scapegoat, and ultimately <a href="https://www.chicagotribune.com/nation-world/ct-russian-hacking-20171102-story.html" target="_blank" rel="noopener noreferrer">a distraction in the midst of all the controversy</a> generated from the breaches themselves.
+</p>
+<div class="box-black p-2 float-left col-3 mr-3">
+  <img src="/img/emails/podestapw.png" alt="Podesta's phishing email" class="img-fluid p-2"><img class="img-fluid p-2" src="/img/emails/legitpw.png" alt="A legitimate email from Google">
+</div>
+
+<p>
+  Moving back to the email itself, we can see the clonephish was successful against Podesta for a few reasons. Technologically speaking, it succeeded because Gmail's spam filter didn't detect the bit.ly link, even though it was a direct copy of one of their emails with a malicious link. The spam filter had no way of telling and let the email go through uninterrupted. But this failure (or success, depending on how you look at it) was inherently due to human error - and what I believe to be a near-perfect representation of simulacrum.
+</p>
+<p>
+  Let's do a brief analysis of the Podesta phishing email (top) while comparing it to a legitimate email (bottom) I received on an alt account after I tried to sign in on a trip. We see that it has nearly every marker of a legitimate Gmail email, from colors to styling. The language is near identical, as well. The email states that Google is notifying them that someone used their password to try and sign in to their Google Account in Ukraine on 19 March 2017 and that the user should change their password to avoid being compromised. The "From" tag is marked as "no-reply@accounts.googlemail.com," which is <i>almost</i> what a legitimate email would come from. The main body text of the email is very similar as well, and the only difference seems to be that the phishing email states an IP address, where the official email does not provide that information. As far as the signature, the only telling difference is that the phishing email is signed off with "Best, The Gmail team," whereas the official one is signed off with, "Best, the Google Accounts Team." It's easy to see just based on these visual markers alone that this email is a phishing attempt.
+</p>
+<p>
+  <a href="https://www.linkedin.com/in/charles-michael-delavan-2968246/" target="_blank" rel="noopener noreferrer">Charles Delevan</a>, the Hillary For America help desk tech contacted regarding the phishing email, even stated, "This is a legitimate email. John needs to change his password immediately, and ensure that two-factor authentication is turned on his account." They then go on to provide a link to change the password as well. But the compromise indicates that Podesta did not, indeed, follow Delavan's advice and instead clicked on the link in the phishing email. It's at this point where the idea of the email being a simulacrum comes into play.
+</p>
+
+<p>
+  The email has become hyperreal. First, it's existence is accepted as real, and has passed the first test - a "good appearance" of a proper email from Google notifying you that your account was compromised.  Because the email is indeed a phishing attempt, it then passes the second order by "masking and denaturing" the email's intentions. That mask has become its own "sorcery," removing the profound reality, that the email is legitimate and from Google, and fulfills the third order. And finally, because it has become a simulation with no reality that matches the intent of the "good appearance," it has become simulation. Thus with the four steps fulfilled, the email itself and perhaps phishing emails, in general, have become a simulacrum in themselves.
+</p>
+<p>
+  Because the email had become a simulacrum to Delevan, there was no indication that it shouldn't have been treated as a phishing attempt. I would venture to say that this is how many of these clonephishing emails operate, especially emails that remain as close to the source material as possible.  The trouble with attempting to teach people about these types of phishing emails then is not one where we can point out typical markers such as poor grammar or an improper email header. Indeed, those things did exist in the Podesta phishing email, but the variations were so small that it is incredibly easy to look over. The focus on educating about clonephishing then relies on challenging the default setting when reviewing emails in general and perhaps adopting a sort of paranoia about every message you get. While it may sound extreme, perhaps we are a bit too trusting in giving our information out as willingly as we do.
+</p>
 
 <p><center><h4><a href="#top">&#9954; beam me up, scotty_ &#9954;</h4></center></p>

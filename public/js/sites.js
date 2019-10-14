@@ -15,7 +15,8 @@ var sites = [
               "http://www.sans.org",
               "http://www.linux.com",
               "http://www.google.com",
-              "http://www.microsoft.com"
+              "http://www.microsoft.com",
+              "https://leahneukirchen.org/blog/archive/2019/10/ken-thompson-s-unix-password.html"
             ];
 
             function randomSite() {
