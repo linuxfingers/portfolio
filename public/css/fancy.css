@@ -24,6 +24,7 @@
 }
 
 */
+span::before {content: '\A'; white-space: pre;}
 
 .modal-open[style] {
 padding-right: 0px !important;
@@ -255,12 +256,17 @@ input:checked ~ .menu-content {
 .box-black {
   border: 1px solid #afaeae;
   background-color: #000;
-  padding: 10px;
+  padding: .5rem;
 }
 
 .dashed-box {
   border: 1px dashed #009600;
-  padding: 1rem;
+  padding: .5rem;
+}
+
+.dashed-box-eve {
+  border: 1px dashed #ffa500;
+  padding: .5rem;
 }
 
 .faf-dashed-box {
@@ -271,8 +277,8 @@ input:checked ~ .menu-content {
 .email-box {
   background-color: #fff;
   color: #000;
-  padding: 10px;
-  height: 700;
+  padding: 1rem;
+  height: auto;
   overflow:scroll;
 }
 

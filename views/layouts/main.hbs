@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-<meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <meta name="description" content="portfolio">
-    <meta name="author" content="linuxfingers aka Jennifer Mead">
+    <meta name="author" content="linuxfingers (Jenny Lynn Mead)">
     <meta name="google-site-verification" content="ZPdA8lBccnjRt8shIo628YmKcxTX_-wOLXfX2vceUNs" />
 
 <title>{{{title}}}</title>
@@ -18,19 +18,24 @@
 <link rel="icon" href="/icons/favicon-192.png" sizes="192x192">
 <link rel="icon" href="/icons/favicon-228.png" sizes="228x228">
 
+<!--FontAwesome-->
 <script src="https://kit.fontawesome.com/1de139fa02.js" crossorigin="anonymous"></script>
 
-<!-- Start Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138652320-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<!--Add to home screen-->
+<link rel="stylesheet" href="css/addtohomescreen.css">
+<script src="js/addtohomescreen.js"></script>
 
-      gtag('config', 'UA-138652320-1');
-    </script>
-<!-- End Google Analytics -->
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138652320-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-138652320-1');
+</script>
+
+<!-- Stylesheets -->
 <link href="/css/bootstrap.css" rel="stylesheet">
 <link href="/css/fancy.css" rel="stylesheet">
 <link href="/css/restext.css" rel="stylesheet">
@@ -38,6 +43,7 @@
 </head>
 
 <body>
+
 
 <nav class="navbar navbar-dark navbar-expand-md bg-faded justify-content-center bighead">
   <a href="/" class="navbar-brand d-flex w-50 mr-auto pglink">visitor@linuxfingers:~$ cd ~</a>
