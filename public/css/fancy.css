@@ -52,8 +52,7 @@ a {
 	color: #afaeae;
   font-family: 'exo_2.0light', courier;
 	text-decoration: none;
-  line-height: inherit;
-  font-weight: inherit;
+
 }
 
 a:hover {
@@ -61,7 +60,9 @@ a:hover {
   text-decoration: dotted #009600 overline underline;
 }
 
-
+a:active {
+  color: #afaeae;
+}
 
 body {
   background-color: #000000;
@@ -78,8 +79,18 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #009600;
+  font-family: 'mylodonlight';
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: #ffa500;
 	/*color: #d78a9b;*/
   font-family: 'mylodonlight';
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{
+	color: #fff;
+	text-decoration: dotted #ffa500 overline underline;
 }
 
 .worktitle {
@@ -104,6 +115,7 @@ p a:hover{
 	color: #fff;
 	text-decoration: dotted #ffa500 overline underline;
 }
+
 ul, dl {
   	color:#afaeae;
   	list-style-type: none;
@@ -115,8 +127,7 @@ ul, dl {
 }
 
 .navbar-toggler {
-    width: 100%;
-    float: none;
+    float: right;
     margin: 0 auto;
     border-width:0;
     border-radius:0;
@@ -415,6 +426,20 @@ color: #009600;
   cursor: default;
 }
 
+@media (max-width: 480px) {
+  h1, .h1 {
+    font-size: 30px;
+  }
+
+  h2, .h2 {
+    font-size: 95%;
+  }
+
+  h3, .h3 {
+    font-size: 95%;
+  }
+}
+
 /** Main Content Wrapper **/
 
 #wrapper {
@@ -424,20 +449,21 @@ color: #009600;
   width: 70%;
   height: 100%;
 	margin: 0 auto;
-  padding: 5rem;
+  padding: 4.2rem;
   overflow-y: auto;
 	overflow-x: hidden;
   display: inline-block;
   border-right: .05rem solid #391F3B;
   border-left: .05rem solid #391F3B;
-  background-color: #060808;
+  /*background-color: #060808;*/
+	background: rgba(0, 0, 0, 0.9);
   color: #afaeae;
 }
 
 @media only screen and (max-width: 1024px) {
   #wrapper {
     width: 100%;
-		padding: 2rem;
+		padding: 1rem;
   }
 }
 
