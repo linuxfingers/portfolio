@@ -14,7 +14,7 @@ $(document).ready(function() {
         }
         else {
             $('.valid').css('display', 'block');
-            window.location = "http://www.linuxfingers.com/training/phished"; 
+            window.location = "http://www.linuxfingers.com/rhetsec/phase2/training/phished"; 
         }
     });
 });

@@ -1,3 +1,21 @@
+#trainwrap {
+  position: relative;
+	text-align: justify;
+	word-spacing: -1px;
+  height: 100%;
+	margin: 0 auto;
+  padding: 4.2rem;
+  overflow-y: auto;
+	overflow-x: hidden;
+  display: inline-block;
+}
+
+
+/*Header & Footer */
+
+
+/* Quiz Stuff */
+
 .quiz-container {
     padding: 1em;
     max-width: 100%;

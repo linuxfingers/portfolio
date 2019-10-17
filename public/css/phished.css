@@ -3,7 +3,7 @@
 .masthead {
   height: 100vh;
   min-height: 500px;
-  background-image: url('/public/img/trees.jpg');
+  background-image: url('/img/trees.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -28,6 +28,17 @@
 
 
 /* ========= Main Bits of Pretty ========= */
+
+#trainwrap {
+  position: relative;
+	text-align: justify;
+	word-spacing: -1px;
+  margin: 0 auto;
+  height: 100vh;
+  padding: 4.2rem;
+  display: inline-block;
+}
+
 
 @font-face {
     font-family: 'sourcesanspro';

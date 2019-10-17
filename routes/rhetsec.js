@@ -229,7 +229,7 @@ router.get('/phase2/training/', function(req,res,next) {
 
 router.get('/phase2/training/phished', function(req,res,next) {
 	if (req.user){
-		res.render('rhetsec/phase2/training/phished', {user: req.user, title: 'visitor@linuxfingers:~/rhetsec/phase2/training/phished$'});
+		res.render('rhetsec/phase2/training/phished', {user: req.user, layout: 'training', title: 'visitor@linuxfingers:~/rhetsec/phase2/training/phished$'});
 	}
 	else{
 		res.redirect('signin');
@@ -238,7 +238,7 @@ router.get('/phase2/training/phished', function(req,res,next) {
 
 router.get('/phase2/training/elogin', function(req,res,next) {
 	if (req.user){
-		res.render('rhetsec/phase2/training/elogin', {user: req.user, layout: 'false'});
+		res.render('rhetsec/phase2/training/elogin', {user: req.user, layout: 'training'});
 	}
 	else{
 		res.redirect('signin');

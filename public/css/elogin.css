@@ -1,3 +1,15 @@
+#trainwrap {
+  position: relative;
+	text-align: justify;
+	word-spacing: -1px;
+  height: 100%;
+	margin: 0 auto;
+  padding: 4.2rem;
+  overflow-y: auto;
+	overflow-x: hidden;
+  display: inline-block;
+}
+
 /* Design based on Blue Login Field of Kevin Sleger https://codepen.io/MurmeltierS/pen/macKb */
 .form {
   position: absolute;
