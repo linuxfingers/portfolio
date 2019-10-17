@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/digispace', function(req, res, next) {
-		res.render('writing/mpca', {user: req.user, title: 'visitor@linuxfingers:~/digital_spaces$'});
+		res.render('writing/digispace', {user: req.user, title: 'visitor@linuxfingers:~/digital_spaces$'});
 });
 
 router.get('/gonzo', function(req, res, next) {
