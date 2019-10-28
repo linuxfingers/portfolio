@@ -1,10 +1,93 @@
 # Portfolio Rewrite
 Version 2.0
 
-Major revision, six weeks left. Removing client and academic focus, working on public-facing porfolio and writing for my audience. Twice weekly check-ins with advisor.
+Major revision, six weeks left. Removing client and academic focus, working on public-facing portfolio and writing for my audience. Twice weekly check-ins with advisor.
 
 # General Housekeeping
 You've got some things to work on, don't you Jen?
+
+# From Sharon:
+
+## REVISION is first and foremost with the conversation
+Feeling existential dread during the revision process is normal, and she'd like to talk about it
+
+- A lot of stuff seemed like it was leading up to what I was doing as opposed to what I had done
+- So where's the project, then?
+
+Who is my audience?
+- Seems like I'm talking to clients? But unsure
+- Audience is too general? The "you" feels like I'm not getting to the point.
+- Make my audience intentional. 
+	- Lack of clarity and audience is causing the problem.
+		- Find out who I'm talking to, and then the direction will help find itself
+		- The 'cup holder' area at the thing 
+	- Pass through the writing looking for audience - who is my audience?
+		- Reframe the writings to be
+- Write about my audience
+	- Talk about the things I've thought about and who I'm writing for?
+
+"There is" is not a good phrase - doesn't have meaning, so rewrite so the sentences have meaning. 
+
+Cut the "their is" and try to reassemble sentences to make it better.
+
+Primary Audience: The committee
+Secondary Audience: Clients and/or other researchers?
+
+Justified text is probably not good
+
+The way I use "you" is offensive? idk
+
+"hold your hand" feels disrespectful - this is an othering statement
+
+## The Method
+- Write the thing that goes to the public
+	- Because it will mean more than just 
+
+## Read some of what I wrote out loud to hear how I "sound"
+How to figure out what I'm stuck on and how to revise by reading it outloud.
+
+
+## Imposter Syndrome
+Don't worry about it lol
+
+## What *actually* needs to get written, because I might have enough
+
+## I'm not constructing myself as the enemy, and that's good.
+
+## Focus of Scale?
+-Thesis instead of portfolio?
+
+## Public-facing portfolio
+Audience: someone who knows enough who'd be looking for that information, and to be a seat at the table versus an adversary
+
+Someone's looked up phishing, interested in phishing
+
+Educational website - audience is the user who's looking for this information
+
+Define for this porject, who my audience is, and define it.
+
+A person who has googled phishing emails
+
+## Anxiety and Writing
+if I can remember the undermining of intelligence, efficacy, etc. 
+
+## Wednesday
+Is there anything getting in the way of the "what's going to happen next" conversation that Sunday?
+
+# Audience
+
+Project has an audience split:
+- Someone who is looking for information on phishing emails
+- Someone who wants information on security awareness training
+
+But someone who wants phishing emails *and* security awareness training is who?
+- The cybersecurity researcher?
+
+Red & Blue Team look at the same data from different vantage points -> cybersecurity researcher -> anyone who *needs* information on it -> Hackers. 
+
+My audience is hackers.
+
+**My audience are hackers and researchers interested in phishing and security from a perspective that isn't corporately biased.**
 
 ## Audience
 My audience is someone who is both interested in phishing emails and security awareness training. They could be a researcher, a professional, or a hobbyist...but what it boils down to is "hacker."  My audience is hackers interested in a non-corporate take on security. 
