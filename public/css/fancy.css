@@ -9,7 +9,7 @@
 =============================================
 = light shade:          c2b280 - cream      =
 = light accent:         d78a9b - pink       =
-= main brand:           009600 - term green =
+= main brand:           004200 - term green =
 = dark accent:          391F3B - purple     =
 = dark shade:           000000 - black      =
 =============================================
@@ -50,15 +50,15 @@ html {
 }
 
 a {
-	color: #c2b280;
-  font-family: 'exo_2.0light', courier;
+	color: #004200;
+  font-family: 'courierprime', courier;
 	text-decoration: none;
 
 }
 
 a:hover {
-  color: #FFA500;
-  text-decoration: dotted #009600 overline underline;
+  color: #004200;
+  text-decoration: dotted #004200 overline underline;
 }
 
 a:active {
@@ -66,8 +66,8 @@ a:active {
 }
 
 body {
-  background-color: #000000;
-  background-image: url("/img/mobo.gif");
+  background-color: #c2b280;
+  background-image: url("/img/background.gif");
   background-repeat: cover;
   background-attachment: fixed;
 	margin:0;
@@ -75,23 +75,23 @@ body {
 	height: 100%;
 	display: flex;
   flex-direction: column;
-  color: #c2b280;
+  color: #000;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #009600;
-  font-family: 'mylodonlight';
+  color: #004200;
+  font-family: 'courierprimecode';
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-  color: #ffa500;
+  color: #004200;
 	/*color: #d78a9b;*/
-  font-family: 'mylodonlight';
+  font-family: 'courierprimecode';
 }
 
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{
 	color: #fff;
-	text-decoration: dotted #ffa500 overline underline;
+	text-decoration: dotted #004200 overline underline;
 }
 
 .worktitle {
@@ -100,26 +100,26 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{
 
 ol.light{
   color:#c2b280;
-  font-family: 'exo_2.0regular', Arial, sans-serif;
+  font-family: 'courierprime', courier;
 }
 
 p {
-  color: #c2b280;
+  color: #000;
   font-family: 'courierprime';
 }
 
 p a {
-	color: #ffa500;
+	color: #004200;
 }
 
 p a:hover{
 	color: #fff;
-	text-decoration: dotted #ffa500 overline underline;
+	text-decoration: dotted #004200 overline underline;
 }
 
 ul, dl {
-  	color:#c2b280;
   	list-style-type: none;
+		font-family: 'courierprime';
 }
 
 .biblio {
@@ -144,10 +144,6 @@ ul, dl {
     }
 }
 
-.eve {
-	color: #FFA500;
-}
-
 //*** Footnotes ***//
 
 body {
@@ -162,7 +158,7 @@ span.footnote:before {
 }
 
 span.footnote {
-    color: #009600;
+    color: #004200;
 }
 
 /** Collapsible Menu CSS **/
@@ -171,14 +167,14 @@ span.footnote {
     max-height: 0;
     overflow: auto;
     text-align: center;
-    font-family: 'exo_2.0light';
+    font-family: 'courierprimecode';
     padding: 0 0 0 50px;
 }
 .collapsible-menu {
     background: inherit;
     color: #c2b280;
     font-weight: inherit;
-    font-family: 'exo_2.0light';
+    font-family: 'courierprimecode';
     width: 100%;
     z-index: 1;
     white-space: nowrap;
@@ -220,26 +216,15 @@ input:checked ~ .menu-content {
     transform: translate(-50%, -50%);
 }
 
-.courier{
-  font-family: 'courierprimecode', courier;
-}
-
 .darken {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
-.white {
-  color: #c2b280;
-  font-family: inherit;
-  font-weight: lighter;
-}
-
 .term {
-  color: #009600;
+  color: #004200;
   background-color: #000;
   padding: 2rem;
-  border: 1px solid #009600;
-  font-family: 'exo_2.0light';
+  border: 1px solid #004200;
+  font-family: 'courierprimecode';
 }
 
 /* Card Edits */
@@ -253,25 +238,9 @@ input:checked ~ .menu-content {
 
 /* Boxes? */
 
-.box-black {
-  border: 1px solid #c2b280;
-  background-color: #000;
-  padding: .5rem;
-}
-
 .dashed-box {
-  border: 1px dashed #009600;
+  border: 1px dashed #004200;
   padding: .5rem;
-}
-
-.dashed-box-eve {
-  border: 1px dashed #ffa500;
-  padding: .5rem;
-}
-
-.faf-dashed-box {
-  border: 1px dashed #c2b280;
-  padding: 1rem;
 }
 
 .email-box {
@@ -293,7 +262,7 @@ input:checked ~ .menu-content {
 
 .box-brand {
   border: 1px solid #c2b280;
-  background-color: #009600;
+  background-color: #004200;
 }
 
 /* Custom Button */
@@ -337,22 +306,22 @@ input:checked ~ .menu-content {
 }
 
 .btn-brand:hover {
-  color: #009600;
+  color: #004200;
   text-decoration: none;
-	border: 1px solid #FFA500;
+	border: 1px solid #004200;
 }
 
 .btn-brand:focus, .btn.focus {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
   background-color: #c2b280;
-  color: #009600;
+  color: #004200;
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #000;
-  background-color: #009600;
+  background-color: #004200;
 }
 
 .btn-brand.disabled, .btn:disabled {
@@ -366,7 +335,7 @@ fieldset:disabled a.btn {
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus{
 background-color: #000000;
-color: #009600;
+color: #004200;
 }
 
 /** Scroll button **/
@@ -381,22 +350,35 @@ color: #009600;
 }
 .scroll-top i {
   display: inline-block;
-  color: #009600;
+  color: #004200;
+}
+
+/* Header and Footer */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
 }
 
 
-/* Header and Footer */
-
 .bighead {
-  background-color: #000000;
+  background-color: rgba(0,42,0,0.42);
+	height: 10%;
 	color: #c2b280;
-  border-bottom: .05rem solid #391F3B;
 }
 
 .bigfoot {
-  background-color: #000000;
-  color: #c2b280;
-  border-top: .05rem solid #391F3B;
+	background-color: rgba(0,42,0,0.42);
+	height: 10%;
+	color: #c2b280;
 }
 
 .navbar-hover a:hover {
@@ -416,13 +398,13 @@ color: #009600;
 }
 
 .pglink:hover, pglink:focus {
-  color: #009600;
-  text-decoration: dotted #FFA500 overline underline;
+  color: #ff;
+  text-decoration: dotted #004200 overline underline;
 }
 
 .pglink:active{
-  color: #009600;
-  text-decoration: dotted #009600 overline underline;
+  color: #004200;
+  text-decoration: dotted #004200 overline underline;
 }
 .pglink.disabled {
   color: #6c757d;
@@ -446,24 +428,31 @@ color: #009600;
   }
 }
 
+.image{
+    position:relative;
+    overflow:hidden;
+    padding-bottom:100%;
+}
+.image img{
+    position:absolute;
+}
+
+
 /** Main Content Wrapper **/
 
 #wrapper {
   position: relative;
-	text-align: justify;
 	word-spacing: -1px;
-  width: 70%;
+  width: 77%;
   height: 100%;
 	margin: 0 auto;
   padding: 4.2rem;
   overflow-y: auto;
 	overflow-x: hidden;
   display: inline-block;
-  /*border-right: .05rem solid #391F3B;
-  border-left: .05rem solid #391F3B;*/
-  /*background-color: #060808;*/
-	background: rgba(0, 0, 0, 0.9);
-  color: #c2b280;
+	/*background: rgba(194, 178, 128, 0.77);*/
+	background-image: linear-gradient(to bottom, rgba(194, 178, 128, 0.8) 90%, rgba(255,0,0,0));
+  color: #000;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -488,7 +477,7 @@ color: #009600;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #391F3B;
+  background-color: rgb(0,42,0,0.8);
   outline: 1px solid #c2b280;
 }
 
@@ -511,7 +500,7 @@ a.win{
 .bottomright {
   position: absolute;
   bottom: 1.5rem;
-  right: 3.5rem;
+  right: 1.5em;
   font-size: 16px;
 }
 
@@ -567,13 +556,13 @@ a.win{
 /*** Dropdown Stuff***/
 
 .dd-black {
-	background: rgba(0, 0, 0, 0.75);
+	background: rgba(0, 0, 0, 0.9);
   color: #c2b280;
   width: auto;
   z-index: 100;
   white-space: nowrap;
   border-radius: 3px !important;
-	border-left-color: #FFA500;
+	border-left-color: #004200;
 }
 
 .dd-black a {
@@ -582,7 +571,7 @@ a.win{
 
 .dd-black a:hover {
   color: #000;
-	background-color: #ffa500;
+	background-color: #004200;
 }
 
 
@@ -610,7 +599,7 @@ a.win{
     white-space: nowrap;
     font-size: 30px;
     font-weight: 700;
-    border-right: 4px solid #FFA500;
+    border-right: 4px solid #004200;
     box-sizing: border-box;
 }
 
@@ -646,108 +635,6 @@ a.win{
 
 /*** FONTS ***/
 
-@font-face {
-    font-family: 'mylodonlight';
-    src: url('/fonts/mylodon-light-webfont.woff2') format('woff2'),
-         url('/fonts/mylodon-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'voyager_grotesqueregular';
-    src: url('/fonts/voyager_grotesqueregular-webfont.woff2') format('woff2'),
-         url('/fonts/voyager_grotesqueregular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'exo_2.0extra_light';
-    src: url('/fonts/exo2.0-extralight-webfont.woff2') format('woff2'),
-         url('/fonts/exo2.0-extralight-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'exo_2.0light';
-    src: url('/fonts/exo2.0-light-webfont.woff2') format('woff2'),
-         url('/fonts/exo2.0-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'exo_2.0regular';
-    src: url('/fonts/exo2.0-regular-webfont.woff2') format('woff2'),
-         url('/fonts/exo2.0-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'exo_2.0semi_bold';
-    src: url('/fonts/exo2.0-semibold-webfont.woff2') format('woff2'),
-         url('/fonts/exo2.0-semibold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'exo_2.0thin';
-    src: url('/fonts/exo2.0-thin-webfont.woff2') format('woff2'),
-         url('/fonts/exo2.0-thin-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'elemental_endregular';
-    src: url('/fonts/elemental_end-webfont.woff2') format('woff2'),
-         url('/fonts/elemental_end-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'lady_ice_-_lightregular';
-    src: url('/fonts/ladyil__-webfont.woff2') format('woff2'),
-         url('/fonts/ladyil__-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'lady_ice_revisitedregular';
-    src: url('/fonts/ladyir__-webfont.woff2') format('woff2'),
-         url('/fonts/ladyir__-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'nidus';
-    src: url('/fonts/nidsans-webfont.eot');
-    src: url('/fonts/nidsans-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/nidsans-webfont.woff2') format('woff2'),
-         url('/fonts/nidsans-webfont.woff') format('woff'),
-         url('/fonts/nidsans-webfont.ttf') format('truetype'),
-         url('/fonts/nidsans-webfont.svg#nidus_sansregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 @font-face {
     font-family: 'sourcesanspro';
@@ -778,14 +665,6 @@ a.win{
     font-family: 'courierprime';
     src: url('/fonts/courier_prime-webfont.woff2') format('woff2'),
          url('/fonts/courier_prime-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'notomono';
-    src: url('/fonts/notomono-regular-webfont.woff2') format('woff2'),
-         url('/fonts/notomono-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }

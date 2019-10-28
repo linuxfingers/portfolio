@@ -11,7 +11,7 @@ exports.localReg = function (username, password) {
   var deferred = Q.defer();
 
   MongoClient.connect(mongodbUrl, function (err, db) {
-    var approved_emails = ["g3n2@strch33z.ws","tre3man@gmail.com","scogdill@stcloudstate.edu","jmkilborn@stcloudstate.edu","jpmadden@stcloudstate.edu"];
+    var approved_emails = ["linuxfingers@gmail.com","g3n2@strch33z.ws","tre3man@gmail.com","scogdill@stcloudstate.edu","jmkilborn@stcloudstate.edu","jpmadden@stcloudstate.edu"];
     var approved = approved_emails.includes(username);
 
     if(!approved) {
