@@ -121,17 +121,14 @@ var local_reg = require('./routes/local_reg');
 var login = require('./routes/login');
 var logout = require('./routes/logout');
 
-//rhetsec
-var rhetsec = require('./routes/rhetsec');
+//MA stuff
+var init = require('./routes/init');
+var phishing = require('./routes/phishing');
+var security = require('./routes/security');
 
-//writing
-var writing = require('./routes/writing');
-
-//visaudio
+//non-MA stuff
 var visaudio = require('./routes/visaudio');
-
-//about
-var about = require('./routes/about');
+var writing = require('./routes/writing');
 
 //404?
 var ope = require('./routes/ope');
@@ -152,18 +149,14 @@ app.use('/login', login);
 //logs user out of site, deleting them from the session, and returns to homepage
 app.use('/logout', logout);
 
-//rhetsec route
-app.use('/rhetsec', rhetsec);
+//MA stuff
+app.use('/init', init);
+app.use('/phishing', phishing);
+app.use('/security/', security)
 
-
-//writing
-app.use('/writing', writing);
-
-//visaudio
+//non-MA stuff
 app.use('/visaudio', visaudio);
-
-//display the about page
-app.use('/about', about);
+app.use('/writing', writing);
 
 //end routes
 
