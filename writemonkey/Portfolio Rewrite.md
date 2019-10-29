@@ -17,16 +17,16 @@ Feeling existential dread during the revision process is normal, and she'd like 
 Who is my audience?
 - Seems like I'm talking to clients? But unsure
 - Audience is too general? The "you" feels like I'm not getting to the point.
-- Make my audience intentional. 
+- Make my audience intentional.
 	- Lack of clarity and audience is causing the problem.
 		- Find out who I'm talking to, and then the direction will help find itself
-		- The 'cup holder' area at the thing 
+		- The 'cup holder' area at the thing
 	- Pass through the writing looking for audience - who is my audience?
 		- Reframe the writings to be
 - Write about my audience
 	- Talk about the things I've thought about and who I'm writing for?
 
-"There is" is not a good phrase - doesn't have meaning, so rewrite so the sentences have meaning. 
+"There is" is not a good phrase - doesn't have meaning, so rewrite so the sentences have meaning.
 
 Cut the "their is" and try to reassemble sentences to make it better.
 
@@ -41,7 +41,7 @@ The way I use "you" is offensive? idk
 
 ## The Method
 - Write the thing that goes to the public
-	- Because it will mean more than just 
+	- Because it will mean more than just
 
 ## Read some of what I wrote out loud to hear how I "sound"
 How to figure out what I'm stuck on and how to revise by reading it outloud.
@@ -69,7 +69,7 @@ Define for this porject, who my audience is, and define it.
 A person who has googled phishing emails
 
 ## Anxiety and Writing
-if I can remember the undermining of intelligence, efficacy, etc. 
+if I can remember the undermining of intelligence, efficacy, etc.
 
 ## Wednesday
 Is there anything getting in the way of the "what's going to happen next" conversation that Sunday?
@@ -83,14 +83,14 @@ Project has an audience split:
 But someone who wants phishing emails *and* security awareness training is who?
 - The cybersecurity researcher?
 
-Red & Blue Team look at the same data from different vantage points -> cybersecurity researcher -> anyone who *needs* information on it -> Hackers. 
+Red & Blue Team look at the same data from different vantage points -> cybersecurity researcher -> anyone who *needs* information on it -> Hackers.
 
 My audience is hackers.
 
 **My audience are hackers and researchers interested in phishing and security from a perspective that isn't corporately biased.**
 
 ## Audience
-My audience is someone who is both interested in phishing emails and security awareness training. They could be a researcher, a professional, or a hobbyist...but what it boils down to is "hacker."  My audience is hackers interested in a non-corporate take on security. 
+My audience is someone who is both interested in phishing emails and security awareness training. They could be a researcher, a professional, or a hobbyist...but what it boils down to is "hacker."  My audience is hackers interested in a non-corporate take on security.
 Should reframe the whole business thing in this, then, I think. Maybe get rid of it for now since we're still up and coming.
 
 ## Aesthetic Fixes
@@ -104,7 +104,7 @@ Font ideas:
 1. Courier Prime
 
 Color theme ideas:
--Dark/black bg with 
+-Dark/black bg with
 
 greens:
 - 42C01C
@@ -112,7 +112,7 @@ greens:
 ## Remove
 
 1. Phase designations - I need to come up with a better way of organizing thoughts. Nodes has come to mind a bit.
-2. Creative works, maybe. 
+2. Creative works, maybe.
 3. Providentia Security?
 
 ## Add

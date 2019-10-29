@@ -10,7 +10,7 @@ router.get('/', function(req,res,next) {
 	}
 });
 
-router.get('/init/bibliography', function(req,res,next) {
+router.get('/bibliography', function(req,res,next) {
 	if (req.user){
 		res.render('init/bibliography', {user: req.user, title: 'visitor@linuxfingers:~/init/bibliography$'});
 	}

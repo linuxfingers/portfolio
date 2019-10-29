@@ -10,16 +10,16 @@ router.get('/', function(req,res,next) {
 	}
 });
 
-router.get('/security/SAT/analysis', function(req,res,next) {
+router.get('/SAT/analysis', function(req,res,next) {
 	if (req.user){
-		res.render('security/analysis', {user: req.user, title: 'visitor@linuxfingers:~/security/analysis$'});
+		res.render('security/SAT/analysis', {user: req.user, title: 'visitor@linuxfingers:~/security/analysis$'});
 	}
 	else{
 		res.redirect('signin');
 	}
 });
 
-router.get('/security/SAT/parts', function(req,res,next) {
+router.get('/SAT/parts', function(req,res,next) {
 	if (req.user){
 		res.render('security/SAT/parts', {user: req.user, title: 'visitor@linuxfingers:~/security/parts_of_SAT$'});
 	}
@@ -28,7 +28,7 @@ router.get('/security/SAT/parts', function(req,res,next) {
 	}
 });
 
-router.get('/security/SAT/skb', function(req,res,next) {
+router.get('/SAT/skb', function(req,res,next) {
 	if (req.user){
 		res.render('security/SAT/skb', {user: req.user, title: 'visitor@linuxfingers:~/security/SANS&&KnowBe4$'});
 	}
