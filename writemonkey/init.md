@@ -1,36 +1,16 @@
 # init
-Phase 0 consists of discussion of technical setup and website design choices. 
-## Website Creation
-dsff
-### Web Server
-dsfsdf
-#### NGINX
-dfssdfsd
-#### Linode
 
-### Languages and Frameworks
+# landing page
 
-### Why DIY
+# what is this project
 
-### The Aesthetics
+# Who is this project for? (audience)
 
-#### Why the shitty aesthetic, anyway?
+# why is this project important to me and to you
 
-## FOSS and You
+# about jen
 
-### The Four Fundamental Freedoms
+# jen's cv
 
-0. Freedom to run the program, for any purpose;
-1. Freedom to study how the program works, and adapt it to your needs;
-2. Freedom to redistribute copies so you can help others; and
-3. Freedom to improve the program, and release your improvements to the public.
+# sitemap
 
-Source: http://www.gnu.org/philosophy/free-sw.html
-
-## What is "The Project"?
-
-See "The Project"
-
-## Why It's Important
-
-See "Rationale"

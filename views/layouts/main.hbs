@@ -42,10 +42,14 @@
 
 </head>
 
-<body>
 
 
-<nav class="navbar navbar-dark navbar-expand-md bg-faded justify-content-center bighead">
+
+
+
+<body class="site">
+
+<nav class="navbar navbar-dark navbar-expand-lg bg-faded justify-content-center greenhead fixed-top">
   <a href="/" class="navbar-brand d-flex w-50 mr-auto pglink" style="color:#c2b280; font-weight:bold;">visitor@linuxfingers:~$ cd ~</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
       <i class="fas fa-sitemap" style="color:#c2b280"></i>
@@ -58,9 +62,9 @@
                     <a class="pglink dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">/init</a>
                     <div class="dropdown-menu dd-black" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="/init/">./the_project</a>
-                      <a class="dropdown-item" href="/init/rationale">./rationale</a>
-                      <a class="dropdown-item" href="/init/limitations">./limitations</a>
-                      <a class="dropdown-item" href="/init/assessment">./self-assessment</a>
+                      <a class="dropdown-item" href="/init/audience">./audience</a>
+                      <a class="dropdown-item" href="/init/why">./why</a>
+                      <a class="dropdown-item" href="/init/bibliography">./bibliography</a>
                       <a class="dropdown-item" href="/init/jen">./about_jen</a>
                       <a class="dropdown-item" href="/init/cv">./jen_CV</a>
                       <a class="dropdown-item" href="/init/provsec">./providentia security</a>
@@ -68,10 +72,9 @@
                 <li class="nav-item dropdown">
                     <a class="pglink dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">/phishing</a>
                     <div class="dropdown-menu dd-black" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/init/">./about</a>
-                        <a class="dropdown-item" href="/init/bibliography">./bibliography</a>
+                        <a class="dropdown-item" href="/phishing/">./about</a>
                       <hr>
-                        <a class="dropdown-item" href="#">&Vert; /phishing email analysis/</a>
+                        <a class="dropdown-item" href="#">&Vert; /the_analyses/</a>
                         <a class="dropdown-item" href="/phishing/analysis/" style="margin-left: 20px">./about</a>
                         <a class="dropdown-item" href="/phishing/analysis/bulk" style="margin-left: 20px">./bulk phishing</a>
                         <a class="dropdown-item" href="/phishing/analysis/clonephishing" style="margin-left: 20px">./clonephishing</a>
@@ -144,40 +147,54 @@
       </div>
   </nav>
 
-<div id="wrapper">
+<main class="site-content">
 
-<a name="top"></a>
+  <div id="wrapper">
 
-{{#if error}}
-<div class="alert alert-warning alert-dismissible fade show" role="alert">
-  <strong>Whoops!</strong> {{error}}
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-{{/if}}
+    <a name="top"></a>
 
-{{#if success}}
-<div class="alert alert-success alert-dismissible fade show" role="alert">
-  <strong>Yay!</strong> {{success}}
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-{{/if}}
 
-{{#if notice}}
-<div class="alert alert-info alert-dismissible fade show" role="alert">
-  <strong>Oh!</strong> {{notice}}
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-{{/if}}
+  {{#if error}}
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Whoops!</strong> {{error}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  {{/if}}
 
-    {{{body}}}
+  {{#if success}}
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Yay!</strong> {{success}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  {{/if}}
 
-</div>
+  {{#if notice}}
+  <div class="alert alert-info alert-dismissible fade show" role="alert">
+    <strong>Oh!</strong> {{notice}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  {{/if}}
+
+
+      {{{body}}}
+
+
+  </div>
+
+</main>
+  <footer class="bigfoot">
+    <div class="row">
+      <div class="col p-3">
+        copyright | sitemap | contact
+      </div>
+    </footer>
+
 
 <!--Activate Windows-->
 <div id="overlay" data-backdrop="static" class="bottomright">
@@ -185,6 +202,7 @@
     <a class="# win" onclick="document.getElementById('sound1').play();">
       <font class="kern">Activate Windows</font><br>Go to Settings to activate Windows.</a>
   </div>
+
 
 
 

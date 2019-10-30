@@ -3,10 +3,19 @@ var router = express.Router();
 
 router.get('/', function(req,res,next) {
 	if (req.user){
-		res.render('init/index', {user: req.user, title: 'visitor@linuxfingers:~/init$'});
+		res.render('init/theproject', {user: req.user, title: 'visitor@linuxfingers:~/init$'});
 	}
 	else{
-		res.redirect('signin');
+		res.redirect('/signin');
+	}
+});
+
+router.get('/audience', function(req,res,next) {
+	if (req.user){
+		res.render('init/audience', {user: req.user, title: 'visitor@linuxfingers:~/init/rationale$'});
+	}
+	else{
+		res.redirect('/signin');
 	}
 });
 
@@ -15,52 +24,29 @@ router.get('/bibliography', function(req,res,next) {
 		res.render('init/bibliography', {user: req.user, title: 'visitor@linuxfingers:~/init/bibliography$'});
 	}
 	else{
-		res.redirect('signin');
+		res.redirect('/signin');
 	}
+});
+
+router.get('/cv', function(req, res, next) {
+	res.render('init/cv', {user: req.user, title: 'visitor@linuxfingers:~/init/cv$'});
 });
 
 router.get('/jen', function(req, res, next) {
 	res.render('init/jen', {user: req.user, title: 'visitor@linuxfingers:~/init/jen$'});
 });
 
-
-router.get('/cv', function(req, res, next) {
-		res.render('init/cv', {user: req.user, title: 'visitor@linuxfingers:~/init/cv$'});
-});
-
-router.get('/limitations', function(req,res,next) {
-	if (req.user){
-		res.render('init/limitations', {user: req.user, title: 'visitor@linuxfingers:~/init/limitations$'});
-	}
-	else{
-		res.redirect('signin');
-	}
-});
-
-router.get('/rationale', function(req,res,next) {
-	if (req.user){
-		res.render('init/rationale', {user: req.user, title: 'visitor@linuxfingers:~/init/rationale$'});
-	}
-	else{
-		res.redirect('signin');
-	}
-});
-
-router.get('/assessment', function(req,res,next) {
-	if (req.user){
-		res.render('init/assessment', {user: req.user, title: 'visitor@linuxfingers:~/init/self_assessment$'});
-	}
-	else{
-		res.redirect('signin');
-	}
-});
-
 router.get('/provsec', function(req, res, next) {
-		res.render('init/provsec', {user: req.user, title: 'visitor@linuxfingers:~/init/provsec$ '});
+	res.render('init/provsec', {user: req.user, title: 'visitor@linuxfingers:~/init/provsec$ '});
 });
 
-
-
-
+router.get('/why', function(req,res,next) {
+	if (req.user){
+		res.render('init/why', {user: req.user, title: 'visitor@linuxfingers:~/init/limitations$'});
+	}
+	else{
+		res.redirect('/signin');
+	}
+});
 
 module.exports = router;

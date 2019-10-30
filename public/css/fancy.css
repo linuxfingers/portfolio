@@ -72,7 +72,7 @@ body {
   background-attachment: fixed;
 	margin:0;
 	width: 100vw;
-	height: 100%;
+	height: 100vh;
 	display: flex;
   flex-direction: column;
   color: #000;
@@ -171,8 +171,7 @@ span.footnote {
     padding: 0 0 0 50px;
 }
 .collapsible-menu {
-    background: inherit;
-    color: #c2b280;
+    color: #000;
     font-weight: inherit;
     font-family: 'courierprimecode';
     width: 100%;
@@ -354,31 +353,27 @@ color: #004200;
 }
 
 /* Header and Footer */
-html {
+
+/*html {
   position: relative;
   min-height: 100%;
-}
+}*/
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 60px; /* Set the fixed height of the footer here */
-  line-height: 60px; /* Vertically center the text there */
-  background-color: #f5f5f5;
-}
-
-
-.bighead {
-  background-color: rgba(0,42,0,0.42);
-	height: 10%;
+.greenhead {
+	background-color: rgba(0,42,0,0.69);
+	min-height: 7%;
 	color: #c2b280;
+	position: sticky;
 }
 
 .bigfoot {
-	background-color: rgba(0,42,0,0.42);
-	height: 10%;
+	background-color: rgba(0,42,0,0.69);
+	min-height: 10%;
 	color: #c2b280;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
 }
 
 .navbar-hover a:hover {
@@ -440,27 +435,56 @@ html {
 
 /** Main Content Wrapper **/
 
-#wrapper {
-  position: relative;
-	word-spacing: -1px;
-  width: 77%;
-  height: 100%;
-	margin: 0 auto;
-  padding: 4.2rem;
-  overflow-y: auto;
-	overflow-x: hidden;
-  display: inline-block;
-	/*background: rgba(194, 178, 128, 0.77);*/
-	background-image: linear-gradient(to bottom, rgba(194, 178, 128, 0.8) 90%, rgba(255,0,0,0));
-  color: #000;
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
+
+.site-content {
+  flex: 1;
+}
+
+#wrapper {
+	position: relative;
+	margin: 0 16%;
+	padding: 4.2rem;
+	display: inline-block;
+	overflow-x: hidden;
+	height: 100%;
+	color: #000;
+	background: radial-gradient(rgba(220, 211, 182, 0.9) 50%, rgba(220, 211, 182, 0.62));
+
+
+/*
+
+
+
+*/
+
+	/*background-color: rgba(220, 211, 182, 0.77);*/
+	/*word-spacing: -1px;*/
+}
+
+/*
+
+position: relative;
+word-spacing: -1px;
+width: 77%;
+height: 100%;
+
+
+*/
 
 @media only screen and (max-width: 1024px) {
   #wrapper {
-    width: 100%;
+		margin: 0;
 		padding: 1rem;
+		text-align: justify;
+		word-spacing: -1px;
   }
 }
+
 
 .text-centered {
   text-align: center;
@@ -474,11 +498,11 @@ html {
 
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 0px #c2b280;
+		  background-color: rgb(0,42,0,0.77);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(0,42,0,0.8);
-  outline: 1px solid #c2b280;
+  background-color: rgb(0,42,0,0.77);
 }
 
 /*You should activate Windows.*/
