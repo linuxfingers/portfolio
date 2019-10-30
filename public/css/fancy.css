@@ -448,6 +448,7 @@ color: #004200;
 #wrapper {
 	position: relative;
 	margin: 0 16%;
+	min-width: 68%;
 	padding: 4.2rem;
 	display: inline-block;
 	overflow-x: hidden;
@@ -482,6 +483,7 @@ height: 100%;
 		padding: 1rem;
 		text-align: justify;
 		word-spacing: -1px;
+		width:100%;
   }
 }
 

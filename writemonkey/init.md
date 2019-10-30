@@ -8,6 +8,8 @@
 
 # why is this project important to me and to you
 
+# bibliography
+
 # about jen
 
 # jen's cv

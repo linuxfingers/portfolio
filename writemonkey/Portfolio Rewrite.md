@@ -229,7 +229,12 @@ My audience is hackers.
 My audience is someone who is both interested in phishing emails and security awareness training. They could be a researcher, a professional, or a hobbyist...but what it boils down to is "hacker."  My audience is hackers interested in a non-corporate take on security.
 
 
-If you're here, I'm guessing you're some sort of researcher or hacker. If not, that's cool too.
+If you're here, I'm guessing you're some sort of researcher or hacker interested in understanding both the offensive and defensive side of cyber attacks. 
+
+If not, that's cool too. 
+
+This website is a space to share ideas, and to bring something valuable to both the rhetoric and cyber sceurity discourse communities. 
+
 
 
 

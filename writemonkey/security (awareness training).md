@@ -1,3 +1,5 @@
+# defensive
+
 # security (awareness training)
 After diving a bit deeper into the corporate side of training material research, I began to notice a pattern within existing trainings: the majority of them only focused on phishing, and were set up in such a way that felt patronizing or wholly uninteresting. While there are some outliers 
 
