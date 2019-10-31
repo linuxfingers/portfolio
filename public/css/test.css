@@ -71,6 +71,41 @@ body.modal-open {
    background-color: transparent;
 }
 
+/** Collapsible Menu CSS **/
+
+.menu-content {
+    max-height: 0;
+    overflow: auto;
+    text-align: center;
+    font-family: 'courierprimecode';
+    padding: 0 0 0 50px;
+}
+.collapsible-menu {
+    color: #000;
+    font-weight: inherit;
+    font-family: 'courierprimecode';
+    width: 100%;
+    z-index: 1;
+    white-space: nowrap;
+    padding: 0.5rem;
+}
+.collapsible-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+.collapsible-menu a {
+    display:block;
+    padding: 10px;
+}
+
+.collapsible-menu label {
+    display: block;
+    cursor: pointer;
+}
+
+input#menu {
+    display: none;
+}
 
 /**/
 
