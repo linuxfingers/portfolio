@@ -5,9 +5,9 @@
   box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
     -webkit-box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
     -moz-box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
-  min-height: 500px;
+  min-height: 40vh;
   max-height: 80vh;
-  overflow: hidden;
+  overflow: auto;
   margin-bottom: auto;
   font: 1.2rem 'courierprime', monospace;
   text-shadow: 0 0 5px #c8c8c8;
@@ -19,15 +19,27 @@
   padding: 2.5rem;
   background-color: rgb(204,204,204,0.9);
   color: #000;
-  box-shadow: 15px 15px 0px 0px rgba(0,0,0,1);
-    -webkit-box-shadow: 15px 15px 0px 0px rgba(0,0,0,1);
-    -moz-box-shadow: 15px 15px 0px 0px rgba(0,0,0,1);
+  box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
+    -webkit-box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
+    -moz-box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
   min-height: 100px;
   overflow: hidden;
   margin: 20px 10%;
   font: 1.2rem 'courierprime', monospace;
   text-shadow: 0 0 5px #c8c8c8;
   border: 6px double #000;
+}
+
+.logbox {
+  padding: 0.5rem;
+  background-color: rgb(204,204,204,0.9);
+  color: #000;
+  box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
+    -webkit-box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
+    -moz-box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
+  overflow: hidden;
+  border: 6px double #000;
+  max-width: 150px;
 }
 
 .menuclose {
@@ -50,6 +62,15 @@
   text-shadow: 0 0 5px #c8c8c8;
   border: 6px double #000;
 }
+
+body.modal-open {
+    overflow: hidden;
+}
+
+.modal-backdrop {
+   background-color: transparent;
+}
+
 
 /**/
 
@@ -126,9 +147,7 @@ body {
    font-family: 'courierprime';
 }
 
-.modal-backdrop {
-   background-color: transparent;
-}
+
 
 * {
   border-radius: 0 !important;
@@ -160,12 +179,30 @@ body {
 
 /* From fancy.css*/
 
-.secondFolder {
-    position: fixed;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/* Boxes? */
+
+.dashed-box {
+  border: 1px dashed #004200;
+  padding: .5rem;
 }
+
+.email-box {
+  background-color: #fff;
+  color: #000;
+  padding: 1rem;
+  height: auto;
+  overflow: scroll;
+}
+
+.email-box p{
+  color: #000;
+}
+
+.email-box a{
+  color: blue;
+	font-family:Roboto-Regular,Helvetica,Arial,sans-serif;
+}
+
 
 /*Scrollbar OwO*/
 

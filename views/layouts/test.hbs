@@ -60,80 +60,85 @@
           <div class="col">
             <div class="container">
               <div class="modal-header top">
-              <span class="tridown"></span> /home/visitor
+              <span class="tridown"></span><a href="/">/home/visitor</a>
             </div>
 
             <div class="content mb-4">
               <div class="container">
                 <div class="row">
                   <div class="col">
-                      <img class="center-block" src="/icons/folder.svg" id="#initFolder" onclick="setTimeout(folderTimer, 3000); this.src='/icons/openfolder.svg'" data-toggle="modal" data-target="#initModal" style="width:80px;height:80px;"/>
+                      <img class="center-block" src="/icons/folder.svg" id="initFolder" onclick="this.src='/icons/openfolder.svg', 1000" data-toggle="modal" data-target="#initModal" style="width:80px;height:80px;"/>
                       <p>/init</p>
                   </div>
                   <div class="col">
-                    <img class="center-block" src="/icons/folder.svg" id="#offFolder" onclick="setTimeout(folderTimer, 3000); this.src='/icons/openfolder.svg'" data-toggle="modal" data-target="#offModal" style="width:80px;height:80px;"/>
+                    <img class="center-block" src="/icons/folder.svg" id="offFolder" onclick="this.src='/icons/openfolder.svg', 1000" data-toggle="modal" data-target="#offModal" style="width:80px;height:80px;"/>
                     <p>/offensive</p>
                   </div>
                   <div class="col">
-                    <img class="center-block" src="/icons/folder.svg" id="#defFolder" onclick="setTimeout(folderTimer, 3000); this.src='/icons/openfolder.svg'" data-toggle="modal" data-target="#defModal" style="width:80px;height:80px;"/>
+                    <img class="center-block" src="/icons/folder.svg" id="defFolder" oonclick="this.src='/icons/openfolder.svg', 1000" data-toggle="modal" data-target="#defModal" style="width:80px;height:80px;"/>
                     <p>/defensive</p>
                   </div>
                   <div class="col">
-                    <img class="center-block" src="/icons/folder.svg" id="#wriFolder" onclick="setTimeout(folderTimer, 3000); this.src='/icons/openfolder.svg'" data-toggle="modal" data-target="#wriModal" style="width:80px;height:80px;"/>
+                    <img class="center-block" src="/icons/folder.svg" id="wriFolder" onclick="this.src='/icons/openfolder.svg', 1000" data-toggle="modal" data-target="#wriModal" style="width:80px;height:80px;"/>
                     <p>/writing</p>
                   </div>
                   <div class="col">
-                    <img class="center-block" src="/icons/folder.svg" id="#vaFolder" onclick="setTimeout(folderTimer, 3000); this.src='/icons/openfolder.svg'" data-toggle="modal" data-target="#vaModal" style="width:80px;height:80px;"/>
+                    <img class="center-block" src="/icons/folder.svg" id="vaFolder" onclick="this.src='/icons/openfolder.svg', 1000" data-toggle="modal" data-target="#vaModal" style="width:80px;height:80px;"/>
                     <p>/visaudio</p>
                   </div>
                   <div class="col">
-                    <img class="center-block" src="/icons/folder.svg" id="#aboutFolder" onclick="setTimeout(folderTimer, 3000); this.src='/icons/openfolder.svg'" data-toggle="modal" data-target="#aboutModal" style="width:80px;height:80px;"/>
-                    <p>/about_jenny</p>
+                    <img class="center-block" src="/icons/folder.svg" id="aboutFolder" onclick="this.src='/icons/openfolder.svg', 1000" data-toggle="modal" data-target="#aboutModal" style="width:80px;height:80px;"/>
+                    <p>/about</p>
                   </div>
-                  </div>
-              </div>
+                </div>
+              <!--<img src="/img/greenskull.gif" class="img-fluid d-flex mx-auto mt-5" href="#" data-toggle="tooltip" title="hello, world" target="_blank" onclick="randomSite();">-->
             </div>
             </div>
+        </div>
+      </div>
+
+      <div class="row">
+            {{#if error}}
+            <div class="alert alert-warning alert-dismissible fade show noti" role="alert">
+              <strong>Whoops!</strong> {{error}}
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                ×
+              </button>
+            </div>
+            {{/if}}
+
+            {{#if success}}
+            <div class="alert alert-success alert-dismissible fade show noti" role="alert">
+              <strong>Yay!</strong> {{success}}
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                ×
+              </button>
+            </div>
+            {{/if}}
+
+            {{#if notice}}
+            <div class="alert alert-info alert-dismissible fade show noti" role="alert">
+              <strong>Oh!</strong> {{notice}}
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                ×
+              </button>
+            </div>
+            {{/if}}
+        </div>
+      </div>
+      <div class="row p-5 mx-auto float-right">
+        <div class="col">
+          {{#if user}}
+          <a href="/logout"><img src="/icons/logout.svg" style="width:80px;height:80px;color:#fff;"/></a>
+          {{else}}
+          <a href="/signin"><img src="/icons/login.svg" style="width:80px;height:80px;color:#fff;"/></a>
+          {{/if}}
         </div>
       </div>
   	</div>
 
 
-  	<div class="row">
-        <!--<div class="col alert alert-warning alert-dismissible fade show noti" role="alert">
-          <strong style="color:#006666;">alert $USER> hello, world!</strong>
-          <p>lots and lots of text here just in case to simulate an error msg mmk ty</p>
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            ×
-          </button>
-        </div>-->
-          {{#if error}}
-          <div class="alert alert-warning alert-dismissible fade show" role="alert">
-            <strong>Whoops!</strong> {{error}}
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              ×
-            </button>
-          </div>
-          {{/if}}
 
-          {{#if success}}
-          <div class="alert alert-success alert-dismissible fade show" role="alert">
-            <strong>Yay!</strong> {{success}}
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              ×
-            </button>
-          </div>
-          {{/if}}
-
-          {{#if notice}}
-          <div class="alert alert-info alert-dismissible fade show" role="alert">
-            <strong>Oh!</strong> {{notice}}
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              ×
-            </button>
-          </div>
-          {{/if}}
-  		</div>
   	</div>
 
 </div>
@@ -173,12 +178,20 @@
       <div class="modal-body content">
         <div class="row">
           <div class="col">
-              <img class="center-block" src="/icons/folder.svg" onclick="this.src='/icons/openfolder.svg'" data-toggle="modal" data-target="#folderModal" style="width:80px;height:80px;">
-              <p>/test</p>
+            <a href="/init"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>project</p></a>
           </div>
           <div class="col">
-            <a href="/init"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
-            <p>file.sh</p></a>
+            <a href="/init/audience"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>who is this for</p></a>
+          </div>
+          <div class="col">
+            <a href="/init/why"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>why</p></a>
+          </div>
+          <div class="col">
+            <a href="/init/bibliography"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>bibliography</p></a>
           </div>
         </div>
       </div>
@@ -196,12 +209,32 @@
       <div class="modal-body content">
         <div class="row">
           <div class="col">
-              <img class="center-block" src="/icons/folder.svg" onclick="this.src='/icons/openfolder.svg'" data-toggle="modal" data-target="#folderModal" style="width:80px;height:80px;">
-              <p>/test</p>
+            <a href="/phishing/analysis"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>readme</p></a>
           </div>
           <div class="col">
-            <a href="/init"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
-            <p>file.sh</p></a>
+            <a href="/phishing/analysis/bulk"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>bulk phishing</p></a>
+          </div>
+          <div class="col">
+            <a href="/phishing/analysis/clonephishing"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>clonephishing</p></a>
+          </div>
+          <div class="col">
+            <a href="/phishing/analysis/malspam"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>malspam</p></a>
+          </div>
+          <div class="col">
+            <a href="/phishing/analysis/pse"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>personal solicitation</p></a>
+          </div>
+          <div class="col">
+            <a href="/phishing/analysis/"spear><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>spearphishing</p></a>
+          </div>
+          <div class="col">
+            <a href="/phishing/analysis/corpus"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>email corpus</p></a>
           </div>
         </div>
       </div>
@@ -219,12 +252,9 @@
       <div class="modal-body content">
         <div class="row">
           <div class="col">
-              <img class="center-block" src="/icons/folder.svg" onclick="this.src='/icons/openfolder.svg'" data-toggle="modal" data-target="#folderModal" style="width:80px;height:80px;">
-              <p>/test</p>
+            <a href="/security/SAT"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>readme</p></a>
           </div>
-          <div class="col">
-            <a href="/init"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
-            <p>file.sh</p></a>
           </div>
         </div>
       </div>
@@ -242,12 +272,20 @@
       <div class="modal-body content">
         <div class="row">
           <div class="col">
-              <img class="center-block" src="/icons/folder.svg" onclick="this.src='/icons/openfolder.svg'" data-toggle="modal" data-target="#folderModal" style="width:80px;height:80px;">
-              <p>/test</p>
+            <a href="/writing/digispace"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>digital spaces</p></a>
           </div>
           <div class="col">
-            <a href="/init"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
-            <p>file.sh</p></a>
+            <a href="/writing/gonzo"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>narrative</p></a>
+          </div>
+          <div class="col">
+            <a href="/writing/other"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>non-creative writing</p></a>
+          </div>
+          <div class="col">
+            <a href="/writing/poetry"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>poetry</p></a>
           </div>
         </div>
       </div>
@@ -265,12 +303,16 @@
       <div class="modal-body content">
         <div class="row">
           <div class="col">
-              <img class="center-block" src="/icons/folder.svg" onclick="this.src='/icons/openfolder.svg'" data-toggle="modal" data-target="#folderModal" style="width:80px;height:80px;">
-              <p>/test</p>
+            <a href="/visaudio/artwork"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>artwork</p></a>
           </div>
           <div class="col">
-            <a href="/init"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
-            <p>file.sh</p></a>
+            <a href="/visaudio/indesign"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>design</p></a>
+          </div>
+          <div class="col">
+            <a href="/visaudio/music"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>music</p></a>
           </div>
         </div>
       </div>
@@ -288,12 +330,16 @@
       <div class="modal-body content">
         <div class="row">
           <div class="col">
-              <img class="center-block" src="/icons/folder.svg" onclick="this.src='/icons/openfolder.svg'" data-toggle="modal" data-target="#folderModal" style="width:80px;height:80px;">
-              <p>/test</p>
+            <a href="/init/jen"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>jen</p></a>
           </div>
           <div class="col">
-            <a href="/init"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
-            <p>file.sh</p></a>
+            <a href="/init/cv"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>cv</p></a>
+          </div>
+          <div class="col">
+            <a href="/init/provsec"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>providentia security</p></a>
           </div>
         </div>
       </div>
@@ -309,6 +355,8 @@
     <a class="# win" onclick="document.getElementById('sound1').play();">
       <font class="kern">Activate Windows</font><br>Go to Settings to activate Windows.</a>
 </div>
+
+</body>
 
 <script
     src="https://code.jquery.com/jquery-3.4.1.js"
@@ -326,5 +374,5 @@
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/custom.js"></script>
 
-</body>
+
 </html>
