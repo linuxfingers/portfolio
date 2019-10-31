@@ -144,6 +144,25 @@ ul, dl {
     }
 }
 
+.content {
+
+  padding: 3rem;
+  background-color: rgb(204,204,204,0.9);
+  color: #000;
+  box-shadow: 15px 15px 0px 0px rgba(0,0,0,1);
+    -webkit-box-shadow: 15px 15px 0px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 15px 15px 0px 0px rgba(0,0,0,1);
+  min-height: 400px;
+  max-height: 80vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: auto;
+  font: 1.2rem 'courierprime', monospace;
+  text-shadow: 0 0 5px #c8c8c8;
+}
+
+
+
 //*** Footnotes ***//
 
 body {
@@ -446,6 +465,7 @@ color: #004200;
 }
 
 #wrapper {
+
 	position: relative;
 	margin: 0 16%;
 	min-width: 68%;
