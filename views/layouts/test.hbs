@@ -13,7 +13,7 @@
 <link rel="icon" href="/icons/favicon-32.png" sizes="32x32">
 <link rel="icon" href="/icons/favicon-57.png" sizes="57x57">
 <link rel="icon" href="/icons/favicon-76.png" sizes="76x76">
-<link rel="icon" href="/icons/favicon-96.png" sizes="96x96">
+<link rel="icon" href="/icons/favicon-80.png" sizes="80x80">
 <link rel="icon" href="/icons/favicon-128.png" sizes="128x128">
 <link rel="icon" href="/icons/favicon-192.png" sizes="192x192">
 <link rel="icon" href="/icons/favicon-228.png" sizes="228x228">
@@ -45,7 +45,7 @@
   	<div class="row">
   		<div class="col-md-8 mt-5">
         <div class="container">
-          <div class="top">
+          <div class="modal-header top">
             <span class="triright"></span>{{title}}
           </div>
             <div class="content mb-4">
@@ -59,43 +59,40 @@
         <div class="row">
           <div class="col">
             <div class="container">
-              <div class="top">
-              <span class="tridown"></span> hey cool
+              <div class="modal-header top">
+              <span class="tridown"></span> /home/visitor
             </div>
 
             <div class="content mb-4">
               <div class="container">
                 <div class="row">
                   <div class="col">
-                      <img class="center-block mx-auto p-3" src="https://via.placeholder.com/64" data-toggle="modal" data-target="#folderModal">
-                      <p>/folder</p>
+                      <img class="center-block" src="/icons/folder.svg" id="#initFolder" onclick="setTimeout(folderTimer, 3000); this.src='/icons/openfolder.svg'" data-toggle="modal" data-target="#initModal" style="width:80px;height:80px;"/>
+                      <p>/init</p>
                   </div>
                   <div class="col">
-                    <img class="center-block mx-auto p-3" src="https://via.placeholder.com/64">
-                    <p>/folder</p>
+                    <img class="center-block" src="/icons/folder.svg" id="#offFolder" onclick="setTimeout(folderTimer, 3000); this.src='/icons/openfolder.svg'" data-toggle="modal" data-target="#offModal" style="width:80px;height:80px;"/>
+                    <p>/offensive</p>
                   </div>
                   <div class="col">
-                    <img class="center-block mx-auto p-3" src="https://via.placeholder.com/64">
-                    <p>/folder</p>
+                    <img class="center-block" src="/icons/folder.svg" id="#defFolder" onclick="setTimeout(folderTimer, 3000); this.src='/icons/openfolder.svg'" data-toggle="modal" data-target="#defModal" style="width:80px;height:80px;"/>
+                    <p>/defensive</p>
                   </div>
                   <div class="col">
-                    <img class="center-block mx-auto p-3" src="https://via.placeholder.com/64">
-                    <p>/folder</p>
+                    <img class="center-block" src="/icons/folder.svg" id="#wriFolder" onclick="setTimeout(folderTimer, 3000); this.src='/icons/openfolder.svg'" data-toggle="modal" data-target="#wriModal" style="width:80px;height:80px;"/>
+                    <p>/writing</p>
                   </div>
                   <div class="col">
-                    <img class="center-block mx-auto p-3" src="https://via.placeholder.com/64">
-                    <p>/folder</p>
+                    <img class="center-block" src="/icons/folder.svg" id="#vaFolder" onclick="setTimeout(folderTimer, 3000); this.src='/icons/openfolder.svg'" data-toggle="modal" data-target="#vaModal" style="width:80px;height:80px;"/>
+                    <p>/visaudio</p>
                   </div>
                   <div class="col">
-                    <img class="center-block mx-auto p-3" src="https://via.placeholder.com/64">
-                    <p>/folder</p>
+                    <img class="center-block" src="/icons/folder.svg" id="#aboutFolder" onclick="setTimeout(folderTimer, 3000); this.src='/icons/openfolder.svg'" data-toggle="modal" data-target="#aboutModal" style="width:80px;height:80px;"/>
+                    <p>/about_jenny</p>
                   </div>
-                  <div class="col">
-                    <img class="center-block mx-auto p-3" src="https://via.placeholder.com/64">
-                    <p>/folder</p>
                   </div>
-                </div>
               </div>
+            </div>
             </div>
         </div>
       </div>
@@ -103,13 +100,13 @@
 
 
   	<div class="row">
-        <div class="col alert alert-warning alert-dismissible fade show noti" role="alert">
+        <!--<div class="col alert alert-warning alert-dismissible fade show noti" role="alert">
           <strong style="color:#006666;">alert $USER> hello, world!</strong>
           <p>lots and lots of text here just in case to simulate an error msg mmk ty</p>
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             ×
           </button>
-        </div>
+        </div>-->
           {{#if error}}
           <div class="alert alert-warning alert-dismissible fade show" role="alert">
             <strong>Whoops!</strong> {{error}}
@@ -139,29 +136,172 @@
   		</div>
   	</div>
 
-    	</div>
+</div>
 
 <!-- Modals -->
 
 <div class="modal" id="folderModal">
   <div class="modal-dialog">
     <div class="modal-content">
-
-      <!-- Modal Header -->
       <div class="modal-header top">
-        <h4 class="modal-title">Modal Heading</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        visitor@linuxfingers.com: ~/folder
+        <button type="button" class="close" data-dismiss="modal" data-backdrop="false"><img src="/img/x.svg"</button>
       </div>
-
-      <!-- Modal body -->
       <div class="modal-body content">
-        Modal body..
+        <div class="row">
+          <div class="col">
+              <img class="center-block" src="/icons/folder.svg" onclick="this.src='/icons/openfolder.svg'" data-toggle="modal" data-target="#folderModal" style="width:80px;height:80px;">
+              <p>/folder</p>
+          </div>
+        <div class="col">
+          <a href="/init"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;" style="width:80px;height:80px;">
+          <p>file.sh</p></a>
+        </div>
+        </div>
       </div>
+      </div>
+    </div>
+  </div>
 
-
+<div class="modal" id="initModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header top">
+        visitor@linuxfingers.com: ~/init
+        <button type="button" class="close" data-dismiss="modal" data-backdrop="false"><img src="/img/x.svg"</button>
+      </div>
+      <div class="modal-body content">
+        <div class="row">
+          <div class="col">
+              <img class="center-block" src="/icons/folder.svg" onclick="this.src='/icons/openfolder.svg'" data-toggle="modal" data-target="#folderModal" style="width:80px;height:80px;">
+              <p>/test</p>
+          </div>
+          <div class="col">
+            <a href="/init"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>file.sh</p></a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
+<div class="modal" id="offModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header top">
+        visitor@linuxfingers.com: ~/offensive
+        <button type="button" class="close" data-dismiss="modal" data-backdrop="false"><img src="/img/x.svg"</button>
+      </div>
+      <div class="modal-body content">
+        <div class="row">
+          <div class="col">
+              <img class="center-block" src="/icons/folder.svg" onclick="this.src='/icons/openfolder.svg'" data-toggle="modal" data-target="#folderModal" style="width:80px;height:80px;">
+              <p>/test</p>
+          </div>
+          <div class="col">
+            <a href="/init"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>file.sh</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="defModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header top">
+        visitor@linuxfingers.com: ~/defensive
+        <button type="button" class="close" data-dismiss="modal" data-backdrop="false"><img src="/img/x.svg"</button>
+      </div>
+      <div class="modal-body content">
+        <div class="row">
+          <div class="col">
+              <img class="center-block" src="/icons/folder.svg" onclick="this.src='/icons/openfolder.svg'" data-toggle="modal" data-target="#folderModal" style="width:80px;height:80px;">
+              <p>/test</p>
+          </div>
+          <div class="col">
+            <a href="/init"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>file.sh</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="wriModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header top">
+        visitor@linuxfingers.com: ~/writing
+        <button type="button" class="close" data-dismiss="modal" data-backdrop="false"><img src="/img/x.svg"</button>
+      </div>
+      <div class="modal-body content">
+        <div class="row">
+          <div class="col">
+              <img class="center-block" src="/icons/folder.svg" onclick="this.src='/icons/openfolder.svg'" data-toggle="modal" data-target="#folderModal" style="width:80px;height:80px;">
+              <p>/test</p>
+          </div>
+          <div class="col">
+            <a href="/init"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>file.sh</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="vaModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header top">
+        visitor@linuxfingers.com: ~/visaudio
+        <button type="button" class="close" data-dismiss="modal" data-backdrop="false"><img src="/img/x.svg"</button>
+      </div>
+      <div class="modal-body content">
+        <div class="row">
+          <div class="col">
+              <img class="center-block" src="/icons/folder.svg" onclick="this.src='/icons/openfolder.svg'" data-toggle="modal" data-target="#folderModal" style="width:80px;height:80px;">
+              <p>/test</p>
+          </div>
+          <div class="col">
+            <a href="/init"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>file.sh</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="aboutModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header top">
+        visitor@linuxfingers.com: ~/about
+        <button type="button" class="close" data-dismiss="modal" data-backdrop="false"><img src="/img/x.svg"</button>
+      </div>
+      <div class="modal-body content">
+        <div class="row">
+          <div class="col">
+              <img class="center-block" src="/icons/folder.svg" onclick="this.src='/icons/openfolder.svg'" data-toggle="modal" data-target="#folderModal" style="width:80px;height:80px;">
+              <p>/test</p>
+          </div>
+          <div class="col">
+            <a href="/init"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>file.sh</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 <!--Activate Windows-->
 <div id="overlay" data-backdrop="static" class="bottomright">
@@ -170,19 +310,19 @@
       <font class="kern">Activate Windows</font><br>Go to Settings to activate Windows.</a>
 </div>
 
-
-<script>
-  $("#menu-toggle").click(function(e) {
-    e.preventDefault();
-    $("#wrapper").toggleClass("toggled");
-  });
-</script>
-
 <script
     src="https://code.jquery.com/jquery-3.4.1.js"
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+  integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+  crossorigin="anonymous"></script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/custom.js"></script>
 

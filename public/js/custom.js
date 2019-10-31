@@ -25,26 +25,12 @@ var sites = [
                 location.href = sites[i];
             }
 
+// Menu JS
 
-//Activate Windows, you scrub
-function on() {
-  document.getElementById("overlay").style.display = "block";
-}
-
-function off() {
-  document.getElementById("overlay").style.display = "none";
-}
-
-
-
-//birthday because I'm lazy
-//
-//var birth = new Date('1988-02-25');
-//var now = new Date();
-//var difference = now - birth;
-//var age = new Date(difference).getFullYear() - 1970
-//var span = document.getElementById('age');
-//span.innerHTML = age;
+$("#menu-toggle").click(function(e) {
+  e.preventDefault();
+  $("#wrapper").toggleClass("toggled");
+});
 
 //footnote & tooltip JS
 
@@ -56,5 +42,126 @@ jQuery(document).ready(function() {
       //container: $elem,
       delay: {hide:400}
     });
+  });
+});
+
+//folder animation
+
+var counter = 0;
+function resetImage(){
+     document.getElementById("initFolder").src = "/icons/folder.svg";
+     if(counter === 2)
+       document.getElementById('initFolder').style.visibility = "show";
+}
+
+function folderTimer() {
+counter++;
+  if (counter === 2)
+  {
+	document.getElementById("offFolder").src = "/icons/openfolder.svg";
+  }else{
+     document.getElementById("offFolder").src = "/icons/folder.svg";
+  }
+  setTimeout(function(){
+     resetImage();
+  }, 3000)
+
+}
+
+var counter = 0;
+function resetImage(){
+     document.getElementById("defFolder").src = "/icons/folder.svg";
+     if(counter === 2)
+       document.getElementById('defFolder').style.visibility = "show";
+}
+
+function folderTimer() {
+counter++;
+  if (counter === 2)
+  {
+	document.getElementById("wriFolder").src = "/icons/openfolder.svg";
+  }else{
+     document.getElementById("wriFolder").src = "/icons/folder.svg";
+  }
+  setTimeout(function(){
+     resetImage();
+  }, 3000)
+
+}
+
+var counter = 0;
+function resetImage(){
+     document.getElementById("vaFolder").src = "/icons/folder.svg";
+     if(counter === 2)
+       document.getElementById('vaFolder').style.visibility = "show";
+}
+
+function folderTimer() {
+counter++;
+  if (counter === 2)
+  {
+	document.getElementById("aboutFolder").src = "/icons/openfolder.svg";
+  }else{
+     document.getElementById("aboutFolder").src = "/icons/folder.svg";
+  }
+  setTimeout(function(){
+     resetImage();
+  }, 3000)
+
+}
+
+//draggable modals
+
+$('#initFolder').click(function() {
+	var modalDiv = $('#initModal');
+  modalDiv.modal({backdrop: false, show: true});
+
+  $('.modal-dialog').draggable({
+    handle: ".modal-header"
+  });
+});
+
+$('#offFolder').click(function() {
+	var modalDiv = $('#offModal');
+  modalDiv.modal({backdrop: false, show: true});
+
+  $('.modal-dialog').draggable({
+    handle: ".modal-header"
+  });
+});
+
+$('#defFolder').click(function() {
+	var modalDiv = $('#defModal');
+  modalDiv.modal({backdrop: false, show: true});
+
+  $('.modal-dialog').draggable({
+    handle: ".modal-header"
+  });
+});
+
+$('#wriFolder').click(function() {
+	var modalDiv = $('#wriModal');
+  modalDiv.modal({backdrop: false, show: true});
+
+  $('.modal-dialog').draggable({
+    handle: ".modal-header"
+  });
+});
+
+$('#vaFolder').click(function() {
+	var modalDiv = $('#vaModal');
+  modalDiv.modal({backdrop: false, show: true});
+
+  $('.modal-dialog').draggable({
+    handle: ".modal-header"
+  });
+});
+
+$('#aboutFolder').click(function() {
+	var modalDiv = $('#aboutModal');
+  modalDiv.modal({backdrop: false, show: true});
+
+  $('.modal-dialog').draggable({
+    handle: ".modal-header"
   });
 });
