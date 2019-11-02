@@ -3,7 +3,7 @@ var router = express.Router();
 
 router.get('/', function(req,res,next) {
 	if (req.user){
-		res.render('init/theproject', {user: req.user, title: 'visitor@linuxfingers:~/init$'});
+		res.render('init/theproject', {user: req.user, title: 'visitor@linuxfingers:~/init/project$'});
 	}
 	else{
 		res.redirect('/signin');
@@ -12,7 +12,7 @@ router.get('/', function(req,res,next) {
 
 router.get('/audience', function(req,res,next) {
 	if (req.user){
-		res.render('init/audience', {user: req.user, title: 'visitor@linuxfingers:~/init/rationale$'});
+		res.render('init/audience', {user: req.user, title: 'visitor@linuxfingers:~/init/who is this for$'});
 	}
 	else{
 		res.redirect('/signin');
@@ -42,7 +42,7 @@ router.get('/provsec', function(req, res, next) {
 
 router.get('/why', function(req,res,next) {
 	if (req.user){
-		res.render('init/why', {user: req.user, title: 'visitor@linuxfingers:~/init/limitations$'});
+		res.render('init/why', {user: req.user, title: 'visitor@linuxfingers:~/init/why$'});
 	}
 	else{
 		res.redirect('/signin');

@@ -1,3 +1,32 @@
+a {
+	color: #006666;
+  font-family: 'courierprime', courier;
+	text-decoration: none;
+
+}
+
+a:hover {
+  text-decoration: dotted #00ffff overline underline;
+}
+
+a:active {
+  color: #009600;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #006666;
+  font-family: 'courierprimecode';
+  margin-bottom: 1rem;
+}
+
+ul, dl {
+  	list-style-type: none;
+		font-family: 'courierprime';
+}
+
+
+/* */
+
 .content {
   padding: 3rem;
   background-color: rgb(204,204,204,0.9);
@@ -13,6 +42,22 @@
   text-shadow: 0 0 5px #c8c8c8;
   border: 6px double #000;
 
+}
+
+.files {
+  padding: 3rem;
+  background-color: rgb(204,204,204,0.9);
+  color: #000;
+  box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
+    -webkit-box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
+    -moz-box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
+  min-height: 30vh;
+  max-height: 70vh;
+  overflow: auto;
+  margin-bottom: auto;
+  font: 1.2rem 'courierprime', monospace;
+  text-shadow: 0 0 5px #c8c8c8;
+  border: 6px double #000;
 }
 
 .noti {
@@ -32,14 +77,13 @@
 
 .logbox {
   padding: 0.5rem;
+  margin: 20px 10%;
   background-color: rgb(204,204,204,0.9);
   color: #000;
-  box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
-    -webkit-box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
-    -moz-box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
   overflow: hidden;
   border: 6px double #000;
-  max-width: 150px;
+  max-width: 80px;
+  max-height: 80px;
 }
 
 .menuclose {
@@ -152,6 +196,13 @@ input#menu {
 
  /* */
 
+ html {
+ 	font-family: 'courierprime', courier;
+ 	list-style: decimal-leading-zero;
+  max-height:100%;
+  position:relative;
+ }
+
 body {
 	 background-color: black;
 	 background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
@@ -198,6 +249,14 @@ body {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'courierprimecode';
+    src: url('/fonts/courier_prime_code-webfont.woff2') format('woff2'),
+         url('/fonts/courier_prime_code-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 /* mobile layout */
 
@@ -210,7 +269,19 @@ body {
   }
 }
 
+@media (max-width: 1024px) {
+  h1, .h1 {
+    font-size: 30px;
+  }
 
+  h2, .h2 {
+    font-size: 95%;
+  }
+
+  h3, .h3 {
+    font-size: 95%;
+  }
+}
 
 /* From fancy.css*/
 
@@ -252,6 +323,12 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background-color: rgba(0,102,102,0.77);
+}
+
+@media screen {
+	html {
+		scroll-behavior: smooth;
+	}
 }
 
 /*You should activate Windows.*/

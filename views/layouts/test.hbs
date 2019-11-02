@@ -63,7 +63,7 @@
               <span class="tridown"></span><a href="/">/home/visitor</a>
             </div>
 
-            <div class="content mb-4">
+            <div class="files mb-4">
               <div class="container">
                 <div class="row">
                   <div class="col">
@@ -126,12 +126,12 @@
             {{/if}}
         </div>
       </div>
-      <div class="row p-5 mx-auto float-right">
+      <div class="row float-left">
         <div class="col">
           {{#if user}}
-          <a href="/logout"><img src="/icons/logout.svg" style="width:80px;height:80px;color:#fff;"/></a>
+          <a href="/logout"><img class="img-fluid p-3" src="/icons/logout.svg" style="width:80px;height:80px;color:#fff;"/></a>
           {{else}}
-          <a href="/signin"><img src="/icons/login.svg" style="width:80px;height:80px;color:#fff;"/></a>
+          <a href="/signin"><img class="img-fluid p-3" src="/icons/login.svg" style="width:80px;height:80px;color:#fff;"/></a>
           {{/if}}
         </div>
       </div>
