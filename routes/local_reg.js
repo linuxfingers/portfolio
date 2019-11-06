@@ -9,4 +9,3 @@ router.post('/', passport.authenticate('local-signup', {
 );
 
 module.exports = router;
-

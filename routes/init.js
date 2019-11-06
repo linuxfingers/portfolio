@@ -49,4 +49,13 @@ router.get('/why', function(req,res,next) {
 	}
 });
 
+router.get('/definitions', function(req,res,next) {
+	if (req.user){
+		res.render('definitions', {user: req.user, title: 'visitor@linuxfingers:~/init/definitions$'});
+	}
+	else{
+		res.redirect('/signin');
+	}
+});
+
 module.exports = router;

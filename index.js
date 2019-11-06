@@ -123,12 +123,13 @@ var logout = require('./routes/logout');
 
 //MA stuff
 var init = require('./routes/init');
-var phishing = require('./routes/phishing');
-var security = require('./routes/security');
+var offensive = require('./routes/offensive');
+var defensive = require('./routes/defensive');
 
 //non-MA stuff
 var visaudio = require('./routes/visaudio');
 var writing = require('./routes/writing');
+var about = require('./routes/about');
 
 //404?
 var ope = require('./routes/ope');
@@ -151,13 +152,13 @@ app.use('/logout', logout);
 
 //MA stuff
 app.use('/init', init);
-app.use('/phishing', phishing);
-app.use('/security/', security)
+app.use('/offensive', offensive);
+app.use('/defensive/', defensive)
 
 //non-MA stuff
 app.use('/visaudio', visaudio);
 app.use('/writing', writing);
-
+app.use('/about', about);
 //end routes
 
 app.use('/*', ope);
