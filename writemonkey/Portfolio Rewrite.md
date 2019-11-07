@@ -129,12 +129,14 @@ Introduction
 7. sitemap
 
 Phishing Emails
-1. What motivates phishing attempts?
-2. How does rhetoric and phishing go together?
-3. Classes of phishing I've looked at
+1. How does rhetoric and phishing go together?
+2. Classes of phishing I've looked at
 
 SAT
-
+1. Why does SAT exist, and what motivates it? aka The Good, the Bad, and the Ugly of SAT
+2. How does SAT and rhetoric go together?
+3. Existing SAT I've examined
+4. 
 What Next?
 
 # init
