@@ -21,7 +21,7 @@ router.get('/sat', function(req,res,next) {
 	}
 });
 
-router.get('/sat', function(req,res,next) {
+router.get('/sat/culture', function(req,res,next) {
 	if (req.user){
 		res.render('defensive/sat/culture', {user: req.user, title: 'visitor@linuxfingers:~/defensive/sat/culture$'});
 	}
@@ -30,7 +30,7 @@ router.get('/sat', function(req,res,next) {
 	}
 });
 
-router.get('/sat', function(req,res,next) {
+router.get('/sat/quizzes', function(req,res,next) {
 	if (req.user){
 		res.render('defensive/sat/quizzes', {user: req.user, title: 'visitor@linuxfingers:~/defensive/sat/quizzes$'});
 	}
@@ -39,7 +39,7 @@ router.get('/sat', function(req,res,next) {
 	}
 });
 
-router.get('/sat', function(req,res,next) {
+router.get('/sat/reporting', function(req,res,next) {
 	if (req.user){
 		res.render('defensive/sat/reporting', {user: req.user, title: 'visitor@linuxfingers:~/defensive/sat/reporting$'});
 	}
@@ -48,7 +48,7 @@ router.get('/sat', function(req,res,next) {
 	}
 });
 
-router.get('/sat', function(req,res,next) {
+router.get('/sat/seminars', function(req,res,next) {
 	if (req.user){
 		res.render('defensive/sat/seminars', {user: req.user, title: 'visitor@linuxfingers:~/defensive/sat/seminars$'});
 	}
@@ -57,7 +57,7 @@ router.get('/sat', function(req,res,next) {
 	}
 });
 
-router.get('/sat', function(req,res,next) {
+router.get('/sat/sq', function(req,res,next) {
 	if (req.user){
 		res.render('defensive/sat/sq', {user: req.user, title: 'visitor@linuxfingers:~/defensive/sat/sq$'});
 	}
@@ -66,7 +66,7 @@ router.get('/sat', function(req,res,next) {
 	}
 });
 
-router.get('/sat', function(req,res,next) {
+router.get('/sat/videos', function(req,res,next) {
 	if (req.user){
 		res.render('defensive/sat/videos', {user: req.user, title: 'visitor@linuxfingers:~/defensive/sat/videos$'});
 	}

@@ -25,6 +25,14 @@ ul, dl {
 }
 
 
+blockquote
+{
+  font-style: italic;
+	font-size: 85%;
+  margin-left: 3rem;
+	margin-right: 3rem;
+}
+
 /* */
 
 .content {
@@ -88,6 +96,11 @@ ul, dl {
 
 .menuclose {
   background-image: url(/img/x.svg);
+}
+
+.smallfont {
+	font-size: 85%;
+	text-align: center;
 }
 
 .folder {
