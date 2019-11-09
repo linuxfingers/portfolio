@@ -1,7 +1,7 @@
-# defensive
-
 # security (awareness training)
 After diving a bit deeper into the corporate side of training material research, I began to notice a pattern within existing trainings: the majority of them only focused on phishing, and were set up in such a way that felt patronizing or wholly uninteresting. While there are some outliers 
+
+----------
 
 Security Awareness Training is ubiquitous for corporations and agencies, especially those mandated for due diligence and best practices. In the Department of Defense, they have a Defense Federal Acquisition Regulation Supplement (DFARS) clause which regulates how sensitive and confidential information is managed. The financial sector is bound to the Gramm-Leach-Bliley Act, which mandates how to handle sensitive personal information. The Health Insurance Portability and Accountability Act (HIPAA) has regulations on privacy and security of data for the medical sector. There's even a National Institute of Standards and Technology (NIST) Special Publication 800-50 that demonstrates how to create an effective security awareness program based on regulations in the Federal Information Security Management Act (FISMA) and the Office of Management and Budget (OMB)!
 
