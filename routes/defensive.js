@@ -48,6 +48,15 @@ router.get('/sat/reporting', function(req,res,next) {
 	}
 });
 
+router.get('/sat/phishsim', function(req,res,next) {
+	if (req.user){
+		res.render('defensive/sat/phishsim', {user: req.user, title: 'visitor@linuxfingers:~/defensive/sat/phishing_sim$'});
+	}
+	else{
+		res.redirect('/signin');
+	}
+});
+
 router.get('/sat/seminars', function(req,res,next) {
 	if (req.user){
 		res.render('defensive/sat/seminars', {user: req.user, title: 'visitor@linuxfingers:~/defensive/sat/seminars$'});
