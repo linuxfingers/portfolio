@@ -104,7 +104,7 @@ app.use(function(req, res, next){
   next();
 });
 
-app.use("/", express.static(__dirname + "/public"));
+app.use("/", express.static(__dirname + "/public", { dotfiles:'allow' } ));
 
 app.engine('.hbs', hbs({defaultLayout: 'os', extname: '.hbs'}));
 app.set('views', path.join(__dirname, 'views'));
