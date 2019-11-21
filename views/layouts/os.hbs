@@ -34,7 +34,7 @@
 
 <!-- Stylesheets -->
 <link href="/css/bootstrap.css" rel="stylesheet">
-<link href="/css/test.css" rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet">
 <link href="/css/restext.css" rel="stylesheet">
 
 </head>
@@ -65,19 +65,13 @@
 
             <div class="files mb-4">
               <div class="container">
-                <div class="row">
+                <div class="d-flex flex-row">
                   <div class="col">
-                      <img class="center-block" src="/icons/folder.svg" id="initFolder" onclick="this.src='/icons/openfolder.svg', 1000" data-toggle="modal" data-target="#initModal" style="width:80px;height:80px;"/>
-                      <p>/init</p>
+                    <img class="center-block" src="/icons/folder.svg" id="portfolioFolder" onclick="this.src='/icons/openfolder.svg', 1000" data-toggle="modal" data-target="#portfolioModal" style="width:80px;height:80px;"/>
+                      <p>/portfolio</p>
                   </div>
-                  <div class="col">
-                    <img class="center-block" src="/icons/folder.svg" id="offFolder" onclick="this.src='/icons/openfolder.svg', 1000" data-toggle="modal" data-target="#offModal" style="width:80px;height:80px;"/>
-                    <p>/offensive</p>
-                  </div>
-                  <div class="col">
-                    <img class="center-block" src="/icons/folder.svg" id="defFolder" onclick="this.src='/icons/openfolder.svg', 1000" data-toggle="modal" data-target="#defModal" style="width:80px;height:80px;"/>
-                    <p>/defensive</p>
-                  </div>
+                </div>
+                <div class="d-flex flex-row">
                   <div class="col">
                     <img class="center-block" src="/icons/folder.svg" id="wriFolder" onclick="this.src='/icons/openfolder.svg', 1000" data-toggle="modal" data-target="#wriModal" style="width:80px;height:80px;"/>
                     <p>/writing</p>
@@ -91,6 +85,7 @@
                     <p>/about</p>
                   </div>
                 </div>
+              </div>
               <!--<img src="/img/greenskull.gif" class="img-fluid d-flex mx-auto mt-5" href="#" data-toggle="tooltip" title="hello, world" target="_blank" onclick="randomSite();">-->
             </div>
             </div>
@@ -126,6 +121,9 @@
             {{/if}}
         </div>
       </div>
+
+<!--login/logout button-->
+
       <div class="row float-left">
         <div class="col">
           {{#if user}}
@@ -135,24 +133,24 @@
           {{/if}}
         </div>
       </div>
-  	</div>
+
+
+  </div> <!-- closes this column-->
 
 
 
-  	</div>
-
-</div>
+</div> <!-- main container-->
 
 <!-- Modals -->
 
 <div class="modal" id="folderModal">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header top">
-        visitor@linuxfingers.com: ~/folder
+        visitor@rhetsec.com: ~/folder
         <button type="button" class="close" data-dismiss="modal" data-backdrop="false"><img src="/img/x.svg"</button>
       </div>
-      <div class="modal-body content smallfont">
+      <div class="modal-body fcontent smallfont">
         <div class="row">
           <div class="col">
               <img class="center-block" src="/icons/folder.svg" onclick="this.src='/icons/openfolder.svg'" data-toggle="modal" data-target="#folderModal" style="width:80px;height:80px;">
@@ -168,14 +166,14 @@
     </div>
   </div>
 
-<div class="modal" id="initModal">
-  <div class="modal-dialog">
+<!--
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header top">
-        visitor@linuxfingers.com: ~/init
+        visitor@rhetsec.com: ~/init
         <button type="button" class="close" data-dismiss="modal" data-backdrop="false"><img src="/img/x.svg"</button>
       </div>
-      <div class="modal-body content smallfont">
+      <div class="modal-body fcontent smallfont">
         <div class="row">
           <div class="col">
             <a href="/init"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
@@ -197,16 +195,71 @@
       </div>
     </div>
   </div>
-</div>
+</div>-->
 
-<div class="modal" id="offModal">
-  <div class="modal-dialog">
+<div class="modal" id="portfolioModal">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header top">
-        visitor@linuxfingers.com: ~/offensive
+        visitor@rhetsec.com: ~/portfolio
         <button type="button" class="close" data-dismiss="modal" data-backdrop="false"><img src="/img/x.svg"</button>
       </div>
-      <div class="modal-body content smallfont">
+      <div class="modal-body fcontent smallfont">
+        <div class="row">
+          <div class="col">
+            <a href="/init/"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+              <p>project_readme</p></a>
+            </div>
+          <div class="col">
+            <a href="/init/rhet101"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+              <p>rhetoric_101</p></a>
+            </div>
+          <div class="col">
+            <a href="/offensive/phishing/analysis"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>phishing_analysis</p></a>
+          </div>
+          <div class="col">
+            <a href="/offensive/phishing/analysis/bulk"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>analysis_bulk</p></a>
+          </div>
+          <div class="col">
+            <a href="/offensive/phishing/analysis/clonephishing"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>analysis_clone</p></a>
+          </div>
+          <div class="col">
+            <a href="/offensive/phishing/analysis/malspam"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>analysis_malspam</p></a>
+          </div>
+          <div class="col">
+            <a href="/offensive/phishing/analysis/pse"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>analysis_pse</p></a>
+          </div>
+          <div class="col">
+            <a href="/offensive/phishing/analysis/spearphishing"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>analysis_spearphish</p></a>
+          </div>
+          <div class="col">
+            <a href="/offensive/phishing/analysis/corpus"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+            <p>email_corpus</p></a>
+        </div>
+        <div class="col">
+          <a href="/init/bibliography"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
+          <p>bibliography</p></a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--
+<div class="modal" id="offModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header top">
+        visitor@rhetsec.com: ~/offensive
+        <button type="button" class="close" data-dismiss="modal" data-backdrop="false"><img src="/img/x.svg"</button>
+      </div>
+      <div class="modal-body fcontent smallfont">
         <div class="row">
           <div class="col">
             <a href="/offensive/phishing/analysis"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
@@ -243,13 +296,13 @@
 </div>
 
 <div class="modal" id="defModal">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header top">
-        visitor@linuxfingers.com: ~/defensive
+        visitor@rhetsec.com: ~/defensive
         <button type="button" class="close" data-dismiss="modal" data-backdrop="false"><img src="/img/x.svg"</button>
       </div>
-      <div class="modal-body content smallfont">
+      <div class="modal-body fcontent smallfont">
         <div class="row">
             <div class="col">
               <a href="/defensive/sat/"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
@@ -287,17 +340,16 @@
         </div>
       </div>
     </div>
-  </div>
-</div>
+  </div>-->
 
 <div class="modal" id="wriModal">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header top">
-        visitor@linuxfingers.com: ~/writing
+        visitor@rhetsec.com: ~/writing
         <button type="button" class="close" data-dismiss="modal" data-backdrop="false"><img src="/img/x.svg"</button>
       </div>
-      <div class="modal-body content smallfont">
+      <div class="modal-body fcontent smallfont">
         <div class="row">
           <div class="col">
             <a href="/writing/digispace"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
@@ -322,13 +374,13 @@
 </div>
 
 <div class="modal" id="vaModal">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-md">
     <div class="modal-content">
       <div class="modal-header top">
-        visitor@linuxfingers.com: ~/visaudio
+        visitor@rhetsec.com: ~/visaudio
         <button type="button" class="close" data-dismiss="modal" data-backdrop="false"><img src="/img/x.svg"</button>
       </div>
-      <div class="modal-body content smallfont">
+      <div class="modal-body fcontent smallfont">
         <div class="row">
           <div class="col">
             <a href="/visaudio/artwork"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
@@ -349,13 +401,13 @@
 </div>
 
 <div class="modal" id="aboutModal">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-md">
     <div class="modal-content">
       <div class="modal-header top">
-        visitor@linuxfingers.com: ~/about
+        visitor@rhetsec.com: ~/about
         <button type="button" class="close" data-dismiss="modal" data-backdrop="false"><img src="/img/x.svg"</button>
       </div>
-      <div class="modal-body content smallfont">
+      <div class="modal-body fcontent smallfont">
         <div class="row">
           <div class="col">
             <a href="/about/jen"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
