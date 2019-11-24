@@ -43,8 +43,8 @@
 
   <div class="container-fluid">
   	<div class="row">
-  		<div class="col-md-8 mt-5">
-        <div class="container">
+  		<div class="col-md-9 mt-5">
+        <!--<div class="container">-->
           <div class="modal-header top">
             <span class="triright"></span>{{title}}
           </div>
@@ -52,29 +52,29 @@
 
               {{{body}}}
 
-            </div>
           </div>
       </div>
-  		<div class="col-md-4 mt-3">
+    <!--</div>-->
+  		<div class="col-md-3 mt-3">
+
         <div class="row">
           <div class="col">
-            <div class="container">
               <div class="modal-header top">
               <span class="tridown"></span><a href="/">/home/visitor</a>
             </div>
 
             <div class="files mb-4">
-              <div class="container">
-                <div class="d-flex flex-row">
+
+                <div class="row">
                   <div class="col">
                     <img class="center-block" src="/icons/folder.svg" id="portfolioFolder" onclick="this.src='/icons/openfolder.svg', 1000" data-toggle="modal" data-target="#portfolioModal" style="width:80px;height:80px;"/>
                       <p>/portfolio</p>
                   </div>
                 </div>
-                <div class="d-flex flex-row">
+                <div class="row">
                   <div class="col">
                     <img class="center-block" src="/icons/folder.svg" id="wriFolder" onclick="this.src='/icons/openfolder.svg', 1000" data-toggle="modal" data-target="#wriModal" style="width:80px;height:80px;"/>
-                    <p>/writing</p>
+                    <p>/other_txts</p>
                   </div>
                   <div class="col">
                     <img class="center-block" src="/icons/folder.svg" id="vaFolder" onclick="this.src='/icons/openfolder.svg', 1000" data-toggle="modal" data-target="#vaModal" style="width:80px;height:80px;"/>
@@ -85,12 +85,12 @@
                     <p>/about</p>
                   </div>
                 </div>
-              </div>
+
               <!--<img src="/img/greenskull.gif" class="img-fluid d-flex mx-auto mt-5" href="#" data-toggle="tooltip" title="hello, world" target="_blank" onclick="randomSite();">-->
             </div>
             </div>
         </div>
-      </div>
+
 
       <div class="row">
             {{#if error}}
@@ -346,7 +346,7 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header top">
-        visitor@rhetsec.com: ~/writing
+        visitor@rhetsec.com: ~/other_writing
         <button type="button" class="close" data-dismiss="modal" data-backdrop="false"><img src="/img/x.svg"</button>
       </div>
       <div class="modal-body fcontent smallfont">
@@ -359,10 +359,10 @@
             <a href="/writing/gonzo"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
             <p>narrative</p></a>
           </div>
-          <div class="col">
+          <!--<div class="col">
             <a href="/writing/other"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
             <p>other-writing</p></a>
-          </div>
+          </div>-->
           <div class="col">
             <a href="/writing/poetry"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
             <p>poetry</p></a>
@@ -386,10 +386,10 @@
             <a href="/visaudio/artwork"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
             <p>artwork</p></a>
           </div>
-          <div class="col">
+          <!--<div class="col">
             <a href="/visaudio/indesign"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
             <p>design</p></a>
-          </div>
+          </div>-->
           <div class="col">
             <a href="/visaudio/music"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
             <p>music</p></a>
@@ -417,10 +417,10 @@
             <a href="/about/cv"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
             <p>cv</p></a>
           </div>
-          <!--<div class="col">
+          <div class="col">
             <a href="/about/provsec"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
             <p>providentia-security</p></a>
-          </div>-->
+          </div>
         </div>
       </div>
     </div>
