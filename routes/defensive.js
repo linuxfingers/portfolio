@@ -3,7 +3,7 @@ var router = express.Router();
 
 router.get('/', function(req,res,next) {
 	if (req.user){
-		res.render('defensive/index', {user: req.user, title: 'visitor@linuxfingers:~/defensive/readme$'});
+		res.render('defensive/index', {user: req.user, title: 'visitor@rhetsec:~/defensive/readme$'});
 	}
 	else{
 		res.redirect('/signin');
@@ -14,7 +14,7 @@ router.get('/', function(req,res,next) {
 
 router.get('/sat', function(req,res,next) {
 	if (req.user){
-		res.render('defensive/sat/index', {user: req.user, title: 'visitor@linuxfingers:~/defensive/sat/readme$'});
+		res.render('defensive/sat/index', {user: req.user, title: 'visitor@rhetsec:~/defensive/sat/readme$'});
 	}
 	else{
 		res.redirect('/signin');
@@ -23,7 +23,7 @@ router.get('/sat', function(req,res,next) {
 
 router.get('/sat/culture', function(req,res,next) {
 	if (req.user){
-		res.render('defensive/sat/culture', {user: req.user, title: 'visitor@linuxfingers:~/defensive/sat/culture$'});
+		res.render('defensive/sat/culture', {user: req.user, title: 'visitor@rhetsec:~/defensive/sat/culture$'});
 	}
 	else{
 		res.redirect('/signin');
@@ -32,7 +32,7 @@ router.get('/sat/culture', function(req,res,next) {
 
 router.get('/sat/quizzes', function(req,res,next) {
 	if (req.user){
-		res.render('defensive/sat/quizzes', {user: req.user, title: 'visitor@linuxfingers:~/defensive/sat/quizzes$'});
+		res.render('defensive/sat/quizzes', {user: req.user, title: 'visitor@rhetsec:~/defensive/sat/quizzes$'});
 	}
 	else{
 		res.redirect('/signin');
@@ -41,7 +41,7 @@ router.get('/sat/quizzes', function(req,res,next) {
 
 router.get('/sat/reporting', function(req,res,next) {
 	if (req.user){
-		res.render('defensive/sat/reporting', {user: req.user, title: 'visitor@linuxfingers:~/defensive/sat/reporting$'});
+		res.render('defensive/sat/reporting', {user: req.user, title: 'visitor@rhetsec:~/defensive/sat/reporting$'});
 	}
 	else{
 		res.redirect('/signin');
@@ -50,7 +50,7 @@ router.get('/sat/reporting', function(req,res,next) {
 
 router.get('/sat/phishsim', function(req,res,next) {
 	if (req.user){
-		res.render('defensive/sat/phishsim', {user: req.user, title: 'visitor@linuxfingers:~/defensive/sat/phishing_sim$'});
+		res.render('defensive/sat/phishsim', {user: req.user, title: 'visitor@rhetsec:~/defensive/sat/phishing_sim$'});
 	}
 	else{
 		res.redirect('/signin');
@@ -59,7 +59,7 @@ router.get('/sat/phishsim', function(req,res,next) {
 
 router.get('/sat/seminars', function(req,res,next) {
 	if (req.user){
-		res.render('defensive/sat/seminars', {user: req.user, title: 'visitor@linuxfingers:~/defensive/sat/seminars$'});
+		res.render('defensive/sat/seminars', {user: req.user, title: 'visitor@rhetsec:~/defensive/sat/seminars$'});
 	}
 	else{
 		res.redirect('/signin');
@@ -68,7 +68,7 @@ router.get('/sat/seminars', function(req,res,next) {
 
 router.get('/sat/sq', function(req,res,next) {
 	if (req.user){
-		res.render('defensive/sat/sq', {user: req.user, title: 'visitor@linuxfingers:~/defensive/sat/sq$'});
+		res.render('defensive/sat/sq', {user: req.user, title: 'visitor@rhetsec:~/defensive/sat/sq$'});
 	}
 	else{
 		res.redirect('/signin');
@@ -77,7 +77,7 @@ router.get('/sat/sq', function(req,res,next) {
 
 router.get('/sat/videos', function(req,res,next) {
 	if (req.user){
-		res.render('defensive/sat/videos', {user: req.user, title: 'visitor@linuxfingers:~/defensive/sat/videos$'});
+		res.render('defensive/sat/videos', {user: req.user, title: 'visitor@rhetsec:~/defensive/sat/videos$'});
 	}
 	else{
 		res.redirect('/signin');

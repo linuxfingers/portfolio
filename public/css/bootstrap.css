@@ -18,14 +18,14 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #305c48;
+  --primary: #007bff;
   --secondary: #6c757d;
-  --success: #44964e;
-  --info: #201e27;
-  --warning: #c18616;
-  --danger: #f44336;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
   --light: #f8f9fa;
-  --dark: #1c1d21;
+  --dark: #343a40;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -1526,7 +1526,7 @@ pre code {
 
 .table thead th {
   vertical-align: bottom;
-  border-bottom: 2px solid #faf9f9;
+  border-bottom: 2px solid #dee2e6;
 }
 
 .table tbody + tbody {
@@ -1544,7 +1544,7 @@ pre code {
 
 .table-bordered th,
 .table-bordered td {
-  border: 1px solid #ffffff;
+  border: 1px solid #dee2e6;
 }
 
 .table-bordered thead th,
@@ -1582,7 +1582,7 @@ pre code {
 }
 
 .table-hover .table-primary:hover {
-  background-color: #d78a9b;
+  background-color: #9fcdff;
 }
 
 .table-hover .table-primary:hover > td,
@@ -1725,15 +1725,14 @@ pre code {
 .table-dark,
 .table-dark > th,
 .table-dark > td {
-  background-color: #154c34;
-  color: #d78a9b;
+  background-color: #c6c8ca;
 }
 
 .table-dark th,
 .table-dark td,
 .table-dark thead th,
 .table-dark tbody + tbody {
-  border-color: #faf9f9;
+  border-color: #95999c;
 }
 
 .table-hover .table-dark:hover {
@@ -1742,7 +1741,7 @@ pre code {
 
 .table-hover .table-dark:hover > td,
 .table-hover .table-dark:hover > th {
-  background-color: #d78a9b;
+  background-color: #b9bbbe;
 }
 
 .table-active,
@@ -1761,9 +1760,9 @@ pre code {
 }
 
 .table .thead-dark th {
-  color: #faf9f9;
-  background-color: #1c1d21;
-  border-color: #faf9f9;
+  color: #fff;
+  background-color: #343a40;
+  border-color: #454d55;
 }
 
 .table .thead-light th {
@@ -1773,14 +1772,14 @@ pre code {
 }
 
 .table-dark {
-  color: #faf9f9;
-  background-color: #1c1d21;
+  color: #fff;
+  background-color: #343a40;
 }
 
 .table-dark th,
 .table-dark td,
 .table-dark thead th {
-  border-color: #154c34;
+  border-color: #454d55;
 }
 
 .table-dark.table-bordered {
@@ -1792,8 +1791,8 @@ pre code {
 }
 
 .table-dark.table-hover tbody tr:hover {
-  color: #d78a9b;
-  background-color: #154c34;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.075);
 }
 
 @media (max-width: 575.98px) {

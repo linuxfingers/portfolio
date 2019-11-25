@@ -16,40 +16,65 @@ a:active {
 h1, h2, h3, h4, h5, h6 {
   color: #006666;
   font-family: 'courierprimecode';
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
-
 ul, dl {
   	list-style-type: none;
 		font-family: 'courierprime';
 }
 
-
-blockquote
-{
-  font-style: italic;
-	font-size: 85%;
-  margin-left: 3rem;
-	margin-right: 3rem;
+.hilite span {
+  box-shadow: 0 0 0 0.6rem #004040;
+  background-color: #004040;
+  color: #cccccc;
+  line-height: 2.3;
 }
 
+.example {
+	padding: 0.5rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.biblio {
+	margin-bottom: 1rem;
+	margin-top: .1rem;
+}
+
+/*
+p {
+			 overflow: hidden;
+	 }
+*/
 /* */
 
 .content {
   padding: 3rem;
-  background-color: rgb(204,204,204,0.9);
+  background-color: rgba(204,204,204,0.9);
   color: #000;
   box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
     -webkit-box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
     -moz-box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
-  min-height: 40vh;
-  max-height: 80vh;
+  min-height: 80vh;
+	max-height: 80vh;
   overflow: auto;
   margin-bottom: auto;
   font: 1.2rem 'courierprime', monospace;
-  text-shadow: 0 0 5px #c8c8c8;
+  /*text-shadow: 0 0 5px #c8c8c8;*/
   border: 6px double #000;
 
+}
+
+.fcontent {
+  padding: 3rem;
+  color: #000;
+  box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
+    -webkit-box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
+    -moz-box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
+  overflow: auto;
+  margin-bottom: auto;
+  border: 6px double #000;
+	background-color: rgba(204,204,204,0.9);
 }
 
 .files {
@@ -110,7 +135,8 @@ blockquote
   box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.5);
     -webkit-box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.5);
     -moz-box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.5);
-  min-height: 300px;
+  min-height: 40vh;
+	min-width: 40vh;
   max-height: 50vh;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -122,6 +148,13 @@ blockquote
 
 body.modal-open {
     overflow: hidden;
+}
+
+.avatar {
+	width: 250px;
+	padding: 1rem;
+	margin-top: 1rem;
+	float: right;
 }
 
 .modal-backdrop {
@@ -201,12 +234,25 @@ input#menu {
   border: 2px double #000;
   display: flex;
   justify-content: space-between;
-  color: #000;
+  color: #fff;
+	background-color: #004040;
   font-family: 'courierprime';
   font-weight: bold;
   font-size: 1rem;
 }
 
+.top a {
+  color: #fff;
+}
+
+.table {
+	font-size:0.9rem;
+ }
+
+ .tgreen {
+	 background-color: #004040;
+   color: #cccccc;
+ }
  /* */
 
  html {

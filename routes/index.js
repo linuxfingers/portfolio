@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function(req, res, next) {
-	res.render('index', {user: req.user, title: 'visitor@linuxfingers:~/'});
+	res.render('index', {user: req.user, title: 'visitor@rhetsec:~/'});
 });
 
 router.get('/notepad', function(req, res, next) {
@@ -10,7 +10,7 @@ router.get('/notepad', function(req, res, next) {
 });
 
 router.get('/test', function(req, res, next) {
-	res.render('test', {title: 'visitor@linuxfingers:~/ test.sh', layout : 'test'});
+	res.render('test', {title: 'visitor@rhetsec:~/ test.sh', layout : 'test'});
 });
 
 
