@@ -1,6 +1,6 @@
 a {
 	color: #006666;
-  font-family: 'courierprime', courier;
+  font-family: 'courierprimecode', courier;
 	text-decoration: none;
 
 }
@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 ul, dl {
   	list-style-type: none;
-		font-family: 'courierprime';
+		font-family: 'courierprimesans';
 }
 
 .hilite span {
@@ -303,6 +303,14 @@ body {
     font-family: 'courierprime';
     src: url('/fonts/courier_prime-webfont.woff2') format('woff2'),
          url('/fonts/courier_prime-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'courierprimesans';
+    src: url('/fonts/courierprimesans-webfont.woff2') format('woff2'),
+         url('/fonts/courierprimesans-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
