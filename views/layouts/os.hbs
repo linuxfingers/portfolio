@@ -68,13 +68,13 @@
                 <div class="row">
                   <div class="col">
                     <img class="center-block" src="/icons/folder.svg" id="portfolioFolder" onclick="this.src='/icons/openfolder.svg', 1000" data-toggle="modal" data-target="#portfolioModal" style="width:80px;height:80px;"/>
-                      <p>/portfolio</p>
+                      <p>/rhetsec_</p>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col">
                     <img class="center-block" src="/icons/folder.svg" id="wriFolder" onclick="this.src='/icons/openfolder.svg', 1000" data-toggle="modal" data-target="#wriModal" style="width:80px;height:80px;"/>
-                    <p>/other_txts</p>
+                    <p>/other_writing</p>
                   </div>
                   <div class="col">
                     <img class="center-block" src="/icons/folder.svg" id="vaFolder" onclick="this.src='/icons/openfolder.svg', 1000" data-toggle="modal" data-target="#vaModal" style="width:80px;height:80px;"/>
@@ -82,7 +82,7 @@
                   </div>
                   <div class="col">
                     <img class="center-block" src="/icons/folder.svg" id="aboutFolder" onclick="this.src='/icons/openfolder.svg', 1000" data-toggle="modal" data-target="#aboutModal" style="width:80px;height:80px;"/>
-                    <p>/about</p>
+                    <p>/about_jen</p>
                   </div>
                 </div>
 
@@ -122,19 +122,6 @@
         </div>
       </div>
 
-<!--login/logout button-->
-
-      <div class="row float-left">
-        <div class="col">
-          {{#if user}}
-          <a href="/logout"><img class="img-fluid p-3" src="/icons/logout.svg" style="width:80px;height:80px;color:#fff;"/></a>
-          {{else}}
-          <a href="/signin"><img class="img-fluid p-3" src="/icons/login.svg" style="width:80px;height:80px;color:#fff;"/></a>
-          {{/if}}
-        </div>
-      </div>
-
-
   </div> <!-- closes this column-->
 
 
@@ -143,65 +130,11 @@
 
 <!-- Modals -->
 
-<div class="modal" id="folderModal">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header top">
-        visitor@linuxfingers: ~/folder
-        <button type="button" class="close" data-dismiss="modal" data-backdrop="false"><img src="/img/x.svg"</button>
-      </div>
-      <div class="modal-body fcontent smallfont">
-        <div class="row">
-          <div class="col">
-              <img class="center-block" src="/icons/folder.svg" onclick="this.src='/icons/openfolder.svg'" data-toggle="modal" data-target="#folderModal" style="width:80px;height:80px;">
-              <p>/folder</p>
-          </div>
-        <div class="col">
-          <a href="/init"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;" style="width:80px;height:80px;">
-          <p>file.sh</p></a>
-        </div>
-        </div>
-      </div>
-      </div>
-    </div>
-  </div>
-
-<!--
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header top">
-        visitor@linuxfingers: ~/init
-        <button type="button" class="close" data-dismiss="modal" data-backdrop="false"><img src="/img/x.svg"</button>
-      </div>
-      <div class="modal-body fcontent smallfont">
-        <div class="row">
-          <div class="col">
-            <a href="/init"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
-            <p>project</p></a>
-          </div>
-          <div class="col">
-            <a href="/init/audience"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
-            <p>audience</p></a>
-          </div>
-          <div class="col">
-            <a href="/init/why"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
-            <p>why</p></a>
-          </div>
-          <div class="col">
-            <a href="/init/bibliography"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
-            <p>bibliography</p></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>-->
-
 <div class="modal" id="portfolioModal">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header top">
-        visitor@linuxfingers: ~/portfolio
+        visitor@linuxfingers: ~/rhetsec_
         <button type="button" class="close" data-dismiss="modal" data-backdrop="false"><img src="/img/x.svg"</button>
       </div>
       <div class="modal-body fcontent smallfont">
@@ -251,96 +184,6 @@
     </div>
   </div>
 </div>
-<!--
-<div class="modal" id="offModal">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header top">
-        visitor@linuxfingers: ~/offensive
-        <button type="button" class="close" data-dismiss="modal" data-backdrop="false"><img src="/img/x.svg"</button>
-      </div>
-      <div class="modal-body fcontent smallfont">
-        <div class="row">
-          <div class="col">
-            <a href="/offensive/phishing/analysis"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
-            <p>1_readme</p></a>
-          </div>
-          <div class="col">
-            <a href="/offensive/phishing/analysis/bulk"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
-            <p>analysis_bulk</p></a>
-          </div>
-          <div class="col">
-            <a href="/offensive/phishing/analysis/clonephishing"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
-            <p>analysis_clone</p></a>
-          </div>
-          <div class="col">
-            <a href="/offensive/phishing/analysis/malspam"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
-            <p>analysis_malspam</p></a>
-          </div>
-          <div class="col">
-            <a href="/offensive/phishing/analysis/pse"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
-            <p>analysis_pse</p></a>
-          </div>
-          <div class="col">
-            <a href="/offensive/phishing/analysis/spearphishing"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
-            <p>analysis_spearphish</p></a>
-          </div>
-          <div class="col">
-            <a href="/offensive/phishing/analysis/corpus"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
-            <p>email_corpus</p></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal" id="defModal">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header top">
-        visitor@linuxfingers: ~/defensive
-        <button type="button" class="close" data-dismiss="modal" data-backdrop="false"><img src="/img/x.svg"</button>
-      </div>
-      <div class="modal-body fcontent smallfont">
-        <div class="row">
-            <div class="col">
-              <a href="/defensive/sat/"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
-              <p>readme</p></a>
-            </div>
-            <div class="col">
-              <a href="/defensive/sat/sq"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
-                <p>status_quo</p></a>
-              </div>
-            <div class="col">
-              <a href="/defensive/sat/culture"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
-                <p>corp_culture</p></a>
-              </div>
-            <div class="col">
-              <a href="/defensive/sat/quizzes"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
-                <p>analysis_quizzes</p></a>
-              </div>
-            <div class="col">
-              <a href="/defensive/sat/reporting"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
-              <p>analysis_reporting</p></a>
-            </div>
-            <div class="col">
-              <a href="/defensive/sat/reporting"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
-              <p>analysis_phishingsim</p></a>
-            </div>
-            <div class="col">
-              <a href="/defensive/sat/seminars"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
-              <p>analysis_seminars</p></a>
-            </div>
-            <div class="col">
-              <a href="/defensive/sat/videos"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
-              <p>analysis_videos</p></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>-->
 
 <div class="modal" id="wriModal">
   <div class="modal-dialog modal-lg">
@@ -353,11 +196,11 @@
         <div class="row">
           <div class="col">
             <a href="/writing/digispace"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
-            <p>digital-spaces</p></a>
+            <p>digital_spaces</p></a>
           </div>
           <div class="col">
             <a href="/writing/other"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
-              <p>other-projects</p></a>
+              <p>other_projects</p></a>
             </div>
           <div class="col">
             <a href="/writing/gonzo"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
@@ -404,7 +247,7 @@
   <div class="modal-dialog modal-md">
     <div class="modal-content">
       <div class="modal-header top">
-        visitor@linuxfingers: ~/about
+        visitor@linuxfingers: ~/about_jen
         <button type="button" class="close" data-dismiss="modal" data-backdrop="false"><img src="/img/x.svg"</button>
       </div>
       <div class="modal-body fcontent smallfont">
@@ -419,7 +262,7 @@
           </div>
           <div class="col">
             <a href="/about/provsec"><img class="center-block p-1" src="/icons/file.svg" style="width:80px;height:80px;">
-            <p>providentia-security</p></a>
+            <p>providentia_security</p></a>
           </div>
         </div>
       </div>
