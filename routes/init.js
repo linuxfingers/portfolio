@@ -2,15 +2,15 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function(req,res,next) {
-		res.render('init/theproject', {user: req.user, title: 'visitor@linuxfingers:~/portfolio/the_project$'});
+		res.render('init/theproject', {user: req.user, title: 'visitor@linuxfingers:~/rhetsec_/project_readme$'});
 });
 
 router.get('/rhet101', function(req,res,next) {
-		res.render('init/rhet101', {user: req.user, title: 'visitor@linuxfingers:~/portfolio/rhetoric_101$'});
+		res.render('init/rhet101', {user: req.user, title: 'visitor@linuxfingers:~/rhetsec_/rhetoric_crash_course'});
 });
 
-router.get('/bibliography', function(req,res,next) {
-		res.render('init/bibliography', {user: req.user, title: 'visitor@linuxfingers:~/portfolio/bibliography$'});
+router.get('/references', function(req,res,next) {
+		res.render('init/references', {user: req.user, title: 'visitor@linuxfingers:~/rhetsec_/references$'});
 });
 
 module.exports = router;

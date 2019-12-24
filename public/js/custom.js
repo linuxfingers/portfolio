@@ -35,14 +35,14 @@ $("#menu-toggle").click(function(e) {
 //footnote & tooltip JS
 
 jQuery(document).ready(function() {
-  jQuery('[data-toggle="tooltip"]').each(function() {
-    var $elem = jQuery(this);
-    $elem.tooltip({
-      html:true,
-      //container: $elem,
-      delay: {hide:400}
+    jQuery('[data-toggle="tooltip"]').each(function() {
+        var $elem = jQuery(this);
+        $elem.tooltip({
+            html:true,
+            container: $elem,
+            delay: {hide:400}
+        });
     });
-  });
 });
 
 
