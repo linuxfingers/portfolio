@@ -43,6 +43,14 @@ ul, dl {
 	margin-top: .1rem;
 }
 
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 /*
 p {
 			 overflow: hidden;
@@ -127,8 +135,8 @@ span.footnote {
 	max-height: 85vh;
   overflow: auto;
   margin-bottom: auto;
-  font: 1.2rem 'courierprime', monospace;
-  /*text-shadow: 0 0 5px #c8c8c8;*/
+  font: 1.1rem 'courierprime', monospace;
+  /* text-shadow: 0 0 5px #c8c8c8; */
   border: 6px double #000;
 
 }
@@ -265,6 +273,9 @@ input#menu {
     display: none;
 }
 
+.navihead {
+	font-weight: bold;
+}
 /**/
 
 * {
