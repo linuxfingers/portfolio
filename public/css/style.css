@@ -24,7 +24,9 @@ ul, dl {
   	list-style-type: none;
 		font-family: 'courierprime';
 }
-
+.sq {
+	list-style-type: square;
+}
 .hilite span {
   box-shadow: 0 0 0 0.6rem #004040;
   background-color: #004040;
@@ -126,7 +128,7 @@ span.footnote {
 
 .content {
   padding: 3rem;
-  background-color: rgba(204,204,204,0.9);
+  background-color: rgba(204,204,204,1.0);
   color: #000;
   box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
     -webkit-box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
@@ -150,12 +152,12 @@ span.footnote {
   overflow: auto;
   margin-bottom: auto;
   border: 6px double #000;
-	background-color: rgba(204,204,204,0.9);
+	background-color: rgba(204,204,204,1.0);
 }
 
 .files {
   padding: 3rem;
-  background-color: rgb(204,204,204,0.9);
+  background-color: rgba(204,204,204,1.0);
   color: #000;
   box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
     -webkit-box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
@@ -171,7 +173,7 @@ span.footnote {
 
 .noti {
   padding: 2.5rem;
-  background-color: rgb(204,204,204,0.9);
+  background-color: rgba(204,204,204,1.0);
   color: #000;
   box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
     -webkit-box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
@@ -187,7 +189,7 @@ span.footnote {
 .logbox {
   padding: 0.5rem;
   margin: 20px 10%;
-  background-color: rgb(204,204,204,0.9);
+  background-color: rgba(204,204,204,1.0);
   color: #000;
   overflow: hidden;
   border: 6px double #000;
@@ -206,7 +208,7 @@ span.footnote {
 
 .folder {
   padding: 3rem;
-  background-color: rgb(204,204,204,0.9);
+  background-color: rgba(204,204,204,0.5);
   color: #000;
   box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.5);
     -webkit-box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.5);
@@ -226,8 +228,12 @@ body.modal-open {
     overflow: hidden;
 }
 
+.modal-content {
+	background-color: rgba(204,204,204,0.5);
+}
+
 .avatar {
-	width: 50%;
+	max-width: 300px;
 	float: right;
 }
 

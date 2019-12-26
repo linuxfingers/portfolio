@@ -4,7 +4,7 @@ var router = express.Router();
 //main offensive//
 
 router.get('/', function(req,res,next) {
-		res.render('offensive/index', {user: req.user, title: 'visitor@linuxfingers:~/rhetsec_/readme$'});
+		res.render('offensive/index', {user: req.user, title: 'visitor@linuxfingers:~/rhetsec_/project_readme$'});
 });
 
 
@@ -12,7 +12,7 @@ router.get('/', function(req,res,next) {
 //Email Analyses//
 
 router.get('/phishing/analysis', function(req,res,next) {
-		res.render('offensive/phishing/analysis/index', {user: req.user, title: 'visitor@linuxfingers:~/rhetsec_/analysis_info$'});
+		res.render('offensive/phishing/analysis/index', {user: req.user, title: 'visitor@linuxfingers:~/rhetsec_/analysis_framework$'});
 });
 
 router.get('/phishing/analysis/bulk', function(req,res,next) {
