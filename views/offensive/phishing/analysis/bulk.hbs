@@ -1,12 +1,11 @@
 <h6 class="navihead">
-  <a href="#whatis"># what is bulk phishing?</a> |<a href="#sit"># rhetorical situation</a> | <a href="#appeals"># rhetorical appeals</a> | <a href="#sim"># simulation</a> | <a href="#further"># more questions</a>
+  <a href="#whatis"># what is bulk phishing?</a> |
+  <a href="#sit"># rhetorical situation</a> |
+  <a href="#appeals"># rhetorical appeals</a> |
+  <a href="#sim"># simulation</a> |
+  <a href="#thoughts"># final thoughts</a>
 </h6>
-<h6>
-  <p><b>emails:</b>
 
-  <a href="#eBay_4"># ebay</a> | <a href="#amazon_3"># amazon</a> | <a href="#warcraft_1"># warcraft</a> | <a href="#paypal_4"># paypal</a>
-</p>
-</h6>
 <h1 class="hilite"><span>bulk phishing</span></h1>
 
 <p>
@@ -26,19 +25,19 @@
     Bulk phishing emails are not personalized, referencing general information vaguely connected to the victim. Bulk phishing emails can also operate by giving a notice or alert that an issue with a customer's account exists or suspicious activity has been detected. The intended recipient was assumed to have been a customer of the company contacting them, either randomly targeted or reached out to because of recent account activity. Recurring themes in bulk phishing include incorrect account information, unauthorized access attempts from foreign IPs, or unauthorized purchases. Generally, all of these "infractions" result in a violation of account policies or procedures that require urgent attention, or the victim's account will be terminated. A great example is this eBay email here, informing the victim their account is suspended due to a policy violation.
   </p>
 
-  <a href="offensive/phishing/analysis/corpus#eBay_4"><img src="/img/emails/bulkeb4.png" class="img-fluid example mx-auto mt-3 mb-3 d-flex" id="eBay_4"></a>
+  <a href="/offensive/phishing/analysis/corpus#eBay_4"><img src="/img/emails/bulkeb4.png" class="img-fluid example mx-auto mt-3 mb-3 d-flex"></a>
 
   <p>
     While the above email reads like a personal letter, it appears to have been sent directly from one of eBay's Certified Information Privacy Professionals. I assume a non-performance infraction is related to not fulfilling orders. Still, it's unclear precisely what that means, which generates curiosity to click on the link in the email. Most emails like this have their form complement the content, with business emails generally looking like formal communications. Logo placement and text styling appear to match up to brand standards on most emails. The main ideas of the messages presented - account alerts and notifications - mimic business communication well, but some common errors tend to break the illusion.
   </p>
 
-  <a href="/offensive/phishing/analysis/corpus#amazon_3"><img src="/img/emails/bulka3.png" class="img-fluid example mx-auto mt-3 mb-3 d-flex" id="amazon_3"></a>
+  <a href="/offensive/phishing/analysis/corpus#amazon_3"><img src="/img/emails/bulka3.png" class="img-fluid example mx-auto mt-3 mb-3 d-flex"></a>
 
   <p>
     In another example from Amazon, the text states: "We will be upgrading our yearly SSL EncryptedServer to prevent fraudulent activity." SSL EncryptedServer looks strange because it is. A quick search of that term pulls up  <a href="https://alt.spam.narkive.com/O4XTlzhW/bank-of-america" target="_blank">phishing email examples on various forums</a> that look precisely like this one. While a more technically-minded person might see the SSL EncryptedServer and know this isn't how you'd refer to an SSL <i>certificate</i>, phishing emails intend to have the victim respond quickly without much forethought. SSL EncryptedServer certainly sounds enough like an SSL certificate, which is a term most people recognize. The word "encrypted" also appears in this phrase, further creating a safe feeling for the victim. The rationale then is that if the email's worried about fraudulent activity, then the email isn't fraudulent itself. Therefore, the context of security is still "valid," even if we know it's not after deconstructing.
   </p>
 
-  <a href="/offensive/phishing/analysis/corpus#warcraft_1"><img src="/img/emails/wow.png" class="img-fluid example mx-auto mt-3 mb-3 d-flex" id="warcraft_1"></a>
+  <a href="/offensive/phishing/analysis/corpus#warcraft_1"><img src="/img/emails/wow.png" class="img-fluid example mx-auto mt-3 mb-3 d-flex"></a>
   <p>
     In this phishing email from Blizzard, the situation presented is that the victim's friend has gifted them a new pet in the game World of Warcraft, and need to claim the pet by logging into their account. Gifts are always lovely, and the recipient might be too excited to notice that it doesn't even say who sent the email, only "Your friend." But the telltale sign that this situation is not what it appears are the random question marks entered the sentences, making the email look that it's unsure of itself.  Interestingly enough, the company transitioned away from the Battle.net name to adopt Blizzard as its branding in 2016, so this email campaign starting over six months after they transitioned is another red flag.
   </p>
@@ -47,18 +46,16 @@
     While the contextual situation may differ depending on the manufactured intent of the email, there's a commonality with bulk phishing in that the reason for contact is usually business communication. The success or failure then of each phishing email is dependent on how well the manufactured intent masks the actual intent. Discovering these contextual markers then is essential for learning how to create more effective training programs to combat more sophisticated phishing attempts in the future.
   </p>
 
-<h3 class="hilite"><span># rhetorical appeals</span></h3>
+<h3 class="hilite" id="appeals"><span># rhetorical appeals</span></h3>
 <p>
   Bulk phishing email's credibility (ethos) is established using brand logos, legal text, and formal language by identifying with the victim through an existing business relationship, establishing itself as legitimate. By communicating to the victim as a valued member and highlighting the importance of privacy and security, it creates a sense of trust that allows the victim to let their guard down. There is often mention that the email cannot be replied to, as it is unmonitored, which is a pretty standard formality in business communications. A common example seen in many PayPal emails is language such as: "Please do not reply to this email. This mailbox is not monitored and you will not receive a response. For assistance, log in to your PayPal account and choose the Help link located in the top right corner of any PayPal page."
 </p>
 
-<a href="/offensive/phishing/analysis/corpus#paypal_1"><img src="/img/emails/dnr.png" class="img-fluid example mx-auto mt-3 mb-3 d-flex" id="paypal_1"></a>
+<a href="/offensive/phishing/analysis/corpus#paypal_1"><img src="/img/emails/dnr.png" class="img-fluid example mx-auto mt-3 mb-3 d-flex"></a>
 
 <p>
   It can be an effective way to mask the phisher's intent if the images are still able to be loaded as it "proves" the email is from whomever the attack is pretending to be. The downside is that it also can dismantle the operation immediately if crucial images aren't loaded. Authority is asserted through forceful language, lack of emotional appeals, and links or quotations of various policies for the company. By including company policies, the email shows it's concerned with privacy and the safety of the community. But by acting unafraid to use legal force or threatening account termination, it creates a detachment that further promotes the phishing email as legitimate communication. The company will use any means necessary to keep the company secure.
 </p>
-
-<a href="/offensive/phishing/analysis/corpus#paypal_4"><img src="/img/emails/bulkhotlink.png" class="img-fluid example mx-auto mt-3 mb-3 d-flex" id="paypal_4"></a>
 
 <p>
   While the tone of bulk phishing attacks tends to be formal, they do express urgency and evoke emotional responses through threatening language. For example, this Amazon email issues legal-sounding notices to the victim that they're violating terms of the User Agreement and are at risk of being terminated:
@@ -89,7 +86,7 @@
   These extreme (and after examination, unreasonable) threats are successful because fear pushes the victim to act quickly without thinking about what's happening. They could be even more successful if they honed their language towards standard communicative practices from the organization as opposed to merely fear-mongering. Even so, recognizing that invoking an emotional response in the reader through jeopardizing something presumably valuable is an effective mode of attack and one that should be understood further than solely looking for "indicators" on the defensive side.
 </p>
 
-<h3 class="hilite"><span># simulation</span></h3>
+<h3 class="hilite" id="sim"><span># simulation</span></h3>
 <p>
   Most bulk phishing appears as regular business communications, following that genre's form and conventions quite well with minimal emotive language, vague yet formal conversations, and consistent mentions of privacy, safety, and copyrights. What seems to be the biggest issue with these emails is visual inconsistencies that break the simulation they're projecting. The more successful bulk phishing emails operate as a clonephish, which I go into more detail <a href="clonephishing">here</a>. Aside from those, the simulation aspect of bulk phishing is not exactly compelling, as there are often glaring formatting and grammatical errors that take away from the presentation of the message. Since many of these bulk emails are meaning to replicate official business communications, the improper use of language is an instant break in the illusion.
 
@@ -117,7 +114,10 @@
 <p>
   The above email from Chase is a good attempt at simulation, especially with the included IP. A quick search on the IP address shows that it's from the Netherlands, and if the victim searched this IP, it would only make the simulation even more real, presuming that they are not from the Netherlands. We can infer this was the goal due to this email example sent to an employee at Enron, which was an American company, but since it was a bulk email, there is no telling whether this was the intended effect. By simulating the attacker is someone trustworthy, or provides trustworthy information, the phishing email becomes a legitimate - even if it's not.
 </p>
-<h3 class="hilite"><span># thoughts</span></h3>
+<h3 class="hilite" id="thoughts"><span># final thoughts</span></h3>
 <p>
-  Bulk phishing relies on existing business communications with the victim and the ability to mimic those communications well. The attacks have gotten more sophisticated, and the ability to mask links through services such as bit.ly and others only make detecting these in both spam filters and the individual more difficult. Some attacks use gentle persuasion, but most bulk phishing attempts are aggressive in describing what the recipient has done wrong and how to fix it, trying to force the audience to act on impulse. Other times they're unbiased and informative, attempting persuasion through the presentation of facts with an easy solution such as the account becoming locked due to multiple incorrect login attempts or a recent order failing due to billing information. Overbearing threats of closure, compromise, and illegitimacy with the right combination of persuasive language makes bulk phishing attempts incredibly successful. But while fear-based aggression garners an immediate emotional response, an email that gives a vast audience nothing to think about, with an easy solution presented to them, is a much more effective tactic. The language in the phishing emails that work quickly is what needs to be examined further to understand <i>how</i> they work so efficiently; noticing the technical details are wrong is not enough.
+  Bulk phishing relies on existing business communications with the victim and the ability to mimic those communications well. The attacks have gotten more sophisticated, and the ability to mask links through services such as bit.ly and others only make detecting these in both spam filters and the individual more difficult. Some attacks use gentle persuasion, but most bulk phishing attempts are aggressive in describing what the recipient has done wrong and how to fix it, trying to force the audience to act on impulse. Other times they're unbiased and informative, attempting persuasion through the presentation of facts with an easy solution such as the account becoming locked due to multiple incorrect login attempts or a recent order failing due to billing information.
+</p>
+<p>
+  Overbearing threats of closure, compromise, and illegitimacy with the right combination of persuasive language makes bulk phishing attempts incredibly successful. But while fear-based aggression garners an immediate emotional response, an email that gives a vast audience nothing to think about, with an easy solution presented to them, is a much more effective tactic. The language in the phishing emails that work quickly is what needs to be examined further to understand <i>how</i> they work so efficiently; pointing out the technical failures in an email's construction is simply not enough.
 </p>
