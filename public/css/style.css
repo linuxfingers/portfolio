@@ -286,6 +286,10 @@ input#menu {
   box-sizing: border-box;
 }
 
+.noflow {
+	overflow: hidden;
+}
+
 .tridown {
   width: 0;
 	height: 0;
