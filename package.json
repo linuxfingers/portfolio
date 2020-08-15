@@ -1,8 +1,8 @@
 {
-  "name": "scrapcode",
-  "version": "1.0.0",
+  "name": "portfolio",
+  "version": "2.0.0",
   "description": "website",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

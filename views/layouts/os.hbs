@@ -21,10 +21,6 @@
 <!--FontAwesome-->
 <script src="https://kit.fontawesome.com/1de139fa02.js" crossorigin="anonymous"></script>
 
-
-<!--Pintrest-->
-<meta name="p:domain_verify" content="c5c1891d537fa568d2e130176a0d6ae1"/>
-
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138652320-1"></script>
 <script>
@@ -46,28 +42,14 @@
 
   <div class="container-fluid">
   	<div class="row">
-  		<div class="col-md-10 mt-5">
-        <!--<div class="container">-->
-          <div class="modal-header top">
-            <span class="triright"></span>{{title}}
-          </div>
-            <div class="content mb-4">
 
-              {{{body}}}
-
-          </div>
-      </div>
-    <!--</div>-->
-  		<div class="col-md-2 mt-3">
-
+      <div class=" col-md-2 mt-3">
         <div class="row">
-          <div class="col">
+          <div class="col draggable">
               <div class="modal-header top">
               <span class="tridown"></span><a href="/">/home/visitor</a>
             </div>
-
             <div class="files mb-4">
-
                 <div class="row">
                   <div class="col">
                     <img class="center-block" src="/icons/folder.svg" id="portfolioFolder" onclick="this.src='/icons/openfolder.svg', 1000" data-toggle="modal" data-target="#portfolioModal" style="width:80px;height:80px;"/>
@@ -89,11 +71,27 @@
                   </div>
                 </div>
 
-              <!--<img src="/img/greenskull.gif" class="img-fluid d-flex mx-auto mt-5" href="#" data-toggle="tooltip" title="hello, world" target="_blank" onclick="randomSite();">-->
             </div>
             </div>
         </div>
-</div>
+      </div>
+
+
+
+
+  		<div class="resizeable col-md-10 mt-5">
+        <!--<div class="container">-->
+          <div class="modal-header atop">
+            <span class="triright"></span>{{title}}
+          </div>
+            <div class="content mb-4">
+
+              {{{body}}}
+
+          </div>
+      </div>
+    <!--</div>-->
+
 
       <div class="row">
             {{#if error}}
@@ -123,7 +121,6 @@
             </div>
             {{/if}}
         </div>
-      </div>
 
   </div> <!-- closes this column-->
 
@@ -133,10 +130,10 @@
 
 <!-- Modals -->
 
-<div class="modal" id="portfolioModal">
+<div class="draggable modal" id="portfolioModal">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-      <div class="modal-header top">
+      <div class="modal-header btop">
         visitor@linuxfingers: ~/rhetsec_
         <button type="button" class="close" data-dismiss="modal" data-backdrop="false"><img src="/img/x.svg"</button>
       </div>
@@ -188,10 +185,10 @@
   </div>
 </div>
 
-<div class="modal" id="wriModal">
+<div class="draggable modal" id="wriModal">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-      <div class="modal-header top">
+      <div class="modal-header btop">
         visitor@linuxfingers: ~/other_writing
         <button type="button" class="close" data-dismiss="modal" data-backdrop="false"><img src="/img/x.svg"</button>
       </div>
@@ -219,10 +216,10 @@
   </div>
 </div>
 
-<div class="modal" id="vaModal">
+<div class="draggable modal" id="vaModal">
   <div class="modal-dialog modal-md">
     <div class="modal-content">
-      <div class="modal-header top">
+      <div class="modal-header btop">
         visitor@linuxfingers: ~/visaudio
         <button type="button" class="close" data-dismiss="modal" data-backdrop="false"><img src="/img/x.svg"</button>
       </div>
@@ -246,12 +243,12 @@
   </div>
 </div>
 
-<div class="modal" id="evaModal">
+<div class="draggable modal" id="evaModal">
   <div class="modal-dialog modal-md">
     <div class="modal-content">
-      <div class="modal-header top">
+      <div class="modal-header btop">
         visitor@linuxfingers: ~/eva
-        <button type="button" class="close" data-dismiss="modal" data-backdrop="false"><img src="/img/x.svg"</button>
+        <button type="button" class="close" data-dismiss="modal" data-backdrop="false"><img src="/img/x.svg"></button>
       </div>
       <div class="modal-body fcontent smallfont">
         <div class="row">
@@ -276,27 +273,21 @@
       <font class="kern">Activate Windows</font><br>Go to Settings to activate Windows.</a>
 </div>
 
+
 </body>
 
+<script src="/js/jquery-3.5.1.min.js"></script>
 <script
-  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-  crossorigin="anonymous"></script>
-
-  <script
   src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
   crossorigin="anonymous"></script>
 
 <script
-  src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+  integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
   crossorigin="anonymous"></script>
-
-<script
-  src="/js/bootstrap.min.js"></script>
-<script
-  src="/js/custom.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/custom.js"></script>
 
 
 </html>

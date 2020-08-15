@@ -13,18 +13,19 @@ _|  _|  _|    _|    _|_|_|  _|    _|    _|      _|  _|    _|    _|_|_|    _|_|_|
 /* Main Bits of Pretty */
 
 a {
-	color: #006666;
+	color: #009696;
   font-family: 'courierprimecode', courier;
 	text-decoration: none;
 
 }
 
 a:hover {
-  text-decoration: dotted #00ffff overline underline;
+  text-decoration: dotted #00cccf overline underline;
+	color: #ccc;
 }
 
 a:active {
-  color: #009600;
+  color: #ccc;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -70,6 +71,10 @@ p {
 			 overflow: hidden;
 	 }
 */
+
+.indent {
+	text-indent: 50px;
+}
 
 /* APA style citations: thank you bertobox (https://github.com/bertobox/CSS-for-APA-Style-references) <3 */
 
@@ -136,20 +141,25 @@ span.footnote {
     color: rgba(0,102,102,0.77);
 }
 
+.w-80 {
+	width:80%;
+}
+
 /* OS Components */
 
 .content {
   padding: 3rem;
-  background-color: rgba(204,204,204,1.0);
-  color: #000;
+  background-color: rgba(64,64,64,1.0);
+  color: #c0c0c0;
   box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
     -webkit-box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
     -moz-box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
   min-height: 85vh;
 	max-height: 85vh;
+	max-width: 85vw;
   overflow: auto;
   margin-bottom: auto;
-  font: 1.1rem 'courierprime', monospace;
+  font: 1.1rem 'courierprimesans', monospace;
   /* text-shadow: 0 0 5px #c8c8c8; */
   border: 6px double #000;
 
@@ -164,13 +174,14 @@ span.footnote {
   overflow: auto;
   margin-bottom: auto;
   border: 6px double #000;
-	background-color: rgba(204,204,204,1.0);
+	background-color: rgba(64,64,64,1.0);
 }
 
 .files {
   padding: 3rem;
-  background-color: rgba(204,204,204,1.0);
-  color: #000;
+	background-color: rgba(64,64,64,1.0);
+  /*background-color: rgba(204,204,204,1.0);*/
+  color: #ccc;
   box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
     -webkit-box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
     -moz-box-shadow: 15px 15px 0px 0px rgba(0,255,255,0.25);
@@ -179,8 +190,18 @@ span.footnote {
   overflow: auto;
   margin-bottom: auto;
   font: 1.2rem 'courierprime', monospace;
-  text-shadow: 0 0 5px #c8c8c8;
+  text-shadow: 0 0 5px #009696;
   border: 6px double #000;
+	z-index:9999;
+}
+
+.box {
+  color: #ccc;
+  box-shadow: 15px 15px 0px 0px rgba(255,255,255,0.25);
+    -webkit-box-shadow: 15px 15px 0px 0px rgba(255,255,255,0.25);
+    -moz-box-shadow: 15px 15px 0px 0px rgba(255,255,255,0.25);
+  border: 6px double #000;
+	max-width: 37vw;
 }
 
 .noti {
@@ -234,6 +255,10 @@ span.footnote {
   font: 1.2rem 'courierprime', monospace;
   text-shadow: 0 0 5px #c8c8c8;
   border: 6px double #000;
+}
+
+.activewindow {
+	background-color: #cccccc;
 }
 
 body.modal-open {
@@ -333,15 +358,49 @@ input#menu {
   border: 2px double #000;
   display: flex;
   justify-content: space-between;
-  color: #fff;
+  color: #ccc;
 	background-color: #004040;
   font-family: 'courierprime';
   font-weight: bold;
   font-size: 1rem;
+	text-shadow: 0 0 5px #009696;
+}
+
+.atop {
+  padding: 10px;
+  background: #f1f1f1;
+  border: 2px double #000;
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+	background-color: #027575;
+  font-family: 'courierprime';
+  font-weight: bold;
+  font-size: 1rem;
+  text-shadow: 0 0 5px #ccc;
+}
+
+.btop {
+  padding: 10px;
+  background: #f1f1f1;
+  border: 2px double #000;
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+	background-color: #00bfbf;
+  font-family: 'courierprime';
+  font-weight: bold;
+  font-size: 1rem;
+  text-shadow: 0 0 5px #ccc;
 }
 
 .top a {
-  color: #fff;
+  color: #ccc;
+}
+
+.term {
+	color: #ccc;
+	text-shadow: 0 0 5px #009696;
 }
 
 .table {
@@ -366,7 +425,7 @@ body {
 	 /*background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);*/
 	 height: 100vh;
 	 margin: 0;
-	 color: white;
+	 color: ccc;
    overflow:hidden;
    background-image: url('/img/background.gif');
    background-size: cover;
@@ -458,7 +517,7 @@ body {
 }
 
 .email-box {
-  background-color: #fff;
+  background-color: #ccc;
   color: #000;
   padding: 1rem;
   height: auto;
@@ -511,6 +570,13 @@ body {
 
 a.win{
   font-family: 'SegoeUILight', sans-serif;
+	color: grey;
+}
+
+a.win:hover{
+  font-family: 'SegoeUILight', sans-serif;
+	color: grey;
+	text-decoration: none;
 }
 
 .bottomright {

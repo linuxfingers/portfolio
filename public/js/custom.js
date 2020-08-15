@@ -25,32 +25,12 @@ var sites = [
                 location.href = sites[i];
             }
 
-// Menu JS
-
-$("#menu-toggle").click(function(e) {
-  e.preventDefault();
-  $("#wrapper").toggleClass("toggled");
-});
-
-//footnote & tooltip JS
-
-jQuery(document).ready(function() {
-    jQuery('[data-toggle="tooltip"]').each(function() {
-        var $elem = jQuery(this);
-        $elem.tooltip({
-            html:true,
-            container: $elem,
-            delay: {hide:400}
-        });
-    });
-});
-
-
 //draggable modals
 
-$('.modal-content').resizable({
-  //alsoResize: ".modal-dialog",
-  minHeight: 300,
-  minWidth: 300
-});
-$('.modal-dialog').draggable();
+$( function() {
+  $( ".draggable" ).draggable();
+} );
+
+$( function() {
+  $( ".resizable" ).resizable();
+} );
