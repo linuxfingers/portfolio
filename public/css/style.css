@@ -5,8 +5,7 @@ _|      _|_|_|    _|    _|  _|    _|    _|          _|_|_|      _|_|_|    _|_|  
 _|  _|  _|    _|  _|    _|    _|_|    _|_|_|_|  _|  _|    _|  _|    _|  _|_|_|_|  _|_|      _|_|
 _|  _|  _|    _|  _|    _|  _|    _|    _|      _|  _|    _|  _|    _|  _|        _|            _|_|
 _|  _|  _|    _|    _|_|_|  _|    _|    _|      _|  _|    _|    _|_|_|    _|_|_|  _|        _|_|_|
-																																		_|
-																																_|_|
+
 
 */
 
@@ -16,6 +15,7 @@ a {
 	color: #009696;
   font-family: 'courierprimecode', courier;
 	text-decoration: none;
+	text-shadow: 2px 2px black;
 
 }
 
@@ -32,6 +32,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #006666;
   font-family: 'courierprimecode';
 	margin-top: 1rem;
+	text-shadow: 2px 2px black;
 }
 ul, dl {
   	list-style-type: none;
@@ -66,11 +67,9 @@ ul, dl {
   transform: translateY(-50%);
 }
 
-/*
-p {
-			 overflow: hidden;
-	 }
-*/
+.indent {
+	text-indent: 5% !important;
+}
 
 .indent {
 	text-indent: 50px;
@@ -203,6 +202,13 @@ span.footnote {
   border: 6px double #000;
 	max-width: 37vw;
 }
+
+.embox {
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: justify;
+}
+
 
 .noti {
   padding: 2.5rem;
