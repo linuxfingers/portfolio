@@ -9,7 +9,7 @@
   "author": "linuxfingers",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-error-handler": "^1.1.0",
     "express-handlebars": "^5.3.1",
     "handlebars": "^4.7.7"
